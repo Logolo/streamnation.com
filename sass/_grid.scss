@@ -1,6 +1,6 @@
 @mixin row{
   @include clearfix;
-  margin: 1em auto;
+  margin: $line auto;
   max-width: $widescreen;
 }
 
@@ -34,4 +34,10 @@
 
 .grid12,.grid8,.grid6,.grid4, .grid3{
   &.right-float{ float: right; }
+}
+
+// equivalent to grid12 inside row
+.container{
+  max-width: $widescreen;
+  padding: $line $gtr;
 }

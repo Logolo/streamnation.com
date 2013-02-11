@@ -6,6 +6,8 @@ $small-text: 12px;
 $line: $font-size * 1.5;
 $gtr: 10px;
 
+$header-height: $line * 3;
+
 $tablet: 400px;
 $desktop: 800px;
 $widescreen: 1200px;
@@ -13,7 +15,10 @@ $widescreen: 1200px;
 $body-font: "Georgia", serif;
 $header-font: sans-serif;
 
-$text-color: #222;
+$text-color: #422;
+$blue: #69c;
+$yellow: #ff6;
+$green: #6f6;
 
 @import 'grid';
 
@@ -27,14 +32,75 @@ a {
   color: inherit;
 }
 
+input{
+  margin: 0;
+}
+
 html {
   font-size: $font-size;
   line-height: $line;
   font-family: $body-font;
   color: $text-color;
+  padding-top: $header-height;
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family: $header-font;
+  font-weight: bold;
   line-height: 1;
 }
+
+// header
+
+.site-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  z-index: 10;
+  &:before{
+    content: "";
+    background-color: $blue;
+    height: $line;
+    display: block;
+    border-bottom: 4px solid $text-color;
+  }
+}
+
+.header-logo{
+  float: left;
+}
+
+.site-nav{
+  float: right;
+}
+
+
+.home-block img{
+  height: $line * 10;
+}
+
+
+// footer
+.site-footer{
+  background-color: black;
+  color: white;
+}
+
+
+.footer-form{
+  float: left;
+}
+
+.footer-logo{
+  float: right;
+}
+
+.footer-legal{
+  clear: both;
+  .contact{
+    float: right;
+  }
+}
+

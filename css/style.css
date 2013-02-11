@@ -58,7 +58,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .row {
   overflow: hidden;
   *zoom: 1;
-  margin: 1em auto;
+  margin: 24px auto;
   max-width: 1200px; }
 
 /* line 29, ../sass/_grid.scss */
@@ -134,26 +134,85 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .grid12.right-float, .grid8.right-float, .grid6.right-float, .grid4.right-float, .grid3.right-float {
   float: right; }
 
-/* line 20, ../sass/style.scss */
+/* line 40, ../sass/_grid.scss */
+.container {
+  max-width: 1200px;
+  padding: 24px 10px; }
+
+/* line 25, ../sass/style.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: relative; }
 
-/* line 25, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 a {
   text-decoration: none;
   color: inherit; }
 
-/* line 30, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
+input {
+  margin: 0; }
+
+/* line 39, ../sass/style.scss */
 html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Georgia", serif;
-  color: #222222; }
+  color: #442222;
+  padding-top: 72px; }
 
-/* line 37, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
+  font-weight: bold;
   line-height: 1; }
+
+/* line 55, ../sass/style.scss */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  z-index: 10; }
+  /* line 62, ../sass/style.scss */
+  .site-header:before {
+    content: "";
+    background-color: #6699cc;
+    height: 24px;
+    display: block;
+    border-bottom: 4px solid #442222; }
+
+/* line 71, ../sass/style.scss */
+.header-logo {
+  float: left; }
+
+/* line 75, ../sass/style.scss */
+.site-nav {
+  float: right; }
+
+/* line 80, ../sass/style.scss */
+.home-block img {
+  height: 240px; }
+
+/* line 86, ../sass/style.scss */
+.site-footer {
+  background-color: black;
+  color: white; }
+
+/* line 92, ../sass/style.scss */
+.footer-form {
+  float: left; }
+
+/* line 96, ../sass/style.scss */
+.footer-logo {
+  float: right; }
+
+/* line 100, ../sass/style.scss */
+.footer-legal {
+  clear: both; }
+  /* line 102, ../sass/style.scss */
+  .footer-legal .contact {
+    float: right; }
