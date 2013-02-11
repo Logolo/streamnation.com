@@ -1,0 +1,159 @@
+/* line 17, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 28, ../sass/_grid.scss */
+.row {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 1em auto;
+  max-width: 1200px; }
+
+/* line 29, ../sass/_grid.scss */
+.grid12 {
+  float: left;
+  padding: 0.5em 10px;
+  width: 100%; }
+  /* line 11, ../sass/_grid.scss */
+  .grid12 img {
+    width: 100%; }
+  @media (min-width: 800px) {
+    /* line 29, ../sass/_grid.scss */
+    .grid12 {
+      width: 100%; } }
+
+/* line 30, ../sass/_grid.scss */
+.grid8 {
+  float: left;
+  padding: 0.5em 10px;
+  width: 100%; }
+  /* line 11, ../sass/_grid.scss */
+  .grid8 img {
+    width: 100%; }
+  @media (min-width: 800px) {
+    /* line 30, ../sass/_grid.scss */
+    .grid8 {
+      width: 66.66667%; } }
+
+/* line 31, ../sass/_grid.scss */
+.grid6 {
+  float: left;
+  padding: 0.5em 10px;
+  width: 100%; }
+  /* line 11, ../sass/_grid.scss */
+  .grid6 img {
+    width: 100%; }
+  @media (min-width: 800px) {
+    /* line 31, ../sass/_grid.scss */
+    .grid6 {
+      width: 50%; } }
+
+/* line 32, ../sass/_grid.scss */
+.grid4 {
+  float: left;
+  padding: 0.5em 10px;
+  width: 100%; }
+  /* line 11, ../sass/_grid.scss */
+  .grid4 img {
+    width: 100%; }
+  @media (min-width: 800px) {
+    /* line 32, ../sass/_grid.scss */
+    .grid4 {
+      width: 33.33333%; } }
+
+/* line 33, ../sass/_grid.scss */
+.grid3 {
+  float: left;
+  padding: 0.5em 10px;
+  width: 100%; }
+  /* line 11, ../sass/_grid.scss */
+  .grid3 img {
+    width: 100%; }
+  @media (min-width: 400px) {
+    /* line 33, ../sass/_grid.scss */
+    .grid3 {
+      width: 50%; } }
+  @media (min-width: 800px) {
+    /* line 33, ../sass/_grid.scss */
+    .grid3 {
+      width: 25%; } }
+
+/* line 36, ../sass/_grid.scss */
+.grid12.right-float, .grid8.right-float, .grid6.right-float, .grid4.right-float, .grid3.right-float {
+  float: right; }
+
+/* line 20, ../sass/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative; }
+
+/* line 25, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/* line 30, ../sass/style.scss */
+html {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Georgia", serif;
+  color: #222222; }
+
+/* line 37, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  line-height: 1; }

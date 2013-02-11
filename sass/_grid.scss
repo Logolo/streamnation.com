@@ -1,0 +1,37 @@
+@mixin row{
+  @include clearfix;
+  margin: 1em auto;
+  max-width: $widescreen;
+}
+
+@mixin grid($cols, $right: false){
+  float: left;
+  padding: .5em $gtr;
+  width: 100%;
+  img{
+    width: 100%;
+  }
+  @if $right == true {
+    float: right;
+  }
+  @media (min-width: $tablet){
+    @if $cols == 3 {
+      width: 50%;
+    }
+  }
+  @media (min-width: $desktop){
+    width: percentage($cols / 12);
+  }
+}
+
+// non-semantic classes
+.row{ @include row; }
+.grid12{ @include grid(12);}
+.grid8{  @include grid(8); }
+.grid6{  @include grid(6); }
+.grid4{  @include grid(4); }
+.grid3{  @include grid(3); }
+
+.grid12,.grid8,.grid6,.grid4, .grid3{
+  &.right-float{ float: right; }
+}
