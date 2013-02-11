@@ -136,6 +136,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 40, ../sass/_grid.scss */
 .container {
+  margin: 0 auto;
   max-width: 1200px;
   padding: 24px 10px; }
 

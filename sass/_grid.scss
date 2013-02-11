@@ -38,6 +38,7 @@
 
 // equivalent to grid12 inside row
 .container{
+  margin: 0 auto;
   max-width: $widescreen;
   padding: $line $gtr;
 }
