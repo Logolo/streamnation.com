@@ -23,7 +23,7 @@
       </div>
     </div>
   </div>
-  <a class="banner" href="#">Sign Up</a>
+  <!-- <a class="banner" href="#">Sign Up</a> -->
 </section>
 
 <section class="home-section" id="secure">

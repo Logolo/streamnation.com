@@ -434,13 +434,21 @@ h1 {
   position: absolute;
   right: 0;
   bottom: 0;
-  display: none;
   font-size: 24px;
   font-style: italic;
   color: white;
   background-color: #6699cc;
-  padding: 12px 10px; }
-  /* line 315, ../sass/style.scss */
+  padding: 12px 24px 12px 10px;
+  -webkit-transform: translateX(120%);
+  -moz-transform: translateX(120%);
+  -ms-transform: translateX(120%);
+  -o-transform: translateX(120%);
+  transform: translateX(120%);
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s; }
+  /* line 316, ../sass/style.scss */
   .banner:before {
     content: "";
     position: absolute;
@@ -448,7 +456,7 @@ h1 {
     left: -24px;
     border-top: 24px solid #6699cc;
     border-left: 24px solid transparent; }
-  /* line 323, ../sass/style.scss */
+  /* line 324, ../sass/style.scss */
   .banner:after {
     content: "";
     position: absolute;
@@ -457,33 +465,37 @@ h1 {
     border-bottom: 24px solid #6699cc;
     border-left: 24px solid transparent; }
 
-/* line 333, ../sass/style.scss */
-.home-section:target .banner {
-  display: block; }
+/* line 334, ../sass/style.scss */
+.current .banner {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%); }
 
-/* line 338, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .site-footer {
   background-color: #444444;
   color: white;
   padding: 24px 0 48px; }
 
-/* line 345, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .footer-form {
   float: left;
   min-width: 50%;
   margin-bottom: 24px; }
-  /* line 348, ../sass/style.scss */
+  /* line 349, ../sass/style.scss */
   .footer-form h3 {
     font-size: 16px;
     height: 24px; }
-  /* line 352, ../sass/style.scss */
+  /* line 353, ../sass/style.scss */
   .footer-form input {
     height: 24px;
     display: block;
     line-height: 24px;
     float: left;
     font-size: 12px; }
-  /* line 360, ../sass/style.scss */
+  /* line 361, ../sass/style.scss */
   .footer-form input[type="submit"] {
     border: none;
     background-color: #6699cc;
@@ -493,11 +505,11 @@ h1 {
     text-transform: uppercase;
     margin-left: 10px; }
 
-/* line 372, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 .footer-logo {
   float: right; }
 
-/* line 376, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .footer-legal {
   clear: both;
   border-top: 2px solid #cccccc;
@@ -506,6 +518,6 @@ h1 {
   font-weight: lighter;
   line-height: 24px;
   font-size: 12px; }
-  /* line 384, ../sass/style.scss */
+  /* line 385, ../sass/style.scss */
   .footer-legal .contact {
     float: right; }

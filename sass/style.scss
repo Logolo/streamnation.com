@@ -306,12 +306,13 @@ h1{
   position: absolute;
   right: 0;
   bottom: 0;
-  display: none;
   font-size: $line;
   font-style: italic;
   color: white;
   background-color: $blue;
-  padding: $line/2 $gtr;
+  padding: $line/2 $line $line/2 $gtr;
+  @include translateX(120%);
+  @include transition(transform 1s);
   &:before{
     content: "";
     position: absolute;
@@ -330,8 +331,8 @@ h1{
   }
 }
 
-.home-section:target .banner{
-  display: block;
+.current .banner{
+  @include translateX(0%);
 }
 
 // footer
