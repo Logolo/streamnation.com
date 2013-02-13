@@ -94,8 +94,12 @@ h1{
   text-transform: uppercase;
   a{
     display: inline-block;
-    padding: 0 2em;
+    padding: 0 2em ($line/2 - 2px);
     line-height: 1;
+    &.current{
+      color: $blue;
+      border-bottom: 2px solid $text-color;
+    }
   }
 }
 

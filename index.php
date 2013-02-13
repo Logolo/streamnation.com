@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Stream Nation | Your Video Collection Anywhere &amp; Everywhere</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-</head>
-<body>
-<!--[if lt IE 7]>
-  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-<![endif]-->
-<header class="site-header">
-  <div class="container">
-    <a href="#" class="header-logo"><img src="img/header.png" alt="Stream Nation" height="100" width="353"></a>
-    <nav class="site-nav">
-      <a href="#" class="current">Home</a>
-      <a href="#">Features</a>
-      <a href="#">Rights</a>
-      <a href="#">Pricing</a>
-    </nav>
-  </div>
-</header>
+<?php require 'header.php' ?>
 
 <nav class="page-nav">
   <a id="prev-section" href="#" title="previous section"></a>
@@ -127,33 +98,4 @@
   <a class="banner" href="#">Sign Up</a>
 </section>
 
-<footer class="site-footer">
-  <div class="container">
-    <form id="mailing-list"class="footer-form">
-      <h3>Join Stream Nation</h3>
-      <input name="email" type="email" placeholder="Email Address">
-      <input type="submit" value="send">
-    </form>
-    <img class="footer-logo" src="img/badge.png" alt="" height="50" width="50">
-    <div class="footer-legal">
-      <span class="copyright">&copy;2013 Stream Nation. All rights reserved.</span>
-      <span class="contact">
-        <a href="mailto:info@streamnation.com">info@streamnation.com</a>     |  
-        1.414.555.5552
-      </span>
-    </div>
-  </div>
-</footer>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
-<script src="js/script.js"></script>
-
-<script>
-  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
-</body>
-</html>
+<?php require 'footer.php' ?>
