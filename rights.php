@@ -1,5 +1,6 @@
 <?php require 'header.php' ?>
-
-<h1>TBD: Rights</h1>
+<div class="container">
+  <h1>TBD: Rights</h1>
+</div>
 
 <?php require 'footer.php' ?>

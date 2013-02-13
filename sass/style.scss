@@ -8,11 +8,11 @@ $small-text: 12px;
 $line: $font-size * 1.5;
 $gtr: 10px;
 
-$header-height: $line * 4;
+$header-height: $line * 3;
 
 $tablet: 500px;
-$desktop: 800px;
-$widescreen: 960px;
+$desktop: 900px;
+$widescreen: 1200px;
 
 $body-font: "Georgia", serif;
 $header-font: "ralewaybold", 'Comic Sans MS', sans-serif;
@@ -69,10 +69,20 @@ h1{
   top: 0;
   left: 0;
   width: 100%;
-  height: $header-height;
+  height: $header-height + $line;
   z-index: 10;
   background-color: $header-light;
   border-bottom: 2px solid $light-border;
+  @include transition(height .5s);
+  .container{
+    @include transition(padding .5s);
+  }
+  &.condensed{
+    height: $header-height;
+    .container {
+      padding-top: 0;
+    }
+  }
   &:before{
     content: "";
     background-color: $blue;
@@ -92,6 +102,10 @@ h1{
   float: right;
   font-family: $light-font;
   text-transform: uppercase;
+  display: none;
+  @media (min-width: $desktop){
+    display: block;
+  }
   a{
     display: inline-block;
     padding: 0 2em ($line/2 - 2px);
@@ -144,30 +158,32 @@ h1{
   }
 }
 
-.hero-text{
+.hero-text-container{
   margin-top: -$line * 2;
-  @media (min-width: $desktop){
+  @media (min-width: $desktop) {
     margin-top: $line * 8;
+    @include translateX(25%);
+    overflow: hidden;
   }
-  background-color: $translucent;
-  padding: $line/2 0;
-  text-align: center;
-  &:after{
-    content: "";
-    width: 4em;
-    height: 100%;
-    background-color:$translucent;
-    top: 0;
-    right: -4em;
-    position: absolute;
+
+  .hero-text{
+    @include translateX(100%);
+    @include transition(transform 1s);
+    background-color: $translucent;
+    padding: $line/2 0;
+    text-align: center;
+    h2{
+      font-family: $body-font;
+      text-transform: none;
+      font-style: italic;
+      font-size: $line* 1.2;
+      line-height: $line * 2;
+    }
   }
-  h2{
-    font-family: $body-font;
-    text-transform: none;
-    font-style: italic;
-    font-size: $line* 1.2;
-    line-height: $line * 2;
-  }
+}
+
+.current .hero-text{
+  @include translateX(0%);
 }
 
 .home-section{
@@ -176,9 +192,20 @@ h1{
 }
 
 #hero{
-  padding:  $line 0 $line * 3;
-  background-image: image-url('gump_framegrab.jpg');
+  padding: $line 0;
+  background-color: $footer-dark;
   background-size: cover;
+}
+
+.background-video, .background-video img{
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  @media (min-width: $desktop){
+    height: auto;
+    width: 100%;
+  }
 }
 
 #secure {

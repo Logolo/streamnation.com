@@ -7,13 +7,20 @@
 </nav>
 
 <section class="home-section" id="hero">
+  <video class="background-video" autoplay loop>
+    <source src="video/video_loop_320x180.mp4" type="video/mp4" />
+    <source src="video/video_loop_320x180.ogv" type="video/ogg" />
+    <img src="img/gump_framegrab.jpg">
+  </video>
   <div class="row">
     <div class="grid6 right-float hero-image">
       <img src="img/png/Hero.png" alt="Join the Stream Nation">
     </div>
-    <div class="grid6 right-float hero-text">
-      <h2>Your Video Collection</h2>
-      <h1>Anywhere &amp; Everywhere</h1>
+    <div class="grid6 right-float hero-text-container">
+      <div class="hero-text">
+        <h2>Your Video Collection</h2>
+        <h1>Anywhere &amp; Everywhere</h1>
+      </div>
     </div>
   </div>
   <a class="banner" href="#">Sign Up</a>
