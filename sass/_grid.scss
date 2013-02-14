@@ -1,21 +1,16 @@
-@mixin row{
-  @include clearfix;
-  margin: $line auto;
-  max-width: $widescreen;
-}
-
-@mixin grid($cols, $right: false){
+%grid-base{
   float: left;
   padding: .5em $gtr;
   width: 100%;
-  img{
-    width: 100%;
-  }
-  @if $right == true {
+  &.right-float{
     float: right;
   }
-  @media (min-width: $tablet){
-    @if $cols == 3 {
+}
+
+@mixin grid($cols){
+  @extend %grid-base;
+  @if $cols == 3 {
+    @media (min-width: $tablet){
       width: 50%;
     }
   }
@@ -24,17 +19,17 @@
   }
 }
 
-// non-semantic classes
-.row{ @include row; }
+.row{
+  @include clearfix;
+  margin: $line auto;
+  max-width: $widescreen;
+}
+
 .grid12{ @include grid(12);}
 .grid8{  @include grid(8); }
 .grid6{  @include grid(6); }
 .grid4{  @include grid(4); }
 .grid3{  @include grid(3); }
-
-.grid12,.grid8,.grid6,.grid4, .grid3{
-  &.right-float{ float: right; }
-}
 
 // equivalent to grid12 inside row
 .container{

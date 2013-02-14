@@ -1,0 +1,218 @@
+// floating elements
+.page-nav{
+  position: fixed;
+  width: $line * 2;
+  right: 0;
+  top: 50%;
+  z-index: 10;
+  background-color: $translucent;
+  a {
+    background-image: image-url('nav-arrows.png');
+    background-repeat: no-repeat;
+    background-size: $line* 1.5 $line *4;
+    width: $line * 2;
+    height: $line;
+    display: block;
+    margin: $line/2 $line/4;
+  }
+  #prev-section{
+    background-position: 0 0;
+  }
+  #next-section{
+    background-position: 0 -30px;
+  }
+  #back-to-top{
+    background-position: 0 -55px;
+    height: $line* 2;
+  }
+}
+
+// sections
+
+.hero-image{
+  z-index: 1;
+  height: $line * 18;
+  text-align: center;
+  img{
+    height: 100%;
+    width: auto;
+  }
+}
+
+.hero-text-container{
+  margin-top: -$line * 2;
+  @media (min-width: $desktop) {
+    margin-top: $line * 8;
+    @include translateX(25%);
+    overflow: hidden;
+  }
+
+  .hero-text{
+    @include translateX(100%);
+    @include transition(transform 1s);
+    background-color: $translucent;
+    padding: $line/2 0;
+    text-align: center;
+    h2{
+      font-family: $body-font;
+      text-transform: none;
+      font-style: italic;
+      font-size: $line* 1.2;
+      line-height: $line * 2;
+    }
+  }
+}
+
+.current .hero-text{
+  @include translateX(0%);
+}
+
+.home-section{
+  border-bottom: 2px solid $light-border;
+  padding-top: $header-height;
+  overflow: hidden;
+}
+
+#hero{
+  padding: $line 0;
+  background-color: $footer-dark;
+  background-size: cover;
+}
+
+.background-video, .background-video img{
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  @media (min-width: $desktop){
+    height: auto;
+    width: 100%;
+  }
+}
+
+#secure {
+
+}
+
+#access {
+
+}
+
+#secure, #share {
+  background-image: image-url('bg/kindajean_@2x.png');
+  background-size: 147px 147px;
+}
+
+.section-header{
+  margin-top: $line * .5;
+  h1{
+    font-size: 1.7* $line;
+    $line-height: $line * 2;
+    padding-bottom: $line /4;
+    border-bottom: 1px solid $text-color;
+    margin-bottom: $line /4 - 2px;
+    &:after{
+      content:"►";
+      position: absolute;
+      font-size: .5em;
+      line-height: $line * 1.5;
+      padding: $gtr/2;
+
+    }
+  }
+  p{
+    font-size: 1.2em;
+    padding-top: $line/3;
+    line-height: $line;
+    font-style: italic;
+    border-top: 1px dotted $text-color;
+  }
+}
+
+.home-block{
+  text-align: center;
+  margin-bottom: $line;
+  padding-top: $line;
+  @media (min-width: $tablet){
+    @include clearfix;
+    img,p{
+      width: 50%;
+      float: left;
+    }
+    img{
+      padding-left: 2em;
+    }
+    p {
+      padding: $line * 2 0;
+
+    }
+  }
+  @media (min-width: $desktop){
+    img,p{
+      width: auto;
+      float: none;
+      padding: 0
+    }
+  }
+
+
+  &:before{
+    content: "";
+    position: absolute;
+    width: 33%;
+    top: 0;
+    left: 33%;
+    border-top: 1px solid $text-color;
+    @media (min-width: $desktop){
+      width: 0;
+      height: 33%;
+      top: 33%;
+      left: 0;
+      border-left: 1px solid $text-color;
+    }
+  }
+  &:first-child:before{
+    display: none;
+  }
+  p{
+    font-style: italic;
+    margin-top: $line;
+  }
+  img{
+    height: $line * 10;
+    width: auto;
+  }
+}
+
+.banner{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: $line;
+  font-style: italic;
+  color: white;
+  background-color: $blue;
+  padding: $line/2 $line $line/2 $gtr;
+  @include translateX(120%);
+  @include transition(transform 1s);
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -$line;
+    border-top: $line solid $blue;
+    border-left: $line solid transparent;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -$line;
+    border-bottom: $line solid $blue;
+    border-left: $line solid transparent;
+  }
+}
+
+.current .banner{
+  @include translateX(0%);
+}

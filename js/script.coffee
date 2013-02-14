@@ -6,6 +6,9 @@ $(document).ready ()->
   currentSectionIndex = 0
   headerHeight = 0
 
+  # slide in hero text
+
+
   do calculateSections = ()->
     # cache sections, section heights
     $sections = $('.home-section').map ()->

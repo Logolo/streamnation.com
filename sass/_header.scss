@@ -1,0 +1,52 @@
+.site-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height + $line;
+  z-index: 10;
+  background-color: $header-light;
+  border-bottom: 2px solid $light-border;
+  @include transition(height .5s);
+  .container{
+    @include transition(padding .5s);
+  }
+  &.condensed{
+    height: $header-height;
+    .container {
+      padding-top: 0;
+    }
+  }
+  &:before{
+    content: "";
+    background-color: $blue;
+    height: $line /2;
+    display: block;
+    border-bottom: 4px solid $text-color;
+  }
+}
+
+.header-logo{
+  float: left;
+}
+
+.site-nav{
+  margin-top: $line;
+  font-weight: lighter;
+  float: right;
+  font-family: $light-font;
+  text-transform: uppercase;
+  display: none;
+  @media (min-width: $desktop){
+    display: block;
+  }
+  a{
+    display: inline-block;
+    padding: 0 2em ($line/2 - 2px);
+    line-height: 1;
+    &.current{
+      color: $blue;
+      border-bottom: 2px solid $text-color;
+    }
+  }
+}

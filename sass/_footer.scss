@@ -1,0 +1,50 @@
+.site-footer{
+  background-color: $footer-dark;
+  color: white;
+  padding: $line 0 $line * 2;
+}
+
+
+.footer-form{
+  float: left;
+  min-width: 50%;
+  h3{
+    font-size: $font-size;
+    height: $line;
+  }
+  input{
+    height: $line;
+    display: block;
+    line-height: $line;
+    float: left;
+    font-size: $small-text;
+
+  }
+  input[type="submit"]{
+    border: none;
+    background-color: $blue;
+    color: white;
+    padding: 0 $gtr;
+    font-family: $header-font;
+    text-transform: uppercase;
+    margin-left: $gtr;
+  }
+  margin-bottom: $line;
+}
+
+.footer-logo{
+  float: right;
+}
+
+.footer-legal{
+  clear: both;
+  border-top: 2px solid $light-border;
+  font-family: $light-font;
+  text-transform: uppercase;
+  font-weight: lighter;
+  line-height: $line;
+  font-size: $small-text;
+  .contact{
+    float: right;
+  }
+}
