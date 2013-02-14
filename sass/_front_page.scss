@@ -129,6 +129,7 @@
 }
 
 .background-video, .background-video img{
+  overflow: hidden;
   position: absolute;
   top: 0;
   width: auto;
@@ -136,6 +137,7 @@
   @media (min-width: $desktop){
     height: auto;
     width: 100%;
+    min-width: 1200px;
   }
 }
 
