@@ -134,21 +134,19 @@
   padding: $line/2 $line $line/2 $gtr;
   @include translateX(120%);
   @include transition(transform 1s);
-  &:before{
+  &:before, &:after{
     content: "";
     position: absolute;
-    top: 0;
     left: -$line;
-    border-top: $line solid $blue;
     border-left: $line solid transparent;
   }
+  &:before{
+    top: 0;
+    border-top: $line solid $blue;
+  }
   &:after{
-    content: "";
-    position: absolute;
     bottom: 0;
-    left: -$line;
     border-bottom: $line solid $blue;
-    border-left: $line solid transparent;
   }
 }
 
@@ -326,6 +324,101 @@
 
 #access {
 
+}
+
+#ios-frame{
+  z-index: 1;
+}
+
+// share
+#share{
+
+}
+
+#lower-mask, #upper-mask{
+  position: absolute;
+  height: 62px;
+  overflow: hidden;
+  img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+  }
+}
+
+#upper-mask{
+  top: 17px;
+  left: 153px;
+  width: 122px;
+  .share-car{
+    @include transition(transform 2s false 1s);
+    @include translateX(-100%);
+  }
+}
+
+#lower-mask{
+  top: 160px;
+  left: 102px;
+  width: 123px;
+  .share-car{
+    @include transition(transform 2s);
+  }
+}
+
+
+.current{
+  #upper-mask .share-car{
+    @include translateX(0);
+  }
+  #lower-mask .share-car{
+    @include translateX(100%);
+  }
+}
+
+
+
+
+
+
+@include keyframes(remote) {
+  0%, 30%, 70%, 100%{
+    @include translateY(0);
+  }
+  15%, 85%{
+    @include translateY(-3px);
+  }
+}
+
+.current #control-button{
+  @include animation(remote 1s linear 2s);
+}
+
+.collect-cd{
+  @include transition(transform 1s);
+  @include translateY(-300px);
+}
+
+.cd-1{@include transition-delay(2s);}
+.cd-2{@include transition-delay(2.3s);}
+.cd-3{@include transition-delay(2.6s);}
+.cd-4{@include transition-delay(3s);}
+
+
+.home-block .image-container{
+  .cd-2, .cd-4{
+    margin-left: -16px;
+  }
+  .cd-3, .cd-4{
+    margin-top: -61px;
+  }
+}
+
+.current .collect-cd{
+  @include translateY(0px);
 }
 
 #secure, #share {

@@ -90,13 +90,19 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <div class="grid4 home-block">
-      <img src="img/png/iPhone_iPad.png" alt="iPhone &amp; iPad">
+    <div class="grid4 home-block" id='ios'>
+      <div class="image-container">
+        <img src="img/png/ios/Dark_Screen.png">
+        <img src="img/png/ios/iPhone_iPad.png" alt="iPhone &amp; iPad" id="ios-frame">
+      </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <div class="grid4 home-block">
-      <img src="img/png/TV.png" alt="TV - AirPlay">
+    <div class="grid4 home-block" id="tv">
+      <div class="image-container">
+        <img src="img/png/tv/TV.png" alt="TV - AirPlay">
+        <img src="img/png/tv/Dark_Screen.png">
+      </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
@@ -112,17 +118,38 @@
   </header>
   <div class="row">
     <div class="grid4 home-block">
-      <img src="img/png/Share.png" alt="Share">
+      <div class="image-container">
+        <img src="img/png/share/iPhones.png" alt="Share">
+        <div id="lower-mask">
+          <img src="img/png/share/cat.png" class="share-lower share-cat">
+          <img src="img/png/share/car.png" class="share-lower share-car">
+        </div>
+        <div id="upper-mask">
+          <img src="img/png/share/mtn.png" class="share-upper share-mtn">
+          <img src="img/png/share/car.png" class="share-upper share-car">
+        </div>
+      </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     <div class="grid4 home-block">
-      <img src="img/png/Control.png" alt="Control">
+      <div class="image-container">
+        <img src="img/png/control/remote_body.png" alt="Control">
+        <img src="img/png/control/button.png" id="control-button">
+      </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     <div class="grid4 home-block">
-      <img src="img/png/Collect.png" alt="Collect">
+      <div class="image-container">
+        <img src="img/png/collect/book.png" alt="Collect">
+        <img src="img/png/collect/cd.png" class="collect-cd cd-3">
+        <img src="img/png/collect/cd.png" class="collect-cd cd-4">
+        <img src="img/png/collect/top-sleeve.png">
+        <img src="img/png/collect/cd.png" class="collect-cd cd-1">
+        <img src="img/png/collect/cd.png" class="collect-cd cd-2">
+        <img src="img/png/collect/bottom-sleeve.png">
+      </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>

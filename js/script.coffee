@@ -1,11 +1,11 @@
 $(document).ready ()->
-  # TODO requestAnimationFrame stuff
   pos = 1
   $window = $(window)
   $sections = []
   currentSectionIndex = 0
   headerHeight = 0
 
+  # GIFs to be loaded
   images = [
     #hero
     []
@@ -13,7 +13,9 @@ $(document).ready ()->
     []
     # access
     [
-      {id: 'access-computer', url: "browser/browser_animation.gif", parent: '#computer'}
+      {id: 'computer', url: "browser/browser_animation.gif", delay:0}
+      {id: 'ios', url: "ios/iphone_ipad_animation.gif", delay: 1000}
+      {id: 'tv', url: 'tv/tv_animation.gif', delay: 2000}
     ]
     # share
     []
@@ -50,14 +52,14 @@ $(document).ready ()->
 
       # trigger access animations
       startAnimations = for image in images[currentSectionIndex]
-        unless $('#' + image.id)?.length > 0
-          $(image.parent).find('.image-container')
+        unless $('#img-' + image.id)?.length > 0
+          $('#' +image.id).find('.image-container')
             .append $("""
-              <img id='#{image.id}'
+              <img id='img-#{image.id}'
               src='img/png/#{image.url}?#{Date.now()}'
               class='generated-image'/>
               """
-            )
+            ).hide().delay(image.delay).show(0)
 
       #remove generated images from non-current sections
       clearAnimations = for section, index in $sections when index != currentSectionIndex
