@@ -121,12 +121,12 @@
       <div class="image-container">
         <img src="img/png/share/iPhones.png" alt="Share">
         <div id="lower-mask">
-          <img src="img/png/share/cat.png" class="share-lower share-cat">
-          <img src="img/png/share/car.png" class="share-lower share-car">
+          <img src="img/png/share/cat.png" >
+          <img src="img/png/share/car.png" class="share-car">
         </div>
         <div id="upper-mask">
-          <img src="img/png/share/mtn.png" class="share-upper share-mtn">
-          <img src="img/png/share/car.png" class="share-upper share-car">
+          <img src="img/png/share/mtn.png" >
+          <img src="img/png/share/car.png" class="share-car">
         </div>
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

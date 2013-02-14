@@ -213,6 +213,13 @@
   }
 }
 
+#secure, #share {
+  background-image: image-url('bg/kindajean_@2x.png');
+  background-size: 147px 147px;
+}
+
+// animations below
+
 @include keyframes(bounce) {
   0% {
     @include translateY(20px);
@@ -227,7 +234,6 @@
     @include translateY(0px);
   }
 }
-
 
 #hero-cloud{
   @include animation(bounce 2s);
@@ -321,19 +327,13 @@
 }
 
 // access
-
-#access {
-
-}
+// [animations done with JS]
 
 #ios-frame{
   z-index: 1;
 }
 
 // share
-#share{
-
-}
 
 #lower-mask, #upper-mask{
   position: absolute;
@@ -379,11 +379,6 @@
   }
 }
 
-
-
-
-
-
 @include keyframes(remote) {
   0%, 30%, 70%, 100%{
     @include translateY(0);
@@ -419,9 +414,4 @@
 
 .current .collect-cd{
   @include translateY(0px);
-}
-
-#secure, #share {
-  background-image: image-url('bg/kindajean_@2x.png');
-  background-size: 147px 147px;
 }
