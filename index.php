@@ -17,9 +17,9 @@
       <img id="hero-cloud" src="img/png/hero/Cloud.png">
       <img src="img/png/hero/shield_animation.gif">
       <img src="img/png/hero/Pillars.png">
-      <img src="img/png/hero/Computer.png">
-      <img src="img/png/hero/iPad.png">
-      <img src="img/png/hero/iPhone.png">
+      <img id="hero-computer" src="img/png/hero/Computer.png">
+      <img id="hero-ipad" src="img/png/hero/iPad.png">
+      <img id="hero-iphone" src="img/png/hero/iPhone.png">
     </div>
     <div class="hero-text-container">
       <div class="hero-text">

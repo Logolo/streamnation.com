@@ -34,7 +34,7 @@
 }
 
 .section-header{
-  margin-top: $line * .5;
+  margin-top: $line;
   h1{
     font-size: 1.7* $line;
     $line-height: $line * 2;
@@ -123,7 +123,7 @@
 // hero
 
 #hero{
-  padding: $line 0;
+  padding: $line * 2 0 $line * 3;
   background-color: $footer-dark;
   background-size: cover;
 }
@@ -160,7 +160,7 @@
   margin-top: -$line * 2;
   @media (min-width: $desktop) {
     margin-top: $line * 8;
-    @include translateX(25%);
+    @include translateX(15%);
     overflow: hidden;
   }
 
@@ -183,13 +183,10 @@
 // animations below
 
 @include keyframes(bounce) {
-  0% {
+  0%, 25% {
     @include translateY(20px);
   }
   50% {
-    @include translateY(20px);
-  }
-  75% {
     @include translateY(-20px);
   }
   100% {
@@ -197,8 +194,29 @@
   }
 }
 
+@include keyframes(slow-bounce) {
+  0%, 50%{
+    @include translateY(20px);
+  }
+  75% {
+    @include translateY(-10px);
+  }
+  100% {
+    @include translateY(0px);
+  }
+}
+
 #hero-cloud{
-  @include animation(bounce 2s);
+  @include animation(bounce 3s);
+}
+
+#hero-ipad{
+  @include animation(slow-bounce 2.5s);
+}
+
+#hero-iphone{
+  // @include translateY(20px);
+  @include animation(slow-bounce 3s);
 }
 
 // secure
@@ -314,7 +332,7 @@
 
 #upper-mask{
   top: 17px;
-  left: 153px;
+  left: 113px;
   width: 122px;
   .share-car{
     @include transition(transform 2s false 1s);
@@ -324,7 +342,7 @@
 
 #lower-mask{
   top: 160px;
-  left: 102px;
+  left: 62px;
   width: 123px;
   .share-car{
     @include transition(transform 2s);

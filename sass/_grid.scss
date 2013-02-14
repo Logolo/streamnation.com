@@ -19,7 +19,7 @@
 .row{
   @include clearfix;
   margin: $line auto;
-  max-width: $widescreen;
+  max-width: $desktop;
 }
 
 .grid12{ @include grid(12);}
@@ -31,6 +31,6 @@
 // equivalent to grid12 inside row
 .container{
   margin: 0 auto;
-  max-width: $widescreen;
+  max-width: $desktop;
   padding: $line $gtr;
 }
