@@ -174,8 +174,8 @@ h1 {
     margin-top: 24px; }
   /* line 85, ../sass/_base.scss */
   .grid-block img, .home-block img {
-    height: 225px;
-    width: auto; }
+    width: 225px;
+    height: auto; }
   @media (min-width: 500px) {
     /* line 76, ../sass/_base.scss */
     .grid-block, .home-block {

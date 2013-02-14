@@ -83,8 +83,8 @@ h1{
     margin-top: $line;
   }
   img{
-    height: 225px;
-    width: auto;
+    width: 225px;
+    height: auto;
   }
   @media (min-width: $tablet){
     @include clearfix;
