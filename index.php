@@ -23,7 +23,7 @@
     </div>
     <div class="grid6 right-float hero-text-container">
       <div class="hero-text">
-        <h2>Your Video Collection</h2>
+        <h2 class="subheader">Your Video Collection</h2>
         <h1>Anywhere &amp; Everywhere</h1>
       </div>
     </div>
@@ -38,7 +38,7 @@
      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </header>
   <div class="row">
-    <div class="grid4 home-block">
+    <div class="home-block">
       <div class="image-container private">
         <img src="img/png/private/Window.png" alt="Private">
         <img id="private-curtain1" src="img/png/private/curtain.png">
@@ -53,7 +53,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <div class="grid4 home-block">
+    <div class="home-block">
       <div class="image-container">
         <img src="img/png/secure/lock-hole.png">
         <img src="img/png/secure/Loop.png" id="secure-lock">
@@ -62,7 +62,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <div class="grid4 home-block">
+    <div class="home-block">
       <div class="image-container">
         <img src="img/png/efficient/Clicker.png" id="efficient-clicker">
         <img src="img/png/efficient/Clock.png"  alt="Efficient">
@@ -82,7 +82,7 @@
     tempor incididunt ut labore et dolore magna aliqua.</p>
   </header>
   <div class="row">
-    <div class="grid4 home-block" id="computer">
+    <div class="home-block" id="computer">
       <div class="image-container">
         <img src="img/png/browser/Computer.png" alt="Browser">
         <img src="img/png/browser/Dark_Screen.png">
@@ -90,7 +90,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <div class="grid4 home-block" id='ios'>
+    <div class="home-block" id='ios'>
       <div class="image-container">
         <img src="img/png/ios/Dark_Screen.png">
         <img src="img/png/ios/iPhone_iPad.png" alt="iPhone &amp; iPad" id="ios-frame">
@@ -98,7 +98,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <div class="grid4 home-block" id="tv">
+    <div class="home-block" id="tv">
       <div class="image-container">
         <img src="img/png/tv/TV.png" alt="TV - AirPlay">
         <img src="img/png/tv/Dark_Screen.png">
@@ -117,7 +117,7 @@
     tempor incididunt ut labore et dolore magna aliqua.</p>
   </header>
   <div class="row">
-    <div class="grid4 home-block">
+    <div class="home-block">
       <div class="image-container">
         <img src="img/png/share/iPhones.png" alt="Share">
         <div id="lower-mask">
@@ -132,7 +132,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <div class="grid4 home-block">
+    <div class="home-block">
       <div class="image-container">
         <img src="img/png/control/remote_body.png" alt="Control">
         <img src="img/png/control/button.png" id="control-button">
@@ -140,7 +140,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <div class="grid4 home-block">
+    <div class="home-block">
       <div class="image-container">
         <img src="img/png/collect/book.png" alt="Collect">
         <img src="img/png/collect/cd.png" class="collect-cd cd-3">

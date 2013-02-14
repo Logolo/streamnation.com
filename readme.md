@@ -1,13 +1,8 @@
-SVG
+SVG or proper-sized PNGs
 
-clouds and devices bounce into place
-
-bind animations to scroll position
+adjust all px offsets
 
 use extra-bold font
 
 rights page
 
-screens on hero
-
-gif edge on hero

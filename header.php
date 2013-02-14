@@ -27,7 +27,7 @@
 <![endif]-->
 <header class="site-header">
   <div class="container">
-    <a href="#" class="header-logo"><img src="img/header.png" alt="Stream Nation" height="100" width="353"></a>
+    <a href="index.php" class="header-logo"><img src="img/header.png" alt="Stream Nation" height="100" width="353"></a>
     <nav class="site-nav">
       <a href="index.php" class="<?php is_current("index.php") ?>">Home</a>
       <a href="features.php" class="<?php is_current("features.php") ?>">Features</a>
