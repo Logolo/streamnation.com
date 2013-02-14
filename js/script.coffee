@@ -6,8 +6,21 @@ $(document).ready ()->
   currentSectionIndex = 0
   headerHeight = 0
 
-  # slide in hero text
+  images = [
+    #hero
+    []
+    # secure
+    []
+    # access
+    [
+      {id: 'access-computer', url: "browser/browser_animation.gif", parent: '#computer'}
+    ]
+    # share
+    []
+  ]
 
+  # slide in hero text
+  $('.hero-text').addClass('active')
 
   do calculateSections = ()->
     # cache sections, section heights
@@ -34,6 +47,22 @@ $(document).ready ()->
           currentSectionIndex = index
         else
           item.selector.removeClass 'current'
+
+      # trigger access animations
+      startAnimations = for image in images[currentSectionIndex]
+        unless $('#' + image.id)?.length > 0
+          $(image.parent).find('.image-container')
+            .append $("""
+              <img id='#{image.id}'
+              src='img/png/#{image.url}?#{Date.now()}'
+              class='generated-image'/>
+              """
+            )
+
+      #remove generated images from non-current sections
+      clearAnimations = for section, index in $sections when index != currentSectionIndex
+        section.selector.find('.generated-image').remove()
+
       $window.one( 'scroll', onScroll )
     , 1000
 

@@ -14,7 +14,12 @@
   </video>
   <div class="row">
     <div class="grid6 right-float hero-image">
-      <img src="img/png/Hero.png" alt="Join the Stream Nation">
+      <img id="hero-cloud" src="img/png/hero/Cloud.png">
+      <img src="img/png/hero/shield_animation.gif">
+      <img src="img/png/hero/Pillars.png">
+      <img src="img/png/hero/Computer.png">
+      <img src="img/png/hero/iPad.png">
+      <img src="img/png/hero/iPhone.png">
     </div>
     <div class="grid6 right-float hero-text-container">
       <div class="hero-text">
@@ -34,17 +39,35 @@
   </header>
   <div class="row">
     <div class="grid4 home-block">
-      <img src="img/png/Private.png" alt="Private">
+      <div class="image-container private">
+        <img src="img/png/private/Window.png" alt="Private">
+        <img id="private-curtain1" src="img/png/private/curtain.png">
+        <img id="private-curtain2" src="img/png/private/curtain.png">
+        <img id="private-hook1" src="img/png/private/hook.png">
+        <img id="private-hook2" src="img/png/private/hook.png">
+        <img id="private-hook3" src="img/png/private/hook.png">
+        <img id="private-hook4" src="img/png/private/hook.png">
+        <img id="private-hook5" src="img/png/private/hook.png">
+        <img id="private-hook6" src="img/png/private/hook.png">
+      </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     <div class="grid4 home-block">
-      <img src="img/png/Secure.png" alt="Secure">
+      <div class="image-container">
+        <img src="img/png/secure/lock-hole.png">
+        <img src="img/png/secure/Loop.png" id="secure-lock">
+        <img src="img/png/secure/lock-cut.png" alt="Secure">
+      </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     <div class="grid4 home-block">
-      <img src="img/png/Efficient.png" alt="Efficient">
+      <div class="image-container">
+        <img src="img/png/efficient/Clicker.png" id="efficient-clicker">
+        <img src="img/png/efficient/Clock.png"  alt="Efficient">
+        <img src="img/png/efficient/Hand.png" id="efficient-hand">
+      </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
@@ -59,8 +82,11 @@
     tempor incididunt ut labore et dolore magna aliqua.</p>
   </header>
   <div class="row">
-    <div class="grid4 home-block">
-      <img src="img/png/Browser.png" alt="Browser">
+    <div class="grid4 home-block" id="computer">
+      <div class="image-container">
+        <img src="img/png/browser/Computer.png" alt="Browser">
+        <img src="img/png/browser/Dark_Screen.png">
+      </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>

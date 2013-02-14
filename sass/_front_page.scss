@@ -28,79 +28,10 @@
 }
 
 // sections
-
-.hero-image{
-  z-index: 1;
-  height: $line * 18;
-  text-align: center;
-  img{
-    height: 100%;
-    width: auto;
-  }
-}
-
-.hero-text-container{
-  margin-top: -$line * 2;
-  @media (min-width: $desktop) {
-    margin-top: $line * 8;
-    @include translateX(25%);
-    overflow: hidden;
-  }
-
-  .hero-text{
-    @include translateX(100%);
-    @include transition(transform 1s);
-    background-color: $translucent;
-    padding: $line/2 0;
-    text-align: center;
-    h2{
-      font-family: $body-font;
-      text-transform: none;
-      font-style: italic;
-      font-size: $line* 1.2;
-      line-height: $line * 2;
-    }
-  }
-}
-
-.current .hero-text{
-  @include translateX(0%);
-}
-
 .home-section{
   border-bottom: 2px solid $light-border;
   padding-top: $header-height;
   overflow: hidden;
-}
-
-#hero{
-  padding: $line 0;
-  background-color: $footer-dark;
-  background-size: cover;
-}
-
-.background-video, .background-video img{
-  position: absolute;
-  top: 0;
-  width: auto;
-  height: 100%;
-  @media (min-width: $desktop){
-    height: auto;
-    width: 100%;
-  }
-}
-
-#secure {
-
-}
-
-#access {
-
-}
-
-#secure, #share {
-  background-image: image-url('bg/kindajean_@2x.png');
-  background-size: 147px 147px;
 }
 
 .section-header{
@@ -135,23 +66,31 @@
   padding-top: $line;
   @media (min-width: $tablet){
     @include clearfix;
-    img,p{
+    .image-container,p{
       width: 50%;
       float: left;
     }
-    img{
+    .image-container{
       padding-left: 2em;
+      height: $line * 10;
+      img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 240px;
+        margin-left: -$line * 5;
+      }
     }
     p {
+      width: 50%;
       padding: $line * 2 0;
-
     }
   }
   @media (min-width: $desktop){
-    img,p{
+    .image-container,p{
       width: auto;
       float: none;
-      padding: 0
+      padding: 0;
     }
   }
 
@@ -215,4 +154,181 @@
 
 .current .banner{
   @include translateX(0%);
+}
+
+// hero
+
+#hero{
+  padding: $line 0;
+  background-color: $footer-dark;
+  background-size: cover;
+}
+
+.background-video, .background-video img{
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  @media (min-width: $desktop){
+    height: auto;
+    width: 100%;
+  }
+}
+
+.hero-image{
+  z-index: 1;
+  height: $line * 18;
+  img{
+    top: 0;
+    left: 50%;
+    margin-left: -$line * 9;
+    position: absolute;
+    height: $line * 18;
+    width: $line * 18;
+  }
+}
+
+.hero-text-container{
+  margin-top: -$line * 2;
+  @media (min-width: $desktop) {
+    margin-top: $line * 8;
+    @include translateX(25%);
+    overflow: hidden;
+  }
+
+  .hero-text{
+    @include translateX(100%);
+    @include transition(transform 1s false 1s);
+    background-color: $translucent;
+    padding: $line/2 0;
+    text-align: center;
+    h2{
+      font-family: $body-font;
+      text-transform: none;
+      font-style: italic;
+      font-size: $line* 1.2;
+      line-height: $line * 2;
+    }
+    &.active{
+      @include translateX(0%);
+    }
+  }
+}
+
+@include keyframes(bounce) {
+  0% {
+    @include translateY(20px);
+  }
+  50% {
+    @include translateY(20px);
+  }
+  75% {
+    @include translateY(-20px);
+  }
+  100% {
+    @include translateY(0px);
+  }
+}
+
+
+#hero-cloud{
+  @include animation(bounce 2s);
+}
+
+// secure
+#secure .private img{
+  @include transition(transform 1s);
+}
+#private-curtain1{
+  @include transform-origin($line);
+}
+#private-curtain2 {
+  margin-left: -$line - 9px;
+  @include transform-origin(53%);
+}
+#private-curtain1, #private-curtain2{
+  @include transform(scaleX(.5));
+}
+
+#private-hook1{
+  @include translateX(-6%);
+}
+#private-hook2 {
+  margin-left: -$line*4;
+  @include translateX(-12%);
+}
+#private-hook3 {
+  margin-left: -$line*3;
+  @include translateX(-18%);
+}
+#private-hook4 {
+  margin-left: -$line - 9px;
+  @include translateX(18%);
+}
+#private-hook5 {
+  margin-left:  - 9px;
+  @include translateX(12%);
+}
+#private-hook6 {
+  margin-left: $line - 9px;
+  @include translateX(6%);
+}
+
+.current {
+  #private-curtain1, #private-curtain2{
+    @include transform(scaleX(1));
+  }
+  // damn you infinite specificity!
+  #private-hook1, #private-hook2, #private-hook3, #private-hook4, #private-hook5, #private-hook6 {
+    @include translateX(0%);
+  }
+}
+
+#secure-lock{
+  @include transition(transform 1s false 1s);
+  @include translateY(-22px);
+}
+
+.current #secure-lock {
+  @include translateY(0);
+}
+
+@include keyframes(clockspin) {
+  50% {
+    @include rotate(0deg);
+  }
+  100% {
+    @include rotate(1440deg);
+  }
+}
+@include keyframes(clicker) {
+  45%, 55%, 90% {
+    @include translate(0px,0px);
+  }
+  50%, 95% {
+    @include translate(-6px, 6px);
+  }
+}
+
+#efficient-hand {
+  @include transform-origin(50%, 159px);
+}
+
+.current #efficient-hand {
+  @include animation(clockspin 4s linear);
+}
+
+.current #efficient-clicker{
+  @include animation(clicker 4s);
+}
+
+// access
+
+#access {
+
+}
+
+#secure, #share {
+  background-image: image-url('bg/kindajean_@2x.png');
+  background-size: 147px 147px;
 }

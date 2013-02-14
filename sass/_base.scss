@@ -30,3 +30,25 @@ h1,h2,h3,h4,h5,h6{
 h1{
   font-size: $line * 2;
 }
+
+@mixin animation($string){
+  -webkit-animation: $string;
+  -moz-animation:    $string;
+  -o-animation:      $string;
+  animation:         $string;
+}
+
+@mixin keyframes($name){
+  @-webkit-keyframes $name {
+    @content;
+  }
+  @-moz-keyframes $name {
+    @content;
+  }
+  @-o-keyframes $name {
+    @content;
+  }
+  @keyframes $name {
+    @content;
+  }
+}
