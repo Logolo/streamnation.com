@@ -63,8 +63,8 @@
   @extend .grid-block;
 
   @media (min-width: $tablet){
-    .image-container{
-      height: $line * 11;
+    .image-container, img{
+      height: 225px;
     }
   }
 
@@ -227,7 +227,7 @@
   @include transform-origin($line);
 }
 #private-curtain2 {
-  margin-left: -$line - 9px;
+  margin-left: -$line - 7px;
   @include transform-origin(53%);
 }
 #private-curtain1, #private-curtain2{
@@ -238,23 +238,23 @@
   @include translateX(-6%);
 }
 #private-hook2 {
-  margin-left: -$line*4;
+  margin-left: -$line*4 + 5px;
   @include translateX(-12%);
 }
 #private-hook3 {
-  margin-left: -$line*3;
+  margin-left: -$line*3 + 5px;
   @include translateX(-18%);
 }
 #private-hook4 {
-  margin-left: -$line - 9px;
+  margin-left: -$line - 8px;
   @include translateX(18%);
 }
 #private-hook5 {
-  margin-left:  - 9px;
+  margin-left:  - 8px;
   @include translateX(12%);
 }
 #private-hook6 {
-  margin-left: $line - 9px;
+  margin-left: $line - 8px;
   @include translateX(6%);
 }
 
@@ -295,7 +295,7 @@
 }
 
 #efficient-hand {
-  @include transform-origin(50%, 159px);
+  @include transform-origin(50%, 149px);
 }
 
 .current #efficient-hand {
@@ -309,7 +309,7 @@
 // access
 // [animations done with JS]
 
-#ios-frame{
+.animation-mask{
   z-index: 1;
 }
 
@@ -331,7 +331,7 @@
 }
 
 #upper-mask{
-  top: 17px;
+  top: 15px;
   left: 113px;
   width: 122px;
   .share-car{
@@ -341,7 +341,7 @@
 }
 
 #lower-mask{
-  top: 160px;
+  top: 148px;
   left: 62px;
   width: 123px;
   .share-car{

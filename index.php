@@ -83,8 +83,8 @@
   <div class="row">
     <div class="home-block" id="computer">
       <div class="image-container">
-        <img src="img/png/browser/Computer.png" alt="Browser">
         <img src="img/png/browser/Dark_Screen.png">
+        <img src="img/png/browser/Computer.png" alt="Browser" class="animation-mask">
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -92,15 +92,15 @@
     <div class="home-block" id='ios'>
       <div class="image-container">
         <img src="img/png/ios/Dark_Screen.png">
-        <img src="img/png/ios/iPhone_iPad.png" alt="iPhone &amp; iPad" id="ios-frame">
+        <img src="img/png/ios/iPhone_iPad.png" alt="iPhone &amp; iPad" class="animation-mask">
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     <div class="home-block" id="tv">
       <div class="image-container">
+        <img class="animation-mask" src="img/png/tv/Dark_Screen.png">
         <img src="img/png/tv/TV.png" alt="TV - AirPlay">
-        <img src="img/png/tv/Dark_Screen.png">
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -117,7 +117,6 @@
   <div class="row">
     <div class="home-block">
       <div class="image-container">
-        <img src="img/png/share/iPhones.png" alt="Share">
         <div id="lower-mask">
           <img src="img/png/share/cat.png" >
           <img src="img/png/share/car.png" class="share-car">
@@ -126,6 +125,7 @@
           <img src="img/png/share/mtn.png" >
           <img src="img/png/share/car.png" class="share-car">
         </div>
+        <img src="img/png/share/iPhones.png" alt="Share">
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
