@@ -130,7 +130,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Georgia", serif;
-  color: #332222;
+  color: #4b4d4d;
   padding-top: 72px; }
 
 /* line 23, ../sass/_base.scss */
@@ -154,13 +154,13 @@ h1 {
 
 /* line 64, ../sass/_base.scss */
 #secure, #share, .page-content {
-  background-image: url('../img/bg/kindajean_@2x.png?1360805205');
+  background-image: url('../img/bg/kindajean.png?1360805205');
   background-size: 147px 147px; }
 
 /* line 69, ../sass/_base.scss */
 .home-section, .page-header, .page-content {
   padding: 72px 0 48px;
-  border-bottom: 2px solid #cccccc; }
+  border-bottom: 2px solid #c1c1c1; }
 
 /* line 74, ../sass/_base.scss */
 .grid-block, .home-block {
@@ -217,7 +217,7 @@ h1 {
   height: 96px;
   z-index: 10;
   background-color: #f5f6f6;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid #c1c1c1;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
   -o-transition: height 0.5s;
@@ -237,16 +237,19 @@ h1 {
   /* line 20, ../sass/_header.scss */
   .site-header:before {
     content: "";
-    background-color: #6699cc;
+    background-color: #65bbe2;
     height: 12px;
     display: block;
-    border-bottom: 4px solid #332222; }
+    border-bottom: 4px solid #4b4d4d; }
 
 /* line 29, ../sass/_header.scss */
 .header-logo {
   float: left; }
+  /* line 31, ../sass/_header.scss */
+  .header-logo img {
+    height: 90px; }
 
-/* line 33, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .site-nav {
   margin-top: 24px;
   font-weight: lighter;
@@ -255,18 +258,18 @@ h1 {
   text-transform: uppercase;
   display: none; }
   @media (min-width: 900px) {
-    /* line 33, ../sass/_header.scss */
+    /* line 34, ../sass/_header.scss */
     .site-nav {
       display: block; } }
-  /* line 43, ../sass/_header.scss */
+  /* line 44, ../sass/_header.scss */
   .site-nav a {
     display: inline-block;
     padding: 0 2em 10px;
     line-height: 1; }
-    /* line 47, ../sass/_header.scss */
+    /* line 48, ../sass/_header.scss */
     .site-nav a.current {
-      color: #6699cc;
-      border-bottom: 2px solid #332222; }
+      color: #65bbe2;
+      border-bottom: 2px solid #4b4d4d; }
 
 /* line 2, ../sass/_front_page.scss */
 .page-nav {
@@ -307,7 +310,7 @@ h1 {
   .section-header h1 {
     font-size: 40.8px;
     padding-bottom: 6px;
-    border-bottom: 1px solid #332222;
+    border-bottom: 1px solid #4b4d4d;
     margin-bottom: 4px; }
     /* line 44, ../sass/_front_page.scss */
     .section-header h1:after {
@@ -322,7 +325,7 @@ h1 {
     padding-top: 8px;
     line-height: 24px;
     font-style: italic;
-    border-top: 1px dotted #332222; }
+    border-top: 1px dotted #4b4d4d; }
 
 @media (min-width: 500px) {
   /* line 66, ../sass/_front_page.scss */
@@ -335,7 +338,7 @@ h1 {
   width: 33%;
   top: 0;
   left: 33%;
-  border-top: 1px solid #332222; }
+  border-top: 1px solid #4b4d4d; }
   @media (min-width: 900px) {
     /* line 72, ../sass/_front_page.scss */
     .home-block:before {
@@ -343,7 +346,7 @@ h1 {
       height: 33%;
       top: 33%;
       left: 0;
-      border-left: 1px solid #332222; } }
+      border-left: 1px solid #4b4d4d; } }
 /* line 87, ../sass/_front_page.scss */
 .home-block:first-child:before {
   display: none; }
@@ -356,7 +359,7 @@ h1 {
   font-size: 24px;
   font-style: italic;
   color: white;
-  background-color: #6699cc;
+  background-color: #65bbe2;
   padding: 12px 24px 12px 10px;
   -webkit-transform: translateX(120%);
   -moz-transform: translateX(120%);
@@ -376,11 +379,11 @@ h1 {
   /* line 109, ../sass/_front_page.scss */
   .banner:before {
     top: 0;
-    border-top: 24px solid #6699cc; }
+    border-top: 24px solid #65bbe2; }
   /* line 113, ../sass/_front_page.scss */
   .banner:after {
     bottom: 0;
-    border-bottom: 24px solid #6699cc; }
+    border-bottom: 24px solid #65bbe2; }
 
 /* line 119, ../sass/_front_page.scss */
 .current .banner {
@@ -1096,7 +1099,7 @@ h1 {
   /* line 23, ../sass/_footer.scss */
   .footer-form input[type="submit"] {
     border: none;
-    background-color: #6699cc;
+    background-color: #65bbe2;
     color: white;
     padding: 0 10px;
     font-family: "ralewayextrabold", "Comic Sans MS", sans-serif;
@@ -1110,7 +1113,7 @@ h1 {
 /* line 39, ../sass/_footer.scss */
 .footer-legal {
   clear: both;
-  border-top: 2px solid #cccccc;
+  border-top: 2px solid #c1c1c1;
   font-family: sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
