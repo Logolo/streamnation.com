@@ -13,7 +13,7 @@
     <img src="img/gump_framegrab.jpg">
   </video>
   <div class="row">
-    <div class="grid6 right-float hero-image">
+    <div class="hero-image">
       <img id="hero-cloud" src="img/png/hero/Cloud.png">
       <img src="img/png/hero/shield_animation.gif">
       <img src="img/png/hero/Pillars.png">
@@ -21,7 +21,7 @@
       <img src="img/png/hero/iPad.png">
       <img src="img/png/hero/iPhone.png">
     </div>
-    <div class="grid6 right-float hero-text-container">
+    <div class="hero-text-container">
       <div class="hero-text">
         <h2 class="subheader">Your Video Collection</h2>
         <h1>Anywhere &amp; Everywhere</h1>

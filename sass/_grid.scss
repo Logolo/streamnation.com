@@ -2,9 +2,6 @@
   float: left;
   padding: .5em $gtr;
   width: 100%;
-  &.right-float{
-    float: right;
-  }
 }
 
 @mixin grid($cols){
