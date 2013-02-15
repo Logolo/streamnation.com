@@ -137,7 +137,7 @@
   width: 100%;
   z-index: 99;
   height: 60px;
-  @include transition(top .25s);
+  @include transition(all .25s);
   &.bottom{
     top: 100%;
     margin-top: -60px;

@@ -408,10 +408,10 @@ h1 {
   width: 100%;
   z-index: 99;
   height: 60px;
-  -webkit-transition: top 0.25s;
-  -moz-transition: top 0.25s;
-  -o-transition: top 0.25s;
-  transition: top 0.25s; }
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s; }
   /* line 141, ../sass/_front_page.scss */
   .signup-footer.bottom {
     top: 100%;
