@@ -120,6 +120,30 @@
   @include translateX(0%);
 }
 
+// persistent sign-up footer
+
+.signup-footer {
+  background-image: image-url('signup-footer.png');
+  background-position: left top;
+  background-repeat: repeat-x;
+  text-transform: uppercase;
+  color: white;
+  font-family: $header-font;
+  font-size: 24px;
+  padding-top: 25px;
+  text-align: center;
+  position: fixed;
+  top: 660px;
+  width: 100%;
+  z-index: 99;
+  height: 60px;
+  @include transition(all .25s);
+}
+
+.signup-footer.locked {
+  
+}
+
 // hero
 
 #hero{

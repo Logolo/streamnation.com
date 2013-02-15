@@ -4,6 +4,7 @@ $(document).ready ()->
   $sections = []
   currentSectionIndex = 0
   headerHeight = 0
+  heroHeight = 0
 
   # GIFs to be loaded
   images = [
@@ -38,9 +39,14 @@ $(document).ready ()->
     # debounced window scroll binding
     setTimeout ()->
       pos = $window.scrollTop()
+
       # condense top menu
       $('.site-header').toggleClass('condensed', pos > 100);
       headerHeight = $('.site-header').height()
+
+      # move signup footer to the bottom of the screen
+      $('.signup-footer').css({'top' : $window.height() - 60 }, pos > 20)
+      heroHeight = $('#hero').height()
 
       # determine "current" section
       $.each $sections, (index, item)->

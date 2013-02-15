@@ -1,11 +1,15 @@
 <?php require 'header.php' ?>
 
-<!-- <nav class="page-nav">
+<!--
+<nav class="page-nav">
   <a id="prev-section" href="#" title="previous section"></a>
   <a id="next-section" href="#" title="next section"></a>
   <a id="back-to-top" href="#home-section" title="back to top"></a>
 </nav>
- -->
+-->
+
+<div class="signup-footer"><a href="#">Sign Up Here</a></div>
+
 <section class="home-section" id="hero">
   <video class="background-video" autoplay loop>
     <source src="video/video_loop_320x180.mp4" type="video/mp4" />
