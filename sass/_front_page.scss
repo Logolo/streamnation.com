@@ -145,14 +145,14 @@
   @extend .grid6;
   float: right;
   z-index: 1;
-  height: $line * 18;
+  height: 480px;
   img{
     top: 0;
     left: 50%;
-    margin-left: -$line * 9;
+    margin-left: -240px;
     position: absolute;
-    height: $line * 18;
-    width: $line * 18;
+    height: 480px;
+    width: 480px;
   }
 }
 
@@ -272,7 +272,7 @@
 
 #secure-lock{
   @include transition(transform 1s false 1s);
-  @include translateY(-22px);
+  @include translateY(-25px);
 }
 
 .current #secure-lock {

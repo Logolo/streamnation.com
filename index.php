@@ -133,7 +133,7 @@
     <div class="home-block">
       <div class="image-container">
         <img src="img/png/control/remote_body.png" alt="Control">
-        <img src="img/png/control/button.png" id="control-button">
+        <img src="img/png/control/button_2.png" id="control-button">
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
