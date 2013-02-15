@@ -296,7 +296,7 @@
   #private-curtain1, #private-curtain2{
     @include transform(scaleX(1));
   }
-  // damn you infinite specificity!
+
   #private-hook1, #private-hook2, #private-hook3, #private-hook4, #private-hook5, #private-hook6 {
     @include translateX(0%);
   }
