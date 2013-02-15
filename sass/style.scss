@@ -41,8 +41,24 @@ $translucent: rgba(255,255,255,.8);
   @extend %jean-background;
 }
 
+.page-header.rights {
+  background-image: image-url('rights/banner.png');
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  padding-top: 120px;
+  padding-bottom: 85px;
+}
 
+.page-header.rights .subheader,
+.page-header.rights h1 {
+  color: white;
+  margin-left: 75px;
+}
 
+.page-header.rights .subheader {
+  font-size: 43px;
+}
 
-
-
+.page-header.rights h1 {
+  font-size: 64px
+}

@@ -1205,3 +1205,25 @@ h1 {
   /* line 47, ../sass/_footer.scss */
   .footer-legal .contact {
     float: right; }
+
+/* line 44, ../sass/style.scss */
+.page-header.rights {
+  background-image: url('../img/rights/banner.png?1360885822');
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  padding-top: 120px;
+  padding-bottom: 85px; }
+
+/* line 53, ../sass/style.scss */
+.page-header.rights .subheader,
+.page-header.rights h1 {
+  color: white;
+  margin-left: 75px; }
+
+/* line 58, ../sass/style.scss */
+.page-header.rights .subheader {
+  font-size: 43px; }
+
+/* line 62, ../sass/style.scss */
+.page-header.rights h1 {
+  font-size: 64px; }

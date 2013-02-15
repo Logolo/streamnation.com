@@ -1,6 +1,6 @@
 <?php require 'header.php' ?>
 
-<section class="page-header">
+<section class="page-header rights">
   <div class="container">
     <h2 class="subheader">Your rights and responsibilities</h2>
     <h1>With Stream Nation</h1>
