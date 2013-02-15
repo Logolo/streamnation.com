@@ -34,8 +34,7 @@
   <header class="section-header container">
     <!-- stealth nbsps -->
     <h1>All of your videos in one safe place</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <br>
-     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Keep all of your files organized in a single spot that will keep them safe from the dangers of computer crashes or hackers, all while keeping your privacy.</p>
   </header>
   <div class="row">
     <div class="home-block">
@@ -50,8 +49,7 @@
         <img id="private-hook5" src="img/png/private/hook.png">
         <img id="private-hook6" src="img/png/private/hook.png">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>You choose who sees your videos and we do not log or track your account.</p>
     </div>
     <div class="home-block">
       <div class="image-container">
@@ -59,8 +57,7 @@
         <img src="img/png/secure/Loop.png" id="secure-lock">
         <img src="img/png/secure/lock-cut.png" alt="Secure">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Your files are stored within a high-security virtual private network (VPN).</p>
     </div>
     <div class="home-block">
       <div class="image-container">
@@ -68,8 +65,7 @@
         <img src="img/png/efficient/Clock.png"  alt="Efficient">
         <img src="img/png/efficient/Hand.png" id="efficient-hand">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Our streamlined transfer process makes uploading quick and effortless.</p>
     </div>
   </div>
 </section>
@@ -77,8 +73,7 @@
 <section class="home-section" id="access">
   <header class="section-header container">
     <h1>Access whenever &amp; wherever</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Stream to any device. And even download videos to watch when you&rsquo;re offline.</p>
   </header>
   <div class="row">
     <div class="home-block" id="computer">
@@ -86,24 +81,21 @@
         <img src="img/png/browser/Dark_Screen.png">
         <img src="img/png/browser/Computer.png" alt="Browser" class="animation-mask">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>From your computer with our Mac &amp; Windows web app.</p>
     </div>
     <div class="home-block" id='ios'>
       <div class="image-container">
         <img src="img/png/ios/Dark_Screen.png">
         <img src="img/png/ios/iPhone_iPad.png" alt="iPhone &amp; iPad" class="animation-mask">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>From your pocket with our iOS mobile app.</p>
     </div>
     <div class="home-block" id="tv">
       <div class="image-container">
         <img class="animation-mask" src="img/png/tv/Dark_Screen.png">
         <img src="img/png/tv/TV.png" alt="TV - AirPlay">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>From your living room with Apple TV.</p>
     </div>
   </div>
 </section>
@@ -111,8 +103,7 @@
 <section class="home-section" id="share">
   <header class="row section-header container">
     <h1>Share &amp; be Shared With</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Give friends secure access to your collections so you can trade videos and movies.</p>
   </header>
   <div class="row">
     <div class="home-block">
@@ -127,16 +118,14 @@
         </div>
         <img src="img/png/share/iPhones.png" alt="Share">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Privately share your videos within our secure network.</p>
     </div>
     <div class="home-block">
       <div class="image-container">
         <img src="img/png/control/remote_body.png" alt="Control">
         <img src="img/png/control/button_2.png" id="control-button">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>You have full authority over your video files and account information.</p>
     </div>
     <div class="home-block">
       <div class="image-container">
@@ -148,8 +137,7 @@
         <img src="img/png/collect/cd.png" class="collect-cd cd-2">
         <img src="img/png/collect/bottom-sleeve.png">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Archive your favorite films into your own personal library.</p>
     </div>
   </div>
 </section>
