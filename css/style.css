@@ -1008,12 +1008,16 @@ h1 {
 .animation-mask {
   z-index: 1; }
 
-/* line 352, ../sass/_front_page.scss */
+/* line 350, ../sass/_front_page.scss */
+#tv .generated-image {
+  z-index: 2; }
+
+/* line 356, ../sass/_front_page.scss */
 #lower-mask, #upper-mask {
   position: absolute;
   height: 62px;
   overflow: hidden; }
-  /* line 356, ../sass/_front_page.scss */
+  /* line 360, ../sass/_front_page.scss */
   #lower-mask img, #upper-mask img {
     position: absolute;
     height: 100%;
@@ -1023,12 +1027,12 @@ h1 {
     left: 0;
     padding: 0; }
 
-/* line 367, ../sass/_front_page.scss */
+/* line 371, ../sass/_front_page.scss */
 #upper-mask {
   top: 15px;
   left: 113px;
   width: 122px; }
-  /* line 371, ../sass/_front_page.scss */
+  /* line 375, ../sass/_front_page.scss */
   #upper-mask .share-car {
     -webkit-transition: -webkit-transform 2s;
     -webkit-transition-delay: 1s;
@@ -1041,26 +1045,26 @@ h1 {
     -o-transform: translateX(-100%);
     transform: translateX(-100%); }
 
-/* line 377, ../sass/_front_page.scss */
+/* line 381, ../sass/_front_page.scss */
 #lower-mask {
   top: 148px;
   left: 62px;
   width: 123px; }
-  /* line 381, ../sass/_front_page.scss */
+  /* line 385, ../sass/_front_page.scss */
   #lower-mask .share-car {
     -webkit-transition: -webkit-transform 2s;
     -moz-transition: -moz-transform 2s;
     -o-transition: -o-transform 2s;
     transition: transform 2s; }
 
-/* line 388, ../sass/_front_page.scss */
+/* line 392, ../sass/_front_page.scss */
 .current #upper-mask .share-car {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0); }
-/* line 391, ../sass/_front_page.scss */
+/* line 395, ../sass/_front_page.scss */
 .current #lower-mask .share-car {
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
@@ -1069,7 +1073,7 @@ h1 {
   transform: translateX(100%); }
 
 @-webkit-keyframes remote {
-  /* line 397, ../sass/_front_page.scss */
+  /* line 401, ../sass/_front_page.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1077,7 +1081,7 @@ h1 {
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 400, ../sass/_front_page.scss */
+  /* line 404, ../sass/_front_page.scss */
   15%, 85% {
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
@@ -1086,7 +1090,7 @@ h1 {
     transform: translateY(-3px); } }
 
 @-moz-keyframes remote {
-  /* line 397, ../sass/_front_page.scss */
+  /* line 401, ../sass/_front_page.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1094,7 +1098,7 @@ h1 {
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 400, ../sass/_front_page.scss */
+  /* line 404, ../sass/_front_page.scss */
   15%, 85% {
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
@@ -1103,7 +1107,7 @@ h1 {
     transform: translateY(-3px); } }
 
 @-o-keyframes remote {
-  /* line 397, ../sass/_front_page.scss */
+  /* line 401, ../sass/_front_page.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1111,7 +1115,7 @@ h1 {
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 400, ../sass/_front_page.scss */
+  /* line 404, ../sass/_front_page.scss */
   15%, 85% {
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
@@ -1120,7 +1124,7 @@ h1 {
     transform: translateY(-3px); } }
 
 @keyframes remote {
-  /* line 397, ../sass/_front_page.scss */
+  /* line 401, ../sass/_front_page.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1128,7 +1132,7 @@ h1 {
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 400, ../sass/_front_page.scss */
+  /* line 404, ../sass/_front_page.scss */
   15%, 85% {
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
@@ -1136,14 +1140,14 @@ h1 {
     -o-transform: translateY(-3px);
     transform: translateY(-3px); } }
 
-/* line 405, ../sass/_front_page.scss */
+/* line 409, ../sass/_front_page.scss */
 .current #control-button {
   -webkit-animation: remote 1s linear 2s;
   -moz-animation: remote 1s linear 2s;
   -o-animation: remote 1s linear 2s;
   animation: remote 1s linear 2s; }
 
-/* line 409, ../sass/_front_page.scss */
+/* line 413, ../sass/_front_page.scss */
 .collect-cd {
   -webkit-transition: -webkit-transform 1s;
   -moz-transition: -moz-transform 1s;
@@ -1155,42 +1159,42 @@ h1 {
   -o-transform: translateY(-300px);
   transform: translateY(-300px); }
 
-/* line 414, ../sass/_front_page.scss */
+/* line 418, ../sass/_front_page.scss */
 .cd-1 {
   -webkit-transition-delay: 2s;
   -moz-transition-delay: 2s;
   -o-transition-delay: 2s;
   transition-delay: 2s; }
 
-/* line 415, ../sass/_front_page.scss */
+/* line 419, ../sass/_front_page.scss */
 .cd-2 {
   -webkit-transition-delay: 2.3s;
   -moz-transition-delay: 2.3s;
   -o-transition-delay: 2.3s;
   transition-delay: 2.3s; }
 
-/* line 416, ../sass/_front_page.scss */
+/* line 420, ../sass/_front_page.scss */
 .cd-3 {
   -webkit-transition-delay: 2.6s;
   -moz-transition-delay: 2.6s;
   -o-transition-delay: 2.6s;
   transition-delay: 2.6s; }
 
-/* line 417, ../sass/_front_page.scss */
+/* line 421, ../sass/_front_page.scss */
 .cd-4 {
   -webkit-transition-delay: 3s;
   -moz-transition-delay: 3s;
   -o-transition-delay: 3s;
   transition-delay: 3s; }
 
-/* line 421, ../sass/_front_page.scss */
+/* line 425, ../sass/_front_page.scss */
 .home-block .image-container .cd-2, .home-block .image-container .cd-4 {
   margin-left: -16px; }
-/* line 424, ../sass/_front_page.scss */
+/* line 428, ../sass/_front_page.scss */
 .home-block .image-container .cd-3, .home-block .image-container .cd-4 {
   margin-top: -61px; }
 
-/* line 429, ../sass/_front_page.scss */
+/* line 433, ../sass/_front_page.scss */
 .current .collect-cd {
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
