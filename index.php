@@ -83,7 +83,7 @@
       </div>
       <p>From your computer with our Mac &amp; Windows web app.</p>
     </div>
-    <div class="home-block" id='ios'>
+    <div class="home-block" id="ios">
       <div class="image-container">
         <img src="img/png/ios/Dark_Screen.png">
         <img src="img/png/ios/iPhone_iPad.png" alt="iPhone &amp; iPad" class="animation-mask">
