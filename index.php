@@ -15,8 +15,9 @@
   <div class="row">
     <div class="hero-image">
       <img id="hero-cloud" src="img/png/hero/Cloud.png">
-      <img src="img/png/hero/shield_animation.gif">
-      <img src="img/png/hero/Pillars.png">
+      <img src="img/png/hero/shield_animation.gif" class="animation">
+      <img src="img/png/hero/shield_background.png">
+      <img src="img/png/hero/Pillars.png" class="foreground">
       <img id="hero-computer" src="img/png/hero/Computer.png">
       <img id="hero-ipad" src="img/png/hero/iPad.png">
       <img id="hero-iphone" src="img/png/hero/iPhone.png">
