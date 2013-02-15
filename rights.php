@@ -6,7 +6,7 @@
     <h1>With Stream Nation</h1>
   </div>
 </section>
-<section class="page-content">
+<section class="page-content rights">
   <div class="row">
     <div class="grid-block">
       <div class="image-container">

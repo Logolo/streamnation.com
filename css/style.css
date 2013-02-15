@@ -1227,3 +1227,7 @@ h1 {
 /* line 62, ../sass/style.scss */
 .page-header.rights h1 {
   font-size: 64px; }
+
+/* line 66, ../sass/style.scss */
+.page-content.rights {
+  padding-top: 10px; }
