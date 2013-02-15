@@ -137,7 +137,7 @@
   width: 100%;
   z-index: 99;
   height: 60px;
-  @include transition(all .25s);
+  @include transition(top .25s);
 }
 
 // hero

@@ -44,7 +44,12 @@ $(document).ready ()->
       headerHeight = $('.site-header').height()
 
       # move signup footer to the bottom of the screen
-      $('.signup-footer').css({'top' : $window.height() - 60 }, pos > 20)
+      $('.signup-footer').css 'top', ()->
+        if (pos > 20)
+          $window.height() - 60 + 'px'
+        else
+          ''
+
 
       # determine "current" section
       $.each $sections, (index, item)->

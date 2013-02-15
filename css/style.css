@@ -1,4 +1,4 @@
-/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,38 +19,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
@@ -155,7 +155,7 @@ h1 {
 
 /* line 66, ../sass/_base.scss */
 #secure, #share, .page-content {
-  background-image: url('../img/bg/kindajean.png?1360887218');
+  background-image: url('../img/bg/kindajean.png?1360939771');
   background-size: 147px 147px; }
 
 /* line 71, ../sass/_base.scss */
@@ -280,7 +280,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0.8); }
   /* line 9, ../sass/_front_page.scss */
   .page-nav a {
-    background-image: url('../img/nav-arrows.png?1360870790');
+    background-image: url('../img/nav-arrows.png?1360939771');
     background-repeat: no-repeat;
     background-size: 36px 96px;
     width: 48px;
@@ -394,7 +394,7 @@ h1 {
 
 /* line 125, ../sass/_front_page.scss */
 .signup-footer {
-  background-image: url('../img/signup-footer.png?1360938699');
+  background-image: url('../img/signup-footer.png?1360939771');
   background-position: left top;
   background-repeat: repeat-x;
   text-transform: uppercase;
@@ -408,10 +408,10 @@ h1 {
   width: 100%;
   z-index: 99;
   height: 60px;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s; }
+  -webkit-transition: top 0.25s;
+  -moz-transition: top 0.25s;
+  -o-transition: top 0.25s;
+  transition: top 0.25s; }
 
 /* line 145, ../sass/_front_page.scss */
 #hero {
@@ -492,7 +492,7 @@ h1 {
 
 /* line 205, ../sass/_front_page.scss */
 .hero-signup-button {
-  background-image: url('../img/png/hero/free_trial_ribbon.png?1360887858');
+  background-image: url('../img/png/hero/free_trial_ribbon.png?1360939771');
   background-repeat: no-repeat;
   color: white;
   display: block;
@@ -1274,7 +1274,7 @@ h1 {
 
 /* line 44, ../sass/style.scss */
 .page-header.rights {
-  background-image: url('../img/rights/banner.png?1360885822');
+  background-image: url('../img/rights/banner.png?1360939771');
   background-repeat: no-repeat;
   background-position: center 50px;
   padding-top: 120px;
