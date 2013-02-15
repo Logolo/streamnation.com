@@ -23,6 +23,7 @@ $(document).ready ()->
 
   # slide in hero text
   $('.hero-text').addClass('active')
+  $('.hero-signup-button').addClass('active')
 
   do calculateSections = ()->
     # cache sections, section heights

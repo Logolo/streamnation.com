@@ -27,6 +27,7 @@
         <h1>Anywhere &amp; Everywhere</h1>
       </div>
     </div>
+    <a href="#" class="hero-signup-button">Start free trial!</a>
   </div>
 </section>
 
