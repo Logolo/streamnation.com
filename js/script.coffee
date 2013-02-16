@@ -3,7 +3,7 @@ $(document).ready ()->
   $window = $(window)
   $sections = []
   currentSectionIndex = 0
-  animationOffset = 200
+  windowHeight = 0
 
   # GIFs to be loaded
   images = [
@@ -25,13 +25,16 @@ $(document).ready ()->
   $('.hero-text').addClass('active')
   $('.hero-signup-button').addClass('active')
 
-  do calculateSections = ()->
-    # cache sections, section heights
+  do calculateHeights = ()->
+    # cache sections, section heights, window height
     $sections = $('.home-section').map ()->
       selector: $(this)
       top: $(this).offset().top
+
+    windowHeight = $window.height()
+
     setTimeout ()->
-      $window.one('resize', calculateSections)
+      $window.one('resize', calculateHeights)
     , 1000
 
   do onScroll = ()->
@@ -48,9 +51,10 @@ $(document).ready ()->
 
 
       # determine "current" section
+      # when it crosses the window midpoint
       $.each $sections, (index, item)->
         sectionBottom = $sections[index+1]?.top || 99999
-        if item.top <= pos + animationOffset  < sectionBottom
+        if item.top <= pos + windowHeight/2  < sectionBottom
           item.selector.addClass 'current'
           currentSectionIndex = index
         else
