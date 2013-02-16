@@ -44,11 +44,10 @@ $(document).ready ()->
 
       # trigger one-shot GIF animations
       $('.reloading-gif').each ()->
-        current = $(this).closest('.home-section').hasClass('current')
         src = $(this).data('src')
-        delay = $(this).data('delay')
+        delay = $(this).data('delay') || 0
         if $(this).closest('.home-section').hasClass('current')
-          if !$(this).attr('src')?
+          unless $(this).attr('src')?
             $(this)
               .delay(delay).show(0)
               .attr 'src', src + "?" + Date.now()

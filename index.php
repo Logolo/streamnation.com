@@ -107,7 +107,7 @@
     <div class="home-block" id="ios">
       <div class="image-container">
         <img src="img/png/ios/Dark_Screen.png">
-        <img class="reloading-gif" data-src="img/png/ios/iphone_ipad_animation.gif" data-delay="1000">
+        <img class="reloading-gif" data-src="img/png/ios/iphone_ipad_animation.gif" data-delay="500">
         <img src="img/png/ios/iPhone_iPad.png" alt="iPhone &amp; iPad" class="animation-mask">
       </div>
       <p>From your pocket with our iOS mobile app.</p>
@@ -115,7 +115,7 @@
     <div class="home-block" id="tv">
       <div class="image-container">
         <img src="img/png/tv/Dark_Screen.png">
-        <img class="reloading-gif" data-src="img/png/tv/tv_animation.gif" data-delay="2000">
+        <img class="reloading-gif" data-src="img/png/tv/tv_animation.gif" data-delay="1000">
         <img src="img/png/tv/TV.png" alt="TV - AirPlay" class="animation-mask">
       </div>
       <p>From your living room with Apple TV.</p>
