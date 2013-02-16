@@ -22,6 +22,7 @@
         <img id="hero-cloud" src="img/png/hero/Cloud.png">
         <img src="img/png/hero/shield_animation.gif">
         <img src="img/png/hero/Pillars.png">
+        <div class="shadow iphone-shadow"></div>
       </div>
       <div class="image-container hero-computer">
         <img src="img/png/hero/computer_Screen.png">

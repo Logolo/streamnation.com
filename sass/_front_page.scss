@@ -254,6 +254,15 @@
   }
 }
 
+@mixin shadowizer($item-distance, $item-width){
+  $width-coefficient: 50;
+  $opacity-coefficient: 50;
+  $shadow-width: $item-width + ($item-distance * $width-coefficient)/100;
+  width: $shadow-width;
+  margin-left: -($shadow-width/2);
+  opacity: .5 - ($item-distance * $opacity-coefficient)/10000px;
+}
+
 @include keyframes(slow-bounce) {
   0%, 50%{
     @include translateY(20px);
@@ -263,6 +272,17 @@
   }
   100% {
     @include translateY(0px);
+  }
+}
+@include keyframes(shadows) {
+  0%, 50%{
+    @include shadowizer(0px, 11px);
+  }
+  75% {
+    @include shadowizer(40px, 11px);
+  }
+  100% {
+    @include shadowizer(20px, 11px);
   }
 }
 
@@ -280,6 +300,15 @@
 
 .hero-iphone{
   @include animation(slow-bounce 3s);
+}
+
+.shadow{
+  @include animation(shadows 3s);
+  @include shadowizer(20px, 11px);
+  position: absolute;
+  top:195px;
+  left: 63px;
+  box-shadow: 0 0 10px 4px #666;
 }
 
 // secure
