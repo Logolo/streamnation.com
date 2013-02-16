@@ -154,12 +154,12 @@ h1 {
   line-height: 48px; }
 
 /* line 66, ../sass/_base.scss */
-#secure, #share, .page-content {
+.page-content, .rights-content, #secure, #share {
   background-image: url('../img/bg/kindajean.png?1360805205');
   background-size: 147px 147px; }
 
 /* line 71, ../sass/_base.scss */
-.home-section, .page-header, .page-content {
+.page-header, .rights-header, .page-content, .rights-content, .home-section {
   padding: 72px 0 48px;
   border-bottom: 2px solid #c1c1c1; }
 
@@ -269,6 +269,55 @@ h1 {
     .site-nav a.current {
       color: #65bbe2;
       border-bottom: 2px solid #4b4d4d; }
+
+/* line 1, ../sass/_footer.scss */
+.site-footer {
+  background-color: #444444;
+  color: white;
+  padding: 24px 0 48px; }
+
+/* line 8, ../sass/_footer.scss */
+.footer-form {
+  float: left;
+  min-width: 50%;
+  margin-bottom: 24px; }
+  /* line 11, ../sass/_footer.scss */
+  .footer-form h3 {
+    font-size: 16px;
+    height: 24px; }
+  /* line 15, ../sass/_footer.scss */
+  .footer-form input {
+    height: 24px;
+    display: block;
+    line-height: 24px;
+    float: left;
+    font-size: 12px; }
+  /* line 23, ../sass/_footer.scss */
+  .footer-form input[type="submit"] {
+    border: none;
+    background-color: #65bbe2;
+    color: white;
+    padding: 0 10px;
+    font-family: "ralewayextrabold", "Comic Sans MS", sans-serif;
+    text-transform: uppercase;
+    margin-left: 10px; }
+
+/* line 35, ../sass/_footer.scss */
+.footer-logo {
+  float: right; }
+
+/* line 39, ../sass/_footer.scss */
+.footer-legal {
+  clear: both;
+  border-top: 2px solid #c1c1c1;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  line-height: 24px;
+  font-size: 12px; }
+  /* line 47, ../sass/_footer.scss */
+  .footer-legal .contact {
+    float: right; }
 
 /* line 2, ../sass/_front_page.scss */
 .page-nav {
@@ -933,15 +982,16 @@ h1 {
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
   transform: scaleX(1); }
-/* line 358, ../sass/_front_page.scss */
-.current #private-hook1, .current #private-hook2, .current #private-hook3, .current #private-hook4, .current #private-hook5, .current #private-hook6 {
+/* line 359, ../sass/_front_page.scss */
+.current #private-hook1, .current #private-hook2, .current #private-hook3,
+.current #private-hook4, .current #private-hook5, .current #private-hook6 {
   -webkit-transform: translateX(0%);
   -moz-transform: translateX(0%);
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
   transform: translateX(0%); }
 
-/* line 363, ../sass/_front_page.scss */
+/* line 364, ../sass/_front_page.scss */
 #secure-lock {
   -webkit-transition: -webkit-transform 0.5s;
   -webkit-transition-delay: 0.5s;
@@ -954,7 +1004,7 @@ h1 {
   -o-transform: translateY(-25px);
   transform: translateY(-25px); }
 
-/* line 368, ../sass/_front_page.scss */
+/* line 369, ../sass/_front_page.scss */
 .current #secure-lock {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -963,7 +1013,7 @@ h1 {
   transform: translateY(0); }
 
 @-webkit-keyframes clockspin {
-  /* line 373, ../sass/_front_page.scss */
+  /* line 374, ../sass/_front_page.scss */
   25% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -971,7 +1021,7 @@ h1 {
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 376, ../sass/_front_page.scss */
+  /* line 377, ../sass/_front_page.scss */
   100% {
     -webkit-transform: rotate(1440deg);
     -moz-transform: rotate(1440deg);
@@ -980,7 +1030,7 @@ h1 {
     transform: rotate(1440deg); } }
 
 @-moz-keyframes clockspin {
-  /* line 373, ../sass/_front_page.scss */
+  /* line 374, ../sass/_front_page.scss */
   25% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -988,7 +1038,7 @@ h1 {
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 376, ../sass/_front_page.scss */
+  /* line 377, ../sass/_front_page.scss */
   100% {
     -webkit-transform: rotate(1440deg);
     -moz-transform: rotate(1440deg);
@@ -997,7 +1047,7 @@ h1 {
     transform: rotate(1440deg); } }
 
 @-o-keyframes clockspin {
-  /* line 373, ../sass/_front_page.scss */
+  /* line 374, ../sass/_front_page.scss */
   25% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1005,7 +1055,7 @@ h1 {
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 376, ../sass/_front_page.scss */
+  /* line 377, ../sass/_front_page.scss */
   100% {
     -webkit-transform: rotate(1440deg);
     -moz-transform: rotate(1440deg);
@@ -1014,7 +1064,7 @@ h1 {
     transform: rotate(1440deg); } }
 
 @keyframes clockspin {
-  /* line 373, ../sass/_front_page.scss */
+  /* line 374, ../sass/_front_page.scss */
   25% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1022,7 +1072,7 @@ h1 {
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 376, ../sass/_front_page.scss */
+  /* line 377, ../sass/_front_page.scss */
   100% {
     -webkit-transform: rotate(1440deg);
     -moz-transform: rotate(1440deg);
@@ -1031,7 +1081,7 @@ h1 {
     transform: rotate(1440deg); } }
 
 @-webkit-keyframes clicker {
-  /* line 381, ../sass/_front_page.scss */
+  /* line 382, ../sass/_front_page.scss */
   20%, 30%, 90% {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
@@ -1039,7 +1089,7 @@ h1 {
     -o-transform: translate(0px, 0px);
     transform: translate(0px, 0px); }
 
-  /* line 384, ../sass/_front_page.scss */
+  /* line 385, ../sass/_front_page.scss */
   25%, 95% {
     -webkit-transform: translate(-6px, 6px);
     -moz-transform: translate(-6px, 6px);
@@ -1048,7 +1098,7 @@ h1 {
     transform: translate(-6px, 6px); } }
 
 @-moz-keyframes clicker {
-  /* line 381, ../sass/_front_page.scss */
+  /* line 382, ../sass/_front_page.scss */
   20%, 30%, 90% {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
@@ -1056,7 +1106,7 @@ h1 {
     -o-transform: translate(0px, 0px);
     transform: translate(0px, 0px); }
 
-  /* line 384, ../sass/_front_page.scss */
+  /* line 385, ../sass/_front_page.scss */
   25%, 95% {
     -webkit-transform: translate(-6px, 6px);
     -moz-transform: translate(-6px, 6px);
@@ -1065,7 +1115,7 @@ h1 {
     transform: translate(-6px, 6px); } }
 
 @-o-keyframes clicker {
-  /* line 381, ../sass/_front_page.scss */
+  /* line 382, ../sass/_front_page.scss */
   20%, 30%, 90% {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
@@ -1073,7 +1123,7 @@ h1 {
     -o-transform: translate(0px, 0px);
     transform: translate(0px, 0px); }
 
-  /* line 384, ../sass/_front_page.scss */
+  /* line 385, ../sass/_front_page.scss */
   25%, 95% {
     -webkit-transform: translate(-6px, 6px);
     -moz-transform: translate(-6px, 6px);
@@ -1082,7 +1132,7 @@ h1 {
     transform: translate(-6px, 6px); } }
 
 @keyframes clicker {
-  /* line 381, ../sass/_front_page.scss */
+  /* line 382, ../sass/_front_page.scss */
   20%, 30%, 90% {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
@@ -1090,7 +1140,7 @@ h1 {
     -o-transform: translate(0px, 0px);
     transform: translate(0px, 0px); }
 
-  /* line 384, ../sass/_front_page.scss */
+  /* line 385, ../sass/_front_page.scss */
   25%, 95% {
     -webkit-transform: translate(-6px, 6px);
     -moz-transform: translate(-6px, 6px);
@@ -1098,7 +1148,7 @@ h1 {
     -o-transform: translate(-6px, 6px);
     transform: translate(-6px, 6px); } }
 
-/* line 389, ../sass/_front_page.scss */
+/* line 390, ../sass/_front_page.scss */
 #efficient-hand {
   -webkit-transform-origin: 50% 149px;
   -moz-transform-origin: 50% 149px;
@@ -1106,30 +1156,30 @@ h1 {
   -o-transform-origin: 50% 149px;
   transform-origin: 50% 149px; }
 
-/* line 393, ../sass/_front_page.scss */
+/* line 394, ../sass/_front_page.scss */
 .current #efficient-hand {
   -webkit-animation: clockspin 3s linear;
   -moz-animation: clockspin 3s linear;
   -o-animation: clockspin 3s linear;
   animation: clockspin 3s linear; }
 
-/* line 397, ../sass/_front_page.scss */
+/* line 398, ../sass/_front_page.scss */
 .current #efficient-clicker {
   -webkit-animation: clicker 3s;
   -moz-animation: clicker 3s;
   -o-animation: clicker 3s;
   animation: clicker 3s; }
 
-/* line 404, ../sass/_front_page.scss */
+/* line 405, ../sass/_front_page.scss */
 .reloading-gif {
   display: none; }
 
-/* line 411, ../sass/_front_page.scss */
+/* line 412, ../sass/_front_page.scss */
 #lower-mask, #upper-mask {
   position: absolute;
   height: 62px;
   overflow: hidden; }
-  /* line 415, ../sass/_front_page.scss */
+  /* line 416, ../sass/_front_page.scss */
   #lower-mask img, #upper-mask img {
     position: absolute;
     height: 100%;
@@ -1139,12 +1189,12 @@ h1 {
     left: 0;
     padding: 0; }
 
-/* line 426, ../sass/_front_page.scss */
+/* line 427, ../sass/_front_page.scss */
 #upper-mask {
   top: 15px;
   left: 113px;
   width: 122px; }
-  /* line 430, ../sass/_front_page.scss */
+  /* line 431, ../sass/_front_page.scss */
   #upper-mask .share-car {
     -webkit-transition: -webkit-transform 2s;
     -webkit-transition-delay: 1s;
@@ -1157,26 +1207,26 @@ h1 {
     -o-transform: translateX(-100%);
     transform: translateX(-100%); }
 
-/* line 436, ../sass/_front_page.scss */
+/* line 437, ../sass/_front_page.scss */
 #lower-mask {
   top: 148px;
   left: 62px;
   width: 123px; }
-  /* line 440, ../sass/_front_page.scss */
+  /* line 441, ../sass/_front_page.scss */
   #lower-mask .share-car {
     -webkit-transition: -webkit-transform 2s;
     -moz-transition: -moz-transform 2s;
     -o-transition: -o-transform 2s;
     transition: transform 2s; }
 
-/* line 447, ../sass/_front_page.scss */
+/* line 448, ../sass/_front_page.scss */
 .current #upper-mask .share-car {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0); }
-/* line 450, ../sass/_front_page.scss */
+/* line 451, ../sass/_front_page.scss */
 .current #lower-mask .share-car {
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
@@ -1185,7 +1235,7 @@ h1 {
   transform: translateX(100%); }
 
 @-webkit-keyframes remote {
-  /* line 456, ../sass/_front_page.scss */
+  /* line 457, ../sass/_front_page.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1193,7 +1243,7 @@ h1 {
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 459, ../sass/_front_page.scss */
+  /* line 460, ../sass/_front_page.scss */
   15%, 85% {
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
@@ -1202,7 +1252,7 @@ h1 {
     transform: translateY(-3px); } }
 
 @-moz-keyframes remote {
-  /* line 456, ../sass/_front_page.scss */
+  /* line 457, ../sass/_front_page.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1210,7 +1260,7 @@ h1 {
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 459, ../sass/_front_page.scss */
+  /* line 460, ../sass/_front_page.scss */
   15%, 85% {
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
@@ -1219,7 +1269,7 @@ h1 {
     transform: translateY(-3px); } }
 
 @-o-keyframes remote {
-  /* line 456, ../sass/_front_page.scss */
+  /* line 457, ../sass/_front_page.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1227,7 +1277,7 @@ h1 {
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 459, ../sass/_front_page.scss */
+  /* line 460, ../sass/_front_page.scss */
   15%, 85% {
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
@@ -1236,7 +1286,7 @@ h1 {
     transform: translateY(-3px); } }
 
 @keyframes remote {
-  /* line 456, ../sass/_front_page.scss */
+  /* line 457, ../sass/_front_page.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1244,7 +1294,7 @@ h1 {
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 459, ../sass/_front_page.scss */
+  /* line 460, ../sass/_front_page.scss */
   15%, 85% {
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
@@ -1252,14 +1302,14 @@ h1 {
     -o-transform: translateY(-3px);
     transform: translateY(-3px); } }
 
-/* line 464, ../sass/_front_page.scss */
+/* line 465, ../sass/_front_page.scss */
 .current #control-button {
   -webkit-animation: remote 1s linear 2s;
   -moz-animation: remote 1s linear 2s;
   -o-animation: remote 1s linear 2s;
   animation: remote 1s linear 2s; }
 
-/* line 468, ../sass/_front_page.scss */
+/* line 469, ../sass/_front_page.scss */
 .collect-cd {
   -webkit-transition: -webkit-transform 1s;
   -moz-transition: -moz-transform 1s;
@@ -1271,42 +1321,42 @@ h1 {
   -o-transform: translateY(-300px);
   transform: translateY(-300px); }
 
-/* line 473, ../sass/_front_page.scss */
+/* line 474, ../sass/_front_page.scss */
 .cd-1 {
   -webkit-transition-delay: 2s;
   -moz-transition-delay: 2s;
   -o-transition-delay: 2s;
   transition-delay: 2s; }
 
-/* line 474, ../sass/_front_page.scss */
+/* line 475, ../sass/_front_page.scss */
 .cd-2 {
   -webkit-transition-delay: 2.3s;
   -moz-transition-delay: 2.3s;
   -o-transition-delay: 2.3s;
   transition-delay: 2.3s; }
 
-/* line 475, ../sass/_front_page.scss */
+/* line 476, ../sass/_front_page.scss */
 .cd-3 {
   -webkit-transition-delay: 2.6s;
   -moz-transition-delay: 2.6s;
   -o-transition-delay: 2.6s;
   transition-delay: 2.6s; }
 
-/* line 476, ../sass/_front_page.scss */
+/* line 477, ../sass/_front_page.scss */
 .cd-4 {
   -webkit-transition-delay: 3s;
   -moz-transition-delay: 3s;
   -o-transition-delay: 3s;
   transition-delay: 3s; }
 
-/* line 480, ../sass/_front_page.scss */
+/* line 481, ../sass/_front_page.scss */
 .home-block .image-container .cd-2, .home-block .image-container .cd-4 {
   margin-left: -16px; }
-/* line 483, ../sass/_front_page.scss */
+/* line 484, ../sass/_front_page.scss */
 .home-block .image-container .cd-3, .home-block .image-container .cd-4 {
   margin-top: -61px; }
 
-/* line 488, ../sass/_front_page.scss */
+/* line 489, ../sass/_front_page.scss */
 .current .collect-cd {
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
@@ -1314,77 +1364,21 @@ h1 {
   -o-transform: translateY(0px);
   transform: translateY(0px); }
 
-/* line 1, ../sass/_footer.scss */
-.site-footer {
-  background-color: #444444;
-  color: white;
-  padding: 24px 0 48px; }
-
-/* line 8, ../sass/_footer.scss */
-.footer-form {
-  float: left;
-  min-width: 50%;
-  margin-bottom: 24px; }
-  /* line 11, ../sass/_footer.scss */
-  .footer-form h3 {
-    font-size: 16px;
-    height: 24px; }
-  /* line 15, ../sass/_footer.scss */
-  .footer-form input {
-    height: 24px;
-    display: block;
-    line-height: 24px;
-    float: left;
-    font-size: 12px; }
-  /* line 23, ../sass/_footer.scss */
-  .footer-form input[type="submit"] {
-    border: none;
-    background-color: #65bbe2;
-    color: white;
-    padding: 0 10px;
-    font-family: "ralewayextrabold", "Comic Sans MS", sans-serif;
-    text-transform: uppercase;
-    margin-left: 10px; }
-
-/* line 35, ../sass/_footer.scss */
-.footer-logo {
-  float: right; }
-
-/* line 39, ../sass/_footer.scss */
-.footer-legal {
-  clear: both;
-  border-top: 2px solid #c1c1c1;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-weight: lighter;
-  line-height: 24px;
-  font-size: 12px; }
-  /* line 47, ../sass/_footer.scss */
-  .footer-legal .contact {
-    float: right; }
-
-/* line 9, ../sass/_rights.scss */
-.page-header.rights {
+/* line 1, ../sass/_rights.scss */
+.rights-header {
   background-image: url('../img/rights/banner.png?1360981905');
   background-repeat: no-repeat;
   background-position: center 50px;
-  padding-top: 120px;
-  padding-bottom: 85px; }
+  padding: 120px 0 85px 75px;
+  padding-bottom: 85px;
+  color: white; }
+  /* line 9, ../sass/_rights.scss */
+  .rights-header .subheader {
+    font-size: 43px; }
+  /* line 13, ../sass/_rights.scss */
+  .rights-header h1 {
+    font-size: 64px; }
 
 /* line 18, ../sass/_rights.scss */
-.page-header.rights .subheader,
-.page-header.rights h1 {
-  color: white;
-  margin-left: 75px; }
-
-/* line 23, ../sass/_rights.scss */
-.page-header.rights .subheader {
-  font-size: 43px; }
-
-/* line 27, ../sass/_rights.scss */
-.page-header.rights h1 {
-  font-size: 64px; }
-
-/* line 31, ../sass/_rights.scss */
-.page-content.rights {
+.rights-content {
   padding-top: 10px; }

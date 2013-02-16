@@ -355,7 +355,8 @@
     @include transform(scaleX(1));
   }
 
-  #private-hook1, #private-hook2, #private-hook3, #private-hook4, #private-hook5, #private-hook6 {
+  #private-hook1, #private-hook2, #private-hook3,
+  #private-hook4, #private-hook5, #private-hook6 {
     @include translateX(0%);
   }
 }

@@ -4,6 +4,7 @@ $(document).ready ()->
   $sections = []
   currentSectionIndex = 0
   windowHeight = 0
+  $gifs = $('.reloading-gif')
 
   # slide in hero text
   $('.hero-text').addClass('active')
@@ -43,7 +44,7 @@ $(document).ready ()->
           item.selector.removeClass 'current'
 
       # trigger one-shot GIF animations
-      $('.reloading-gif').each ()->
+      $gifs.each ()->
         src = $(this).data('src')
         delay = $(this).data('delay') || 0
         if $(this).closest('.home-section').hasClass('current')

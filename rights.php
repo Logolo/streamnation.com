@@ -1,12 +1,12 @@
 <?php require 'header.php' ?>
 
-<section class="page-header rights">
+<section class="rights-header">
   <div class="container">
     <h2 class="subheader">Your rights and responsibilities</h2>
     <h1>With Stream Nation</h1>
   </div>
 </section>
-<section class="page-content rights">
+<section class="rights-content">
   <div class="row">
     <div class="grid-block">
       <div class="image-container">
