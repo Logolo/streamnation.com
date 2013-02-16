@@ -273,7 +273,6 @@
 }
 
 #hero-iphone{
-  // @include translateY(20px);
   @include animation(slow-bounce 3s);
 }
 
@@ -369,10 +368,6 @@
 
 .animation-mask{
   z-index: 1;
-}
-
-#tv .generated-image {
-  z-index: 2;
 }
 
 // share

@@ -3,7 +3,7 @@ $(document).ready ()->
   $window = $(window)
   $sections = []
   currentSectionIndex = 0
-  headerHeight = 0
+  animationOffset = 200
 
   # GIFs to be loaded
   images = [
@@ -41,7 +41,6 @@ $(document).ready ()->
 
       # condense top menu
       $('.site-header').toggleClass('condensed', pos > 100);
-      headerHeight = $('.site-header').height()
 
       # move signup footer to the bottom of the screen
       $('.signup-footer').toggleClass('bottom', pos > 20)
@@ -50,14 +49,14 @@ $(document).ready ()->
 
       # determine "current" section
       $.each $sections, (index, item)->
-        target = $sections[index+1]?.top || 99999
-        if item.top <= (pos + headerHeight) < target
+        sectionBottom = $sections[index+1]?.top || 99999
+        if item.top <= pos + animationOffset  < sectionBottom
           item.selector.addClass 'current'
           currentSectionIndex = index
         else
           item.selector.removeClass 'current'
 
-      # trigger access animations
+      # trigger one-shot GIF animations
       startAnimations = for image in images[currentSectionIndex]
         unless $('#img-' + image.id)?.length > 0
           $('#' +image.id).find('.image-container')
@@ -73,7 +72,7 @@ $(document).ready ()->
         section.selector.find('.generated-image').remove()
 
       $window.one( 'scroll', onScroll )
-    , 1000
+    , 500
 
   # floating side navigation
   $('a', '.page-nav').click (e)->

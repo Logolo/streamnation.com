@@ -98,8 +98,8 @@
     </div>
     <div class="home-block" id="tv">
       <div class="image-container">
-        <img class="animation-mask" src="img/png/tv/Dark_Screen.png">
-        <img src="img/png/tv/TV.png" alt="TV - AirPlay">
+        <img src="img/png/tv/Dark_Screen.png">
+        <img src="img/png/tv/TV.png" alt="TV - AirPlay" class="animation-mask" >
       </div>
       <p>From your living room with Apple TV.</p>
     </div>
