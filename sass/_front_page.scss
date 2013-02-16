@@ -361,7 +361,7 @@
 }
 
 #secure-lock{
-  @include transition(transform 1s false 1s);
+  @include transition(transform .5s false .5s);
   @include translateY(-25px);
 }
 
@@ -370,7 +370,7 @@
 }
 
 @include keyframes(clockspin) {
-  50% {
+  25% {
     @include rotate(0deg);
   }
   100% {
@@ -378,10 +378,10 @@
   }
 }
 @include keyframes(clicker) {
-  45%, 55%, 90% {
+  20%, 30%, 90% {
     @include translate(0px,0px);
   }
-  50%, 95% {
+  25%, 95% {
     @include translate(-6px, 6px);
   }
 }
@@ -391,11 +391,11 @@
 }
 
 .current #efficient-hand {
-  @include animation(clockspin 4s linear);
+  @include animation(clockspin 3s linear);
 }
 
 .current #efficient-clicker{
-  @include animation(clicker 4s);
+  @include animation(clicker 3s);
 }
 
 // access

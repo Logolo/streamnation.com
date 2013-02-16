@@ -943,11 +943,11 @@ h1 {
 
 /* line 363, ../sass/_front_page.scss */
 #secure-lock {
-  -webkit-transition: -webkit-transform 1s;
-  -webkit-transition-delay: 1s;
-  -moz-transition: -moz-transform 1s 1s;
-  -o-transition: -o-transform 1s 1s;
-  transition: transform 1s false 1s;
+  -webkit-transition: -webkit-transform 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition: -moz-transform 0.5s 0.5s;
+  -o-transition: -o-transform 0.5s 0.5s;
+  transition: transform 0.5s false 0.5s;
   -webkit-transform: translateY(-25px);
   -moz-transform: translateY(-25px);
   -ms-transform: translateY(-25px);
@@ -964,7 +964,7 @@ h1 {
 
 @-webkit-keyframes clockspin {
   /* line 373, ../sass/_front_page.scss */
-  50% {
+  25% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -981,7 +981,7 @@ h1 {
 
 @-moz-keyframes clockspin {
   /* line 373, ../sass/_front_page.scss */
-  50% {
+  25% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -998,7 +998,7 @@ h1 {
 
 @-o-keyframes clockspin {
   /* line 373, ../sass/_front_page.scss */
-  50% {
+  25% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -1015,7 +1015,7 @@ h1 {
 
 @keyframes clockspin {
   /* line 373, ../sass/_front_page.scss */
-  50% {
+  25% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -1032,7 +1032,7 @@ h1 {
 
 @-webkit-keyframes clicker {
   /* line 381, ../sass/_front_page.scss */
-  45%, 55%, 90% {
+  20%, 30%, 90% {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
@@ -1040,7 +1040,7 @@ h1 {
     transform: translate(0px, 0px); }
 
   /* line 384, ../sass/_front_page.scss */
-  50%, 95% {
+  25%, 95% {
     -webkit-transform: translate(-6px, 6px);
     -moz-transform: translate(-6px, 6px);
     -ms-transform: translate(-6px, 6px);
@@ -1049,7 +1049,7 @@ h1 {
 
 @-moz-keyframes clicker {
   /* line 381, ../sass/_front_page.scss */
-  45%, 55%, 90% {
+  20%, 30%, 90% {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
@@ -1057,7 +1057,7 @@ h1 {
     transform: translate(0px, 0px); }
 
   /* line 384, ../sass/_front_page.scss */
-  50%, 95% {
+  25%, 95% {
     -webkit-transform: translate(-6px, 6px);
     -moz-transform: translate(-6px, 6px);
     -ms-transform: translate(-6px, 6px);
@@ -1066,7 +1066,7 @@ h1 {
 
 @-o-keyframes clicker {
   /* line 381, ../sass/_front_page.scss */
-  45%, 55%, 90% {
+  20%, 30%, 90% {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
@@ -1074,7 +1074,7 @@ h1 {
     transform: translate(0px, 0px); }
 
   /* line 384, ../sass/_front_page.scss */
-  50%, 95% {
+  25%, 95% {
     -webkit-transform: translate(-6px, 6px);
     -moz-transform: translate(-6px, 6px);
     -ms-transform: translate(-6px, 6px);
@@ -1083,7 +1083,7 @@ h1 {
 
 @keyframes clicker {
   /* line 381, ../sass/_front_page.scss */
-  45%, 55%, 90% {
+  20%, 30%, 90% {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
@@ -1091,7 +1091,7 @@ h1 {
     transform: translate(0px, 0px); }
 
   /* line 384, ../sass/_front_page.scss */
-  50%, 95% {
+  25%, 95% {
     -webkit-transform: translate(-6px, 6px);
     -moz-transform: translate(-6px, 6px);
     -ms-transform: translate(-6px, 6px);
@@ -1108,17 +1108,17 @@ h1 {
 
 /* line 393, ../sass/_front_page.scss */
 .current #efficient-hand {
-  -webkit-animation: clockspin 4s linear;
-  -moz-animation: clockspin 4s linear;
-  -o-animation: clockspin 4s linear;
-  animation: clockspin 4s linear; }
+  -webkit-animation: clockspin 3s linear;
+  -moz-animation: clockspin 3s linear;
+  -o-animation: clockspin 3s linear;
+  animation: clockspin 3s linear; }
 
 /* line 397, ../sass/_front_page.scss */
 .current #efficient-clicker {
-  -webkit-animation: clicker 4s;
-  -moz-animation: clicker 4s;
-  -o-animation: clicker 4s;
-  animation: clicker 4s; }
+  -webkit-animation: clicker 3s;
+  -moz-animation: clicker 3s;
+  -o-animation: clicker 3s;
+  animation: clicker 3s; }
 
 /* line 404, ../sass/_front_page.scss */
 .reloading-gif {
