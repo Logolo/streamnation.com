@@ -171,17 +171,19 @@
   z-index: 1;
   height: 480px;
 
-  img{
-    top: 0;
-    left: 50%;
-    margin-left: -240px;
+  img, .image-container{
     position: absolute;
+    top: 0;
     height: 480px;
     width: 480px;
   }
 
-  .animation  { z-index: 2; }
-  .foreground { z-index: 3; }
+  .image-container{
+    left: 0;
+    left: 50%;
+    margin-left: -240px;
+  }
+
 }
 
 .hero-text-container{
@@ -268,11 +270,15 @@
   @include animation(bounce 3s);
 }
 
-#hero-ipad{
+.hero-ipad{
   @include animation(slow-bounce 2.5s);
 }
 
-#hero-iphone{
+.hero-computer{
+  margin-top: -14px;
+}
+
+.hero-iphone{
   @include animation(slow-bounce 3s);
 }
 
@@ -295,7 +301,7 @@
   @include translateX(-6%);
 }
 #private-hook2 {
-  margin-left: -$line*4 + 5px;
+  margin-left: -$line*4 + 6px;
   @include translateX(-12%);
 }
 #private-hook3 {
@@ -366,9 +372,10 @@
 // access
 // [animations done with JS]
 
-.animation-mask{
-  z-index: 1;
+.reloading-gif{
+  display: none;
 }
+
 
 // share
 

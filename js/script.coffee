@@ -5,22 +5,6 @@ $(document).ready ()->
   currentSectionIndex = 0
   windowHeight = 0
 
-  # GIFs to be loaded
-  images = [
-    #hero
-    []
-    # secure
-    []
-    # access
-    [
-      {id: 'computer', url: "browser/browser_animation.gif", delay:0}
-      {id: 'ios', url: "ios/iphone_ipad_animation.gif", delay: 1000}
-      {id: 'tv', url: 'tv/tv_animation.gif', delay: 2000}
-    ]
-    # share
-    []
-  ]
-
   # slide in hero text
   $('.hero-text').addClass('active')
   $('.hero-signup-button').addClass('active')
@@ -48,8 +32,6 @@ $(document).ready ()->
       # move signup footer to the bottom of the screen
       $('.signup-footer').toggleClass('bottom', pos > 20)
 
-
-
       # determine "current" section
       # when it crosses the window midpoint
       $.each $sections, (index, item)->
@@ -61,19 +43,17 @@ $(document).ready ()->
           item.selector.removeClass 'current'
 
       # trigger one-shot GIF animations
-      startAnimations = for image in images[currentSectionIndex]
-        unless $('#img-' + image.id)?.length > 0
-          $('#' +image.id).find('.image-container')
-            .append $("""
-              <img id='img-#{image.id}'
-              src='img/png/#{image.url}?#{Date.now()}'
-              class='generated-image'/>
-              """
-            ).hide().delay(image.delay).show(0)
-
-      #remove generated images from non-current sections
-      clearAnimations = for section, index in $sections when index != currentSectionIndex
-        section.selector.find('.generated-image').remove()
+      $('.reloading-gif').each ()->
+        current = $(this).closest('.home-section').hasClass('current')
+        src = $(this).data('src')
+        delay = $(this).data('delay')
+        if $(this).closest('.home-section').hasClass('current')
+          if !$(this).attr('src')?
+            $(this)
+              .delay(delay).show(0)
+              .attr 'src', src + "?" + Date.now()
+        else
+          $(this).hide().attr('src', null)
 
       $window.one( 'scroll', onScroll )
     , 500
