@@ -1,28 +1,30 @@
-.site-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: $header-height + $line;
-  z-index: 10;
-  background-color: $header-light;
-  border-bottom: 2px solid $light-border;
-  @include transition(height .5s);
-  .container{
-    @include transition(padding .5s);
-  }
-  &.condensed{
-    height: $header-height;
-    .container {
-      padding-top: 0;
-    }
-  }
+body {
   &:before{
+    position: fixed;
+    width: 100%;
+    top: 0;
     content: "";
     background-color: $blue;
     height: $line /2;
     display: block;
     border-bottom: 4px solid $text-color;
+    z-index: 11;
+  }
+}
+
+.site-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  padding-top: $line/2 + 4px;
+  z-index: 10;
+  background-color: $header-light;
+  border-bottom: 2px solid $light-border;
+  @include transition(transform .5s);
+  &.condensed{
+    @include translateY(-$line);
   }
 }
 

@@ -5,7 +5,9 @@ $(document).ready ()->
   currentSectionIndex = 0
   windowHeight = 0
   $gifs = $('.reloading-gif')
-  headerHeight = $('.site-header').height()
+  $header = $('.site-header')
+  headerHeight = $header.height()
+  $signup = $('.signup-footer')
 
   # slide in hero text
   $('.hero-text').addClass('active')
@@ -29,10 +31,13 @@ $(document).ready ()->
       pos = $window.scrollTop()
 
       # condense top menu
-      $('.site-header').toggleClass('condensed', pos > $sections[1].top - headerHeight);
+      if pos > $sections[1].top - headerHeight
+        $header.addClass('condensed')
+      else if pos <= headerHeight
+        $header.removeClass('condensed')
 
       # move signup footer to the bottom of the screen
-      $('.signup-footer').toggleClass('bottom', pos > 20)
+      $signup.toggleClass('bottom', pos > 20)
 
       # determine "current" section
       # when it crosses the window midpoint

@@ -411,12 +411,16 @@
 
 #lower-mask, #upper-mask{
   position: absolute;
-  height: 62px;
+  height: 57px;
+  width: 114px;
   overflow: hidden;
+  // border: 1px solid red;
   img{
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
+    // height: 100%;
+    // width: 100%;
     margin: 0;
     top: 0;
     left: 0;
@@ -425,9 +429,8 @@
 }
 
 #upper-mask{
-  top: 15px;
-  left: 113px;
-  width: 122px;
+  top: 16px;
+  left: 116px;
   .share-car{
     @include transition(transform 2s false 1s);
     @include translateX(-100%);
@@ -435,9 +438,8 @@
 }
 
 #lower-mask{
-  top: 148px;
-  left: 62px;
-  width: 123px;
+  top: 151px;
+  left: 69px;
   .share-car{
     @include transition(transform 2s);
   }

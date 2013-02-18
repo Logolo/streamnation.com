@@ -17,7 +17,7 @@ html {
   line-height: $line;
   font-family: $body-font;
   color: $text-color;
-  padding-top: $header-height;
+  padding-top: $header-height - $line;
   // to prevent abrupt quality changes during transition:
   -webkit-font-smoothing: antialiased;
 }
