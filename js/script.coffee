@@ -5,6 +5,7 @@ $(document).ready ()->
   currentSectionIndex = 0
   windowHeight = 0
   $gifs = $('.reloading-gif')
+  headerHeight = $('.site-header').height()
 
   # slide in hero text
   $('.hero-text').addClass('active')
@@ -28,7 +29,7 @@ $(document).ready ()->
       pos = $window.scrollTop()
 
       # condense top menu
-      $('.site-header').toggleClass('condensed', pos > 100);
+      $('.site-header').toggleClass('condensed', pos > $sections[1].top - headerHeight);
 
       # move signup footer to the bottom of the screen
       $('.signup-footer').toggleClass('bottom', pos > 20)
@@ -56,7 +57,7 @@ $(document).ready ()->
           $(this).hide().attr('src', null)
 
       $window.one( 'scroll', onScroll )
-    , 500
+    , 100
 
   # floating side navigation
   $('a', '.page-nav').click (e)->
