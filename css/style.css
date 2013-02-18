@@ -145,7 +145,15 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 48px; }
 
-/* line 58, ../sass/_base.scss */
+/* line 36, ../sass/_base.scss */
+strong {
+  font-weight: bold; }
+
+/* line 40, ../sass/_base.scss */
+em {
+  font-style: italic; }
+
+/* line 66, ../sass/_base.scss */
 .subheader {
   font-family: "Georgia", serif;
   text-transform: none;
@@ -153,55 +161,55 @@ h1 {
   font-size: 28.8px;
   line-height: 48px; }
 
-/* line 66, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
 .page-content, .rights-content, #secure, #share {
   background-image: url('../img/bg/kindajean.png?1360805205');
   background-size: 147px 147px; }
 
-/* line 71, ../sass/_base.scss */
+/* line 79, ../sass/_base.scss */
 .page-header, .rights-header, .page-content, .rights-content, .home-section {
   padding: 96px 0 48px;
   border-bottom: 2px solid #c1c1c1; }
 
-/* line 76, ../sass/_base.scss */
+/* line 84, ../sass/_base.scss */
 .grid-block, .home-block {
   text-align: center;
   margin-bottom: 24px;
   padding-top: 24px; }
-  /* line 81, ../sass/_base.scss */
+  /* line 89, ../sass/_base.scss */
   .grid-block p, .home-block p {
     font-style: italic;
     margin-top: 24px; }
-  /* line 85, ../sass/_base.scss */
+  /* line 93, ../sass/_base.scss */
   .grid-block img, .home-block img {
     width: 225px;
     height: auto; }
   @media (min-width: 500px) {
-    /* line 76, ../sass/_base.scss */
+    /* line 84, ../sass/_base.scss */
     .grid-block, .home-block {
       overflow: hidden;
       *zoom: 1; }
-      /* line 91, ../sass/_base.scss */
+      /* line 99, ../sass/_base.scss */
       .grid-block .image-container, .home-block .image-container, .grid-block p, .home-block p {
         width: 50%;
         float: left; }
-      /* line 95, ../sass/_base.scss */
+      /* line 103, ../sass/_base.scss */
       .grid-block .image-container, .home-block .image-container {
         padding-left: 2em;
         height: 192px;
         margin: 24px 0; }
-        /* line 99, ../sass/_base.scss */
+        /* line 107, ../sass/_base.scss */
         .grid-block .image-container img, .home-block .image-container img {
           position: absolute;
           top: 0;
           left: 50%;
           margin-left: -112px; }
-      /* line 106, ../sass/_base.scss */
+      /* line 114, ../sass/_base.scss */
       .grid-block p, .home-block p {
         width: 50%;
         padding: 48px 0; } }
   @media (min-width: 960px) {
-    /* line 112, ../sass/_base.scss */
+    /* line 120, ../sass/_base.scss */
     .grid-block .image-container, .home-block .image-container, .grid-block p, .home-block p {
       width: auto;
       float: none;

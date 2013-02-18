@@ -33,6 +33,14 @@ h1{
   font-size: $line * 2;
 }
 
+strong{
+  font-weight: bold;
+}
+
+em{
+  font-style: italic;
+}
+
 @mixin animation($string){
   -webkit-animation: $string;
   -moz-animation:    $string;

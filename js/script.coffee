@@ -15,7 +15,7 @@ $(document).ready ()->
 
   do calculateHeights = ()->
     # cache sections, section heights, window height
-    $sections = $('.home-section').map ()->
+    $sections = $('body').children('section').map ()->
       selector: $(this)
       top: $(this).offset().top
 
