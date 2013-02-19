@@ -51,12 +51,12 @@
 </section>
 
 <section class="home-section" id="secure">
-  <header class="section-header container">
+  <header class="section-header">
     <!-- stealth nbsps -->
     <h1>All of your videos in one safe place</h1>
     <p>
-      <a href="#">
-        <img src="img/png/stamps/Sign_Up_blue.png" class="signup-stamp" alt="Sign Up Here">
+      <a href="#" class="signup-stamp">
+        <img src="img/png/stamps/Sign_Up_blue.png" alt="Sign Up Here">
       </a>
       Keep all of your files organized in a single spot that will keep them safe from the dangers of computer crashes or hackers, all while keeping your privacy.
     </p>
@@ -96,11 +96,11 @@
 </section>
 
 <section class="home-section" id="access">
-  <header class="section-header container">
+  <header class="section-header">
     <h1>Access whenever &amp; wherever</h1>
     <p>
-      <a href="#">
-        <img src="img/png/stamps/Sign_Up_yellow.png" class="signup-stamp" alt="Sign Up Here">
+      <a href="#" class="signup-stamp">
+        <img src="img/png/stamps/Sign_Up_yellow.png" alt="Sign Up Here">
       </a>
       Stream to any device. And even download videos to watch when you&rsquo;re offline.
     </p>
@@ -134,11 +134,11 @@
 </section>
 
 <section class="home-section" id="share">
-  <header class="row section-header container">
+  <header class="section-header">
     <h1>Share &amp; be Shared With</h1>
     <p>
-      <a href="#">
-        <img src="img/png/stamps/Sign_Up_green.png" class="signup-stamp" alt="Sign Up Here">
+      <a href="#" class="signup-stamp">
+        <img src="img/png/stamps/Sign_Up_green.png" alt="Sign Up Here">
       </a>
       Give friends secure access to your collections so you can trade videos and movies.
     </p>

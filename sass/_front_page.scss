@@ -34,6 +34,7 @@
 }
 
 .section-header{
+  @extend .container;
   margin-top: $line;
   h1{
     font-size: 1.7* $line;
@@ -51,16 +52,25 @@
     }
   }
   p{
-    @include clearfix;
+    padding-right: 110px;
     font-size: 1.2em;
     padding-top: $line/3;
     line-height: $line;
     font-style: italic;
     border-top: 1px dotted $text-color;
+    min-height: 110px + $line;
   }
   .signup-stamp{
-    float: right;
+    position: absolute;
+    top: $line /2;
+    right: 0;
+    @include translateX(500px);
+    @include transition(transform 1.5s);
   }
+}
+
+.current .signup-stamp{
+  @include translateX(0);
 }
 
 .home-block{
