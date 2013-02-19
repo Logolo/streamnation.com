@@ -25,10 +25,10 @@
 <!--[if lt IE 7]>
   <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
-<header class="site-header">
+<header class="site-header" role="banner">
   <div class="container">
     <a href="index.php" class="header-logo"><img src="img/header.png" alt="Stream Nation"></a>
-    <nav class="site-nav">
+    <nav class="site-nav" role="navigation">
       <a href="index.php" class="<?php is_current("index.php") ?>">Home</a>
       <a href="features.php" class="<?php is_current("features.php") ?>">Features</a>
       <a href="rights.php" class="<?php is_current("rights.php") ?>">Rights</a>

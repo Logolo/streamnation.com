@@ -1,6 +1,6 @@
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
   <div class="container">
-    <form id="mailing-list"class="footer-form">
+    <form id="mailing-list" class="footer-form">
       <h3>Join Stream Nation</h3>
       <input name="email" type="email" placeholder="Email Address">
       <input type="submit" value="send">
