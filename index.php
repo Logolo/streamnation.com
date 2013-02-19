@@ -54,7 +54,12 @@
   <header class="section-header container">
     <!-- stealth nbsps -->
     <h1>All of your videos in one safe place</h1>
-    <p>Keep all of your files organized in a single spot that will keep them safe from the dangers of computer crashes or hackers, all while keeping your privacy.</p>
+    <p>
+      <a href="#">
+        <img src="img/png/stamps/Sign_Up_blue.png" class="signup-stamp" alt="Sign Up Here">
+      </a>
+      Keep all of your files organized in a single spot that will keep them safe from the dangers of computer crashes or hackers, all while keeping your privacy.
+    </p>
   </header>
   <div class="row">
     <div class="home-block">
@@ -93,7 +98,12 @@
 <section class="home-section" id="access">
   <header class="section-header container">
     <h1>Access whenever &amp; wherever</h1>
-    <p>Stream to any device. And even download videos to watch when you&rsquo;re offline.</p>
+    <p>
+      <a href="#">
+        <img src="img/png/stamps/Sign_Up_yellow.png" class="signup-stamp" alt="Sign Up Here">
+      </a>
+      Stream to any device. And even download videos to watch when you&rsquo;re offline.
+    </p>
   </header>
   <div class="row">
     <div class="home-block" id="computer">
@@ -126,7 +136,12 @@
 <section class="home-section" id="share">
   <header class="row section-header container">
     <h1>Share &amp; be Shared With</h1>
-    <p>Give friends secure access to your collections so you can trade videos and movies.</p>
+    <p>
+      <a href="#">
+        <img src="img/png/stamps/Sign_Up_green.png" class="signup-stamp" alt="Sign Up Here">
+      </a>
+      Give friends secure access to your collections so you can trade videos and movies.
+    </p>
   </header>
   <div class="row">
     <div class="home-block">

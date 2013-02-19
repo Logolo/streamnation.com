@@ -51,11 +51,15 @@
     }
   }
   p{
+    @include clearfix;
     font-size: 1.2em;
     padding-top: $line/3;
     line-height: $line;
     font-style: italic;
     border-top: 1px dotted $text-color;
+  }
+  .signup-stamp{
+    float: right;
   }
 }
 
