@@ -71,6 +71,11 @@ em{
   line-height: $line * 2;
 }
 
+.sub-subheader{
+  @extend .subheader;
+  font-size: $line;
+}
+
 %jean-background {
   background-image: image-url('bg/kindajean.png');
   background-size: 147px 147px;

@@ -123,24 +123,32 @@
 // persistent sign-up footer
 
 .signup-footer {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
   background-image: image-url('signup-footer.png');
   background-position: left top;
   background-repeat: repeat-x;
   text-transform: uppercase;
   color: white;
   font-family: $header-font;
-  font-size: 24px;
-  padding-top: 25px;
   text-align: center;
-  position: fixed;
-  top: 660px;
-  width: 100%;
-  z-index: 99;
-  height: 60px;
+  font-size: $line * .8;
+  padding-top: $line * .8;
+  height: 44px;
+  top: 100%;
+  margin-top: -44px;
   @include transition(all .25s);
-  &.bottom{
-    top: 100%;
-    margin-top: -60px;
+  @media (min-width: $desktop){
+    top: 660px;
+    height: 60px;
+    font-size: $line;
+    padding-top: $line;
+    margin-top: 0;
+    &.bottom{
+      top: 100%;
+      margin-top: -60px;
+    }
   }
 }
 
@@ -206,6 +214,20 @@
       @include translateX(0%);
     }
   }
+  .sub-subheader{
+    margin-top: $line/2;
+    padding-top: $line/2;
+  }
+
+  .sub-subheader:before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    top: 0;
+    left: 37.5%;
+    height: 4px;
+    background-color: $light-border;
+  }
 }
 
 .hero-signup-button{
@@ -215,17 +237,23 @@
   display: block;
   position: absolute;
   left: 20px;
-  top: 170px;
+  top: 90px;
   @include rotate(-10deg);
-  font-family: $header-font;
+  font-style: italic;
+  font-weight: bold;
+  // font-family: $header-font;
   font-size: 21px;
   text-align: center;
   width: 250px;
   height: 45px;
   padding: 10px 0;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   opacity: 0;
+  z-index: 5;
   @include transition(all .2s ease-in-out);
+  @media (min-width: $desktop){
+    top: 170px;
+  }
 }
 
 .hero-signup-button.active{
@@ -274,42 +302,43 @@
     @include translateY(0px);
   }
 }
-@include keyframes(shadows) {
-  0%, 50%{
-    @include shadowizer(0px, 11px);
-  }
-  75% {
-    @include shadowizer(40px, 11px);
-  }
-  100% {
-    @include shadowizer(20px, 11px);
-  }
-}
+// @include keyframes(shadows) {
+//   0%, 50%{
+//     @include shadowizer(0px, 11px);
+//   }
+//   75% {
+//     @include shadowizer(40px, 11px);
+//   }
+//   100% {
+//     @include shadowizer(20px, 11px);
+//   }
+// }
 
 #hero-cloud{
   @include animation(bounce 3s);
 }
 
-.hero-ipad{
-  @include animation(slow-bounce 2.5s);
-}
-
 .hero-computer{
-  margin-top: -14px;
+  @include animation(slow-bounce 2s);
+  margin-top: -30px;
 }
 
 .hero-iphone{
   @include animation(slow-bounce 3s);
 }
 
-.shadow{
-  @include animation(shadows 3s);
-  @include shadowizer(20px, 11px);
-  position: absolute;
-  top:195px;
-  left: 63px;
-  box-shadow: 0 0 10px 4px #666;
+.hero-ipad{
+  @include animation(slow-bounce 4s);
 }
+
+// .shadow{
+//   @include animation(shadows 3s);
+//   @include shadowizer(20px, 11px);
+//   position: absolute;
+//   top:195px;
+//   left: 63px;
+//   box-shadow: 0 0 10px 4px #666;
+// }
 
 // secure
 #secure .private img{

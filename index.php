@@ -22,32 +22,31 @@
         <img id="hero-cloud" src="img/png/hero/Cloud.png">
         <img src="img/png/hero/shield_animation.gif">
         <img src="img/png/hero/Pillars.png">
-        <div class="shadow iphone-shadow"></div>
       </div>
       <div class="image-container hero-computer">
         <img src="img/png/hero/computer_Screen.png">
-        <img class="reloading-gif" data-src="img/png/hero/computer_Moon.png" data-delay="0">
+        <img class="reloading-gif" data-src="img/png/hero/computer_Moon.png" data-delay="1000">
         <img src="img/png/hero/Computer.png">
-      </div>
-      <div class="image-container hero-ipad">
-        <img src="img/png/hero/iPad_Screen.png">
-        <img class="reloading-gif" data-src="img/png/hero/iPad_Moon.png" data-delay="500">
-        <img src="img/png/hero/iPad.png">
       </div>
       <div class="image-container hero-iphone">
         <img src="img/png/hero/iPhone_Screen.png">
-        <img class="reloading-gif" data-src="img/png/hero/iPhone_Moon.png" data-delay="1000">
+        <img class="reloading-gif" data-src="img/png/hero/iPhone_Moon.png" data-delay="2000">
         <img src="img/png/hero/iPhone.png">
       </div>
-
+      <div class="image-container hero-ipad">
+        <img src="img/png/hero/iPad_Screen.png">
+        <img class="reloading-gif" data-src="img/png/hero/iPad_Moon.png" data-delay="3000">
+        <img src="img/png/hero/iPad.png">
+      </div>
     </div>
     <div class="hero-text-container">
       <div class="hero-text">
         <h2 class="subheader">Your Video Collection</h2>
         <h1>Anywhere &amp; Everywhere</h1>
+        <h3 class="sub-subheader">Soon Your Photos Too!</h3>
       </div>
     </div>
-    <a href="#" class="hero-signup-button">Start free trial!</a>
+    <a href="#" class="hero-signup-button">Request an Invite!</a>
   </div>
 </section>
 
@@ -108,7 +107,7 @@
     <div class="home-block" id="ios">
       <div class="image-container">
         <img src="img/png/ios/Dark_Screen.png">
-        <img class="reloading-gif" data-src="img/png/ios/iphone_ipad_animation.gif" data-delay="500">
+        <img class="reloading-gif" data-src="img/png/ios/iphone_ipad_animation.gif" data-delay="1000">
         <img src="img/png/ios/iPhone_iPad.png" alt="iPhone &amp; iPad" class="animation-mask">
       </div>
       <p>From your pocket with our iOS mobile app.</p>
@@ -116,7 +115,7 @@
     <div class="home-block" id="tv">
       <div class="image-container">
         <img src="img/png/tv/Dark_Screen.png">
-        <img class="reloading-gif" data-src="img/png/tv/tv_animation.gif" data-delay="1000">
+        <img class="reloading-gif" data-src="img/png/tv/tv_animation.gif" data-delay="2000">
         <img src="img/png/tv/TV.png" alt="TV - AirPlay" class="animation-mask">
       </div>
       <p>From your living room with Apple TV.</p>
