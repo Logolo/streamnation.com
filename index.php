@@ -43,7 +43,7 @@
       <div class="hero-text">
         <h2 class="subheader">Your Movies, Videos &amp; TV Shows</h2>
         <h1>Anywhere &amp; Everywhere</h1>
-        <h3 class="sub-subheader">Soon Your Photos Too!</h3>
+        <h3 class="sub-subheader">And Soon Your Photos Too!</h3>
       </div>
     </div>
     <a href="#" class="hero-signup-button">Request an Invite!</a>
