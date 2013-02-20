@@ -41,7 +41,7 @@
     </div>
     <div class="hero-text-container">
       <div class="hero-text">
-        <h2 class="subheader">Your Video Collection</h2>
+        <h2 class="subheader">Your Movies, Videos &amp; TV Shows</h2>
         <h1>Anywhere &amp; Everywhere</h1>
         <h3 class="sub-subheader">Soon Your Photos Too!</h3>
       </div>
@@ -53,12 +53,12 @@
 <section class="home-section" id="secure">
   <header class="section-header">
     <!-- stealth nbsps -->
-    <h1>All of your videos in one safe place</h1>
+    <h1>Your videos in one safe place</h1>
     <p>
       <a href="#" class="signup-stamp">
         <img src="img/png/stamps/Sign_Up_blue.png" alt="Sign Up Here">
       </a>
-      Keep all of your files organized in a single spot that will keep them safe from the dangers of computer crashes or hackers, all while keeping your privacy.
+      Privately store all of your files on our secure network. This keeps them safe from the dangers of computer crashes or hackers.
     </p>
   </header>
   <div class="row">
@@ -74,7 +74,7 @@
         <img id="private-hook5" src="img/png/private/hook.png">
         <img id="private-hook6" src="img/png/private/hook.png">
       </div>
-      <p>You choose who sees your videos and we do not log or track your account.</p>
+      <p>You choose who sees your videos and we do not log or track your account in any way.</p>
     </div>
     <div class="home-block">
       <div class="image-container">
@@ -90,7 +90,7 @@
         <img src="img/png/efficient/Clock.png"  alt="Efficient">
         <img src="img/png/efficient/Hand.png" id="efficient-hand">
       </div>
-      <p>Our streamlined transfer process makes uploading quick and effortless.</p>
+      <p>Our streamlined transfer process makes uploading files quick and effortless.</p>
     </div>
   </div>
 </section>
@@ -102,7 +102,7 @@
       <a href="#" class="signup-stamp">
         <img src="img/png/stamps/Sign_Up_yellow.png" alt="Sign Up Here">
       </a>
-      Stream to any device. And even download videos to watch when you&rsquo;re offline.
+      Stream to any device, and even download videos to watch when you&rsquo;re offline.
     </p>
   </header>
   <div class="row">
@@ -163,7 +163,7 @@
         <img src="img/png/control/remote_body.png" alt="Control">
         <img src="img/png/control/button_2.png" id="control-button">
       </div>
-      <p>You have full authority over your video files and account information.</p>
+      <p>You have full authority over your video files and account info.</p>
     </div>
     <div class="home-block">
       <div class="image-container">
