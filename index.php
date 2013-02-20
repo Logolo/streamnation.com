@@ -8,8 +8,6 @@
 </nav>
 -->
 
-<div class="signup-footer"><a href="#">Sign Up Here</a></div>
-
 <section class="home-section" id="hero">
   <video class="background-video" autoplay loop>
     <source src="video/video_loop_320x180.mp4" type="video/mp4" />
