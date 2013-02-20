@@ -213,7 +213,7 @@
   float: right;
   margin-top: -$line * 2;
   @media (min-width: $desktop) {
-    margin-top: $line * 8;
+    margin-top: $line * 6;
     @include translateX(15%);
     overflow: hidden;
   }
@@ -266,7 +266,7 @@
   z-index: 5;
   @include transition(all .2s ease-in-out);
   @media (min-width: $desktop){
-    top: 170px;
+    top: 130px;
   }
 }
 

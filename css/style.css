@@ -556,7 +556,7 @@ body:before {
   @media (min-width: 960px) {
     /* line 211, ../sass/_front_page.scss */
     .hero-text-container {
-      margin-top: 192px;
+      margin-top: 144px;
       -webkit-transform: translateX(15%);
       -moz-transform: translateX(15%);
       -ms-transform: translateX(15%);
@@ -629,7 +629,7 @@ body:before {
   @media (min-width: 960px) {
     /* line 247, ../sass/_front_page.scss */
     .hero-signup-button {
-      top: 170px; } }
+      top: 130px; } }
 
 /* line 273, ../sass/_front_page.scss */
 .hero-signup-button.active {

@@ -39,7 +39,7 @@
     </div>
     <div class="hero-text-container">
       <div class="hero-text">
-        <h2 class="subheader">Your Movies, Videos &amp; TV Shows</h2>
+        <h2 class="subheader">Your Movies, Videos &amp; TV Shows</h2>
         <h1>Anywhere &amp; Everywhere</h1>
         <h3 class="sub-subheader">And Soon Your Photos Too!</h3>
       </div>
