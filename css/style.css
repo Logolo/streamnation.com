@@ -167,7 +167,7 @@ em {
 
 /* line 79, ../sass/_base.scss */
 .page-content, .rights-content, #secure, #share {
-  background-image: url('../img/bg/kindajean.png?1360805205');
+  background-image: url('../img/bg/denim.png?1360887218');
   background-size: 147px 147px; }
 
 /* line 84, ../sass/_base.scss */
@@ -349,7 +349,7 @@ body:before {
   background-color: rgba(255, 255, 255, 0.8); }
   /* line 9, ../sass/_front_page.scss */
   .page-nav a {
-    background-image: url('../img/nav-arrows.png?1360805205');
+    background-image: url('../img/nav-arrows.png?1360870790');
     background-repeat: no-repeat;
     background-size: 36px 96px;
     width: 48px;
@@ -490,7 +490,7 @@ body:before {
   position: fixed;
   z-index: 99;
   width: 100%;
-  background-image: url('../img/signup-footer.png?1360981905');
+  background-image: url('../img/signup-footer.png?1360938699');
   background-position: left top;
   background-repeat: repeat-x;
   text-transform: uppercase;
@@ -608,7 +608,7 @@ body:before {
 
 /* line 247, ../sass/_front_page.scss */
 .hero-signup-button {
-  background-image: url('../img/png/hero/free_trial_ribbon.png?1360981905');
+  background-image: url('../img/png/hero/free_trial_ribbon.png?1360887858');
   background-repeat: no-repeat;
   color: white;
   display: block;
@@ -1350,7 +1350,7 @@ body:before {
 
 /* line 1, ../sass/_rights.scss */
 .rights-header {
-  background-image: url('../img/rights/banner.png?1360981905');
+  background-image: url('../img/rights/banner.png?1360885822');
   background-repeat: no-repeat;
   background-position: center 50px;
   padding: 120px 0 85px 75px;
