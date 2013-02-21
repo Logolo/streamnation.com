@@ -23,23 +23,23 @@
       </div>
       <div class="image-container hero-computer">
         <img src="img/png/hero/computer_Screen.png">
-        <img class="reloading-gif" data-src="img/png/hero/computer_Moon.png" data-delay="1000">
+        <img src="img/png/hero/computer_Moon.png" class="fade-in">
         <img src="img/png/hero/Computer.png">
       </div>
       <div class="image-container hero-iphone">
         <img src="img/png/hero/iPhone_Screen.png">
-        <img class="reloading-gif" data-src="img/png/hero/iPhone_Moon.png" data-delay="2000">
+        <img src="img/png/hero/iPhone_Moon.png" class="fade-in">
         <img src="img/png/hero/iPhone.png">
       </div>
       <div class="image-container hero-ipad">
         <img src="img/png/hero/iPad_Screen.png">
-        <img class="reloading-gif" data-src="img/png/hero/iPad_Moon.png" data-delay="3000">
+        <img src="img/png/hero/iPad_Moon.png" class="fade-in">
         <img src="img/png/hero/iPad.png">
       </div>
     </div>
     <div class="hero-text-container">
       <div class="hero-text">
-        <h2 class="subheader">Your Movies, Videos &amp; TV Shows</h2>
+        <h2 class="subheader">Your Movies, Videos &amp; TV Shows</h2>
         <h1>Anywhere &amp; Everywhere</h1>
         <h3 class="sub-subheader">And Soon Your Photos Too!</h3>
       </div>

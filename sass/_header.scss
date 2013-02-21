@@ -55,8 +55,12 @@ body {
 
 .login{
   position: absolute;
-  top: -$line /2;
-  right: $line * 2;
+  top: -$line /2 - 2px;
+  right: 44px;
   font-family: $header-font;
   font-size: $small-text;
+  text-transform: uppercase;
+  background-color: $blue;
+  color: white;
+  padding: 0 $gtr;
 }

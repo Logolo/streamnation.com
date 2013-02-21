@@ -82,7 +82,7 @@ em{
 }
 
 %page-section {
-  padding: $header-height 0 ($line * 2);
+  padding: $header-height 0 $line;
   border-bottom: 2px solid $light-border;
 }
 
