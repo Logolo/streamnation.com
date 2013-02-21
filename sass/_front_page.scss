@@ -6,6 +6,7 @@
 
 .section-header{
   @extend .container;
+  padding-right: 150px;
   h1{
     font-size: 1.7* $line;
     $line-height: $line * 2;
@@ -22,7 +23,6 @@
     }
   }
   p{
-    padding-right: 110px;
     font-size: 1.2em;
     padding-top: $line/3;
     line-height: $line;
@@ -31,15 +31,19 @@
   }
   .signup-stamp{
     position: absolute;
-    top: $line /2;
+    top: $line/2 + 1px;
     right: 0;
-    @include translateX(500px);
-    @include transition(transform 1.5s);
+    opacity: 0;
+    @include transition(all 1s ease-out);
+    height: 120px;
+    width: 120px;
+    @include scale(.5, .5);
   }
 }
 
 .current .signup-stamp{
-  @include translateX(0);
+  opacity: 1;
+  @include scale(1,1);
 }
 
 .home-block{
