@@ -46,6 +46,7 @@
     </div>
     <a href="#" class="hero-signup-button">Request an Invite!</a>
   </div>
+  <a class="next-tab">Scroll Down to Learn More</a>
 </section>
 
 <section class="home-section" id="secure">
@@ -91,6 +92,7 @@
       <p>Our streamlined transfer process makes uploading files quick and effortless.</p>
     </div>
   </div>
+  <a class="next-tab">Access Your Files Anywhere</a>
 </section>
 
 <section class="home-section" id="access">
@@ -129,6 +131,7 @@
       <p>From your living room with Apple TV.</p>
     </div>
   </div>
+  <a class="next-tab">Share With Friends</a>
 </section>
 
 <section class="home-section" id="share">
@@ -176,6 +179,7 @@
       <p>Archive your favorite films into your own personal library.</p>
     </div>
   </div>
+  <a class="back-to-top">Back to Top</a>
 </section>
 
 <?php require 'footer.php' ?>

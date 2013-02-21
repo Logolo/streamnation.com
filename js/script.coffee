@@ -7,7 +7,7 @@ $(document).ready ()->
   $gifs = $('.reloading-gif')
   $header = $('.site-header')
   headerHeight = $header.height()
-  $signup = $('.signup-footer')
+  footerTop = $('.site-footer').offset().top;
 
   # slide in hero text
   $('.hero-text').addClass('active')
@@ -18,6 +18,7 @@ $(document).ready ()->
     $sections = $('body').children('section').map ()->
       selector: $(this)
       top: $(this).offset().top
+      bottom: $(this).offset().top + $(this).height()
 
     windowHeight = $window.height()
 
@@ -36,18 +37,20 @@ $(document).ready ()->
       else if pos <= headerHeight
         $header.removeClass('condensed')
 
-      # move signup footer to the bottom of the screen
-      $signup.toggleClass('bottom', pos > 20)
+      # stickify section tabs
 
-      # determine "current" section
-      # when it crosses the window midpoint
+
+      # manage "current" section
       $.each $sections, (index, item)->
-        sectionBottom = $sections[index+1]?.top || 99999
+        sectionBottom = $sections[index+1]?.top || footerTop
         if item.top <= pos + windowHeight/2  < sectionBottom
           item.selector.addClass 'current'
           currentSectionIndex = index
         else
           item.selector.removeClass 'current'
+        item.selector.find('.next-tab, .back-to-top')
+          .toggleClass('sticky', pos + windowHeight > sectionBottom )
+
 
       # trigger one-shot GIF animations
       $gifs.each ()->

@@ -107,35 +107,41 @@
   @include translateX(0%);
 }
 
-// persistent sign-up footer
 
-.signup-footer {
+%bottom-tab{
   position: fixed;
-  z-index: 99;
-  width: 100%;
-  background-image: image-url('signup-footer.png');
-  background-position: left top;
-  background-repeat: repeat-x;
-  text-transform: uppercase;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -227px;
+  width: 454px;
+  height: 54px;
+  font-size: 19px;
+  padding: 15px 0;
+  font-style: italic;
+  font-weight: bold;
   color: white;
-  font-family: $header-font;
   text-align: center;
-  font-size: $line * .8;
-  padding-top: $line * .8;
-  height: 44px;
-  top: 100%;
-  margin-top: -44px;
-  @include transition(all .25s);
-  @media (min-width: $desktop){
-    top: 660px;
-    height: 60px;
-    font-size: $line;
-    padding-top: $line;
-    margin-top: 0;
-    &.bottom{
-      top: 100%;
-      margin-top: -60px;
-    }
+  @include translateY(60px);
+  @include transition(transform 1s);
+  z-index: 100;
+  &.sticky{
+    position: absolute;
+  }
+}
+
+.next-tab{
+  @extend %bottom-tab;
+  background: image-url('scroll_button_down.png')
+}
+
+.back-to-top{
+  @extend %bottom-tab;
+  background: image-url('scroll_button_up.png');
+}
+
+.current{
+  .next-tab, .back-to-top{
+    @include translateY(0);
   }
 }
 
