@@ -141,7 +141,7 @@
       Give friends secure access to your collections so you can trade videos and movies.
     </p>
     <a href="#" class="signup-stamp">
-      <img src="img/png/stamps/Sign_Up_green.png" alt="Sign Up Here">
+      <img src="img/png/stamps/Sign_Up_Green.png" alt="Sign Up Here">
     </a>
   </header>
   <div class="row">
