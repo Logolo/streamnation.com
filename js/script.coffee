@@ -67,15 +67,14 @@ $(document).ready ()->
       $window.one( 'scroll', onScroll )
     , 100
 
-  # floating side navigation
-  $('a', '.page-nav').click (e)->
+  # tab navigation
+  $('.next-tab, .back-to-top').click (e)->
     e.preventDefault()
-    switch $(this).attr('id')
-      when "prev-section" then index = currentSectionIndex - 1
-      when "next-section" then index = currentSectionIndex + 1
-      when "back-to-top" then index = 0
-    if index < 0 then index = 0
-    if index >= $sections.length then index = $sections.length - 1
+
+    if $(this).hasClass('next-tab')
+      index = $(this).closest('section').index()
+    else
+      index = 0;
 
     $('body').animate { scrollTop: $sections[index].top }, ()->
       # set current section immediately
