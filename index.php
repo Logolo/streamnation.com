@@ -57,7 +57,7 @@
       Privately store all of your files on our secure network. This keeps them safe from the dangers of computer crashes or hackers.
     </p>
     <a href="#" class="signup-stamp">
-      <img src="img/png/stamps/Sign_Up_blue.png" alt="Sign Up Here">
+      <img src="img/png/stamps/Request_blue.png" alt="Request an Invite">
     </a>
   </header>
   <div class="row">
@@ -102,7 +102,7 @@
       Stream to any device, and even download videos to watch when you&rsquo;re offline.
     </p>
     <a href="#" class="signup-stamp">
-      <img src="img/png/stamps/Sign_Up_yellow.png" alt="Sign Up Here">
+      <img src="img/png/stamps/Request_yellow.png" alt="Request an Invite">
     </a>
   </header>
   <div class="row">
@@ -141,7 +141,7 @@
       Give friends secure access to your collections so you can trade videos and movies.
     </p>
     <a href="#" class="signup-stamp">
-      <img src="img/png/stamps/Sign_Up_Green.png" alt="Sign Up Here">
+      <img src="img/png/stamps/Request_green.png" alt="Request an Invite">
     </a>
   </header>
   <div class="row">
