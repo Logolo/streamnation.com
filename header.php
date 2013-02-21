@@ -34,5 +34,6 @@
       <a href="rights.php" class="<?php is_current("rights.php") ?>">Rights</a>
       <a href="pricing.php" class="<?php is_current("pricing.php") ?>">Pricing</a>
     </nav>
+    <a href="#" class="login">Log in</a>
   </div>
 </header>

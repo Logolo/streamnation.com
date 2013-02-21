@@ -131,7 +131,7 @@ html {
   line-height: 24px;
   font-family: "Georgia", serif;
   color: #4b4d4d;
-  padding-top: 72px;
+  padding-top: 48px;
   -webkit-font-smoothing: antialiased; }
 
 /* line 25, ../sass/_base.scss */
@@ -172,7 +172,7 @@ em {
 
 /* line 84, ../sass/_base.scss */
 .page-header, .rights-header, .page-content, .rights-content, .home-section {
-  padding: 96px 0 48px;
+  padding: 72px 0 48px;
   border-bottom: 2px solid #c1c1c1; }
 
 /* line 89, ../sass/_base.scss */
@@ -226,18 +226,17 @@ body:before {
   top: 0;
   content: "";
   background-color: #65bbe2;
-  height: 12px;
+  height: 4px;
   display: block;
-  border-bottom: 4px solid #4b4d4d;
   z-index: 11; }
 
-/* line 15, ../sass/_header.scss */
+/* line 14, ../sass/_header.scss */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 96px;
+  height: 72px;
   padding-top: 16px;
   z-index: 10;
   background-color: #f5f6f6;
@@ -246,16 +245,17 @@ body:before {
   -moz-transition: -moz-transform 0.5s;
   -o-transition: -o-transform 0.5s;
   transition: transform 0.5s; }
-  /* line 26, ../sass/_header.scss */
+  /* line 25, ../sass/_header.scss */
   .site-header.condensed {
-    -webkit-transform: translateY(-24px);
-    -moz-transform: translateY(-24px);
-    -ms-transform: translateY(-24px);
-    -o-transform: translateY(-24px);
-    transform: translateY(-24px); }
+    -webkit-transform: translateY(-22px);
+    -moz-transform: translateY(-22px);
+    -ms-transform: translateY(-22px);
+    -o-transform: translateY(-22px);
+    transform: translateY(-22px); }
 
-/* line 31, ../sass/_header.scss */
+/* line 30, ../sass/_header.scss */
 .header-logo {
+  margin-top: -24px;
   float: left; }
   /* line 33, ../sass/_header.scss */
   .header-logo img {
@@ -263,7 +263,6 @@ body:before {
 
 /* line 36, ../sass/_header.scss */
 .site-nav {
-  margin-top: 24px;
   font-weight: lighter;
   float: right;
   font-family: sans-serif;
@@ -273,15 +272,23 @@ body:before {
     /* line 36, ../sass/_header.scss */
     .site-nav {
       display: block; } }
-  /* line 46, ../sass/_header.scss */
+  /* line 45, ../sass/_header.scss */
   .site-nav a {
     display: inline-block;
     padding: 0 2em 10px;
     line-height: 1; }
-    /* line 50, ../sass/_header.scss */
+    /* line 49, ../sass/_header.scss */
     .site-nav a.current {
       color: #65bbe2;
       border-bottom: 2px solid #4b4d4d; }
+
+/* line 56, ../sass/_header.scss */
+.login {
+  position: absolute;
+  top: -12px;
+  right: 48px;
+  font-family: "ralewayextrabold", "Comic Sans MS", sans-serif;
+  font-size: 12px; }
 
 /* line 1, ../sass/_footer.scss */
 .site-footer {

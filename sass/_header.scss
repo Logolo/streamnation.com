@@ -5,9 +5,8 @@ body {
     top: 0;
     content: "";
     background-color: $blue;
-    height: $line /2;
+    height: 4px;
     display: block;
-    border-bottom: 4px solid $text-color;
     z-index: 11;
   }
 }
@@ -24,17 +23,17 @@ body {
   border-bottom: 2px solid $light-border;
   @include transition(transform .5s);
   &.condensed{
-    @include translateY(-$line);
+    @include translateY(-$line + 2px);
   }
 }
 
 .header-logo{
+  margin-top: -$line;
   float: left;
   img{ height: 90px; }
 }
 
 .site-nav{
-  margin-top: $line;
   font-weight: lighter;
   float: right;
   font-family: $light-font;
@@ -52,4 +51,12 @@ body {
       border-bottom: 2px solid $text-color;
     }
   }
+}
+
+.login{
+  position: absolute;
+  top: -$line /2;
+  right: $line * 2;
+  font-family: $header-font;
+  font-size: $small-text;
 }
