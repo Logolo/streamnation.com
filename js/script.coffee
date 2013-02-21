@@ -18,7 +18,6 @@ $(document).ready ()->
     $sections = $('body').children('section').map ()->
       selector: $(this)
       top: $(this).offset().top
-      bottom: $(this).offset().top + $(this).height()
 
     windowHeight = $window.height()
 
@@ -37,9 +36,6 @@ $(document).ready ()->
       else if pos <= headerHeight
         $header.removeClass('condensed')
 
-      # stickify section tabs
-
-
       # manage "current" section
       $.each $sections, (index, item)->
         sectionBottom = $sections[index+1]?.top || footerTop
@@ -48,6 +44,8 @@ $(document).ready ()->
           currentSectionIndex = index
         else
           item.selector.removeClass 'current'
+
+        # stickify section tabs
         item.selector.find('.next-tab, .back-to-top')
           .toggleClass('sticky', pos + windowHeight > sectionBottom )
 
