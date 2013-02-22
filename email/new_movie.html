@@ -31,7 +31,6 @@
     color: #4c4d4d;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;
-    letter-spacing: -1px;
     text-transform: uppercase;
   }
 
@@ -68,18 +67,28 @@
     background: url(img/notification-background.gif) left top repeat-x;
   }
 
+  .notification
+  {
+    background: #f5f7f7;
+    border-top: 3px solid #c1c1c1;
+    border-right: 3px solid #c1c1c1;
+    border-left: 3px solid #c1c1c1;
+  }
+
   .notification-title a
   {
     font-size: 28px;
+    font-weight: bold;
   }
 
   .notification-title img
   {
-    vertical-align: 3px;
+    vertical-align: 5px;
   }
 
   .notification-text
   {
+    font-size: 15px;
     font-style: italic;
   }
 
@@ -98,14 +107,45 @@
 
   .heading
   {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: bold;
     line-height: 1.7;
   }
 
   .information .heading + p
   {
+    font-size: 14px;
     font-style: italic;
     line-height: 1.4;
+  }
+
+  p.tagline
+  {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .footer td,
+  .footer a
+  {
+    color: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  a.unsubscribe
+  {
+    background: #63b5d0;
+    color: #fff !important;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 4px 8px;
+    text-decoration: none !important;
+    text-transform: uppercase;
   }
   </style>
 </head>
@@ -119,28 +159,27 @@
       <!-- logo bar -->
       <tr>
         <td height="100" style="background: url(img/logo-background.gif) top repeat-x" align="center" valign="top">
-          <table width="600" height="100" cellpadding="0" cellspacing="0" border="0"><tr><td align="left"><img src="img/logo.gif" height="100" width="351"></td></tr></table>
+          <table width="600" height="100" cellpadding="0" cellspacing="0" border="0"><tr><td align="left"><img src="img/logo.gif" width="351" height="100"></td></tr></table>
         </td>
       </tr>
 
       <!-- notification -->
       <tr>
         <td bgcolor="ffffff" align="center" class="notification-wrapper">
-          <table width="600" cellpadding="0" cellspacing="0" border="0">
 
-            <tr><td height="35"></td></tr> <!-- space -->
+          <table><tr><td height="25"></td></tr></table> <!-- space -->
 
-            <!-- notification avatar and text -->
+          <table width="600" cellpadding="20" cellspacing="0" class="notification"> <!-- notification avatar and text -->
             <tr>
               <td>
                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
-                    <td rowspan="3" width="90">
-                      <img src="http://placehold.it/75x75" class="avatar">
+                    <td rowspan="3" width="90" valign="top">
+                      <img src="http://placehold.it/75x75" class="avatar" width="75" height="75">
                     </td>
                     <td height="38" valign="top">
                       <p class="notification-title">
-                        <a href="#">You&rsquo;ve got a new movie <img src="img/notification-arrow.gif"></a>
+                        <a href="#">You&rsquo;ve got a new movie <img src="img/notification-arrow.gif" width="6" height="10"></a>
                       </p>
                     </td>
                   </tr>
@@ -155,23 +194,125 @@
                 </table>
               </td>
             </tr>
+          </table>
+
+          <table width="600" height="47" cellpadding="0" cellspacing="0" border="0"> <!-- 'stream it now' button -->
+            <tr><td class="button"><a href="#"><img src="img/stream_it.gif" alt="Stream Movie" title="Stream Movie" width="600" height="47"></a></td></tr>
+          </table>
+
+          <table><tr><td height="25"></td></tr></table> <!-- space -->
+
+        </td>
+      </tr>
+
+      <!-- further information -->
+      <tr>
+        <td align="center" valign="top" class="information">
+          <table width="600" cellpadding="0" cellspacing="0" border="0">
 
             <tr><td height="35"></td></tr> <!-- space -->
 
-            <!-- 'stream it now' button -->
             <tr>
-              <td align="center" valign="center">
-                <table width="200" height="40" cellpadding="0" cellspacing="0" border="0">
-                  <tr><td class="button"><a href="#"><img src="img/stream_it.gif" alt="Stream Movie" title="Stream Movie"></a></td></tr>
+              <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td width="25%" align="left">
+                      <a href="#"><img src="img/share_grayscale.png" width="120" height="120"></a>
+                    </td>
+                    <td width="75%">
+                      <p class="heading"><a href="#">Share &amp; Be Shared With</a></p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis odio eget arcu bibendum sollicitudin in at odio. Mauris ullamcorper nibh id mauris tristique ornare. Etiam non mi magna, vel ullamcorper tortor. Mauris ullamcorper nibh id mauris tristique ornare. Etiam non mi magna.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr><td height="45"></td></tr> <!-- space -->
+            <tr>
+              <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td width="25%" align="left">
+                      <a href="#"><img src="img/control_grayscale.png" width="120" height="120"></a>
+                    </td>
+                    <td width="75%">
+                      <p class="heading"><a href="#">You Are Always in Control</a></p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis odio eget arcu bibendum sollicitudin in at odio. Mauris ullamcorper nibh id mauris tristique ornare. Etiam non mi magna, vel ullamcorper tortor. Mauris ullamcorper nibh id mauris tristique ornare. Etiam non mi magna.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr><td height="45"></td></tr> <!-- space -->
+            <tr>
+              <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td width="25%" align="left">
+                      <a href="#"><img src="img/collect_grayscale.png" width="120" height="120"></a>
+                    </td>
+                    <td width="75%">
+                      <p class="heading"><a href="#">Start Your Collection Today</a></p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis odio eget arcu bibendum sollicitudin in at odio. Mauris ullamcorper nibh id mauris tristique ornare. Etiam non mi magna, vel ullamcorper tortor. Mauris ullamcorper nibh id mauris tristique ornare. Etiam non mi magna.</p>
+                    </td>
+                  </tr>
                 </table>
               </td>
             </tr>
 
-            <tr><td height="45"></td></tr> <!-- space -->
+            <tr><td height="35"></td></tr> <!-- space -->
 
+          </table>
+        </td>        
+      </tr>
+
+      <!-- devices graphic -->
+      <tr>
+        <td align="center" valign="top">
+          <table width="600" cellpadding="0" cellspacing="0" border="0">
+            <tr><td height="25"></td></tr> <!-- space -->
+            <tr>
+              <td align="center">
+                <p class="tagline">Your Movies, Videos, and TV Shows Anywhere &amp; Everywhere.</p>
+              </td>
+            </tr>
+            <tr><td height="25"></td></tr> <!-- space -->
+            <tr>
+              <td align="center">
+                <img src="img/3devices.png" width="290" height="80">
+              </td>
+            </tr>
+            <tr><td height="25"></td></tr> <!-- space -->
+          </table>
+        </td>        
+      </tr>
+
+      <!-- footer -->
+      <tr>
+        <td align="center" valign="top" width="100%" bgcolor="#434744" class="footer">
+          <table width="600" cellpadding="0" cellspacing="0" border="0">
+            <tr><td colspan="2" height="30"></td></tr> <!-- space -->
+
+            <tr>
+              <td width="50%" align="left"><a href="#" class="unsubscribe">Unsubscribe</a></td>
+              <td width="50%" align="right"><img src="img/badge.png" width="50" height="50"></td>
+            </tr>
+
+
+            <tr><td colspan="2" height="15"></td></tr> <!-- space -->
+            <tr><td colspan="2" height="2" bgcolor="#ffffff"></td></tr> <!-- line -->
+            <tr><td colspan="2" height="15"></td></tr> <!-- space -->
+
+            <tr>
+              <td width="50%" align="left">&copy; 2013 Stream Nation. All Rights Reserved.</td>
+              <td width="50%" align="right"><a href="mailto:info@streamnation.com">info@streamnation.com</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;+1 (414) 555-5552</td>
+            </tr>
+
+            <tr><td colspan="2" height="30"></td></tr> <!-- space -->
           </table>
         </td>
       </tr>
+    </table>
 
     </table>
   </center>
