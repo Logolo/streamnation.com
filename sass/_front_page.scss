@@ -265,26 +265,80 @@
   @include translateX(0%);
 }
 
-.hero-signup-button{
-  background-image: image-url('request_invite_button.png');
-  display: inline-block;
-  height: 43px;
-  width: 215px;
-  color: white;
-  font-family: $header-font;
-  text-transform: uppercase;
-  text-align: left;
-  padding: $line/2 - 1px $gtr - 1px;
-}
-
 #secure, #share {
   @extend %jean-background;
 }
 
+.signup-button {
+  color: white;
+  font-family: $header-font;
+  text-transform: uppercase;
+  text-align: left;
+  padding: $line/2 - 1px $gtr - 1px;  
+}
+
+.hero-signup-button{
+  @extend .signup-button;
+
+  background-image: image-url('request_invite_button.png');
+  display: inline-block;
+  height: 43px;
+  width: 215px;
+}
+
+.body-signup-button {
+  @extend .signup-button;
+
+  background-image: image-url('png/pricing/request_an_invite.png');
+  display: block;
+  height: 59px;
+  width: 316px;
+  margin: $line auto $line*2;
+  text-indent: -1000000px;
+}
+
 // Pricing
 
+#pricing {
+  padding-bottom: $line*2.5;  
+}
+
+#pricing .section-header {
+  padding-right: 0;
+}
+
 .pricing-block {
-  @extend .grid-block;
+  @extend .grid3;
+
+  background: #f7f9f9;
+  border: 2px solid #c1c1c1;
+  text-align: center;
+  width: 23.5%;
+  margin-right: 2%;
+
+  &:nth-child(4)
+  {
+    margin-right: 0;
+  }
+
+  h2 {
+    background-image: image-url('png/pricing/heading_border.gif');
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    font-size: 32px;
+    padding: $line/2 0 $line*.75;
+    margin-bottom: $line;
+  }
+
+  p {
+    background: #dddedf;
+    color: #828484;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    margin: $line 0 $line/2;
+    padding: $line/2;
+  }
 }
 
 // animations below
