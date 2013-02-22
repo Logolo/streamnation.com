@@ -9,7 +9,7 @@
 -->
 
 <section class="home-section" id="hero">
-  <video class="background-video" autoplay loop>
+  <video class="background-video" loop>
     <source src="video/homepage_loop_320x180.mp4" type="video/mp4" />
     <source src="video/homepage_loop_320x180.ogv" type="video/ogg" />
     <img src="img/gump_framegrab.jpg">

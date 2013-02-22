@@ -153,7 +153,7 @@
 #hero{
   margin: 0;
   padding: 0;
-  background-color: $footer-dark;
+  background-color: $text-color;
   background-size: cover;
 
   .row{
@@ -170,15 +170,19 @@
   top: 0;
   width: auto;
   height: 100%;
-  .wide{
-
-  }
+  opacity: 0;
+  @include transition(opacity 2s false 1s);
   @media (min-width: 1300px){
     height: auto;
     width: 100%;
     // min-width: 1200px;
   }
 }
+
+.active .background-video, .background-video img{
+  opacity: 1;
+}
+
 
 .hero-image{
   @extend .grid6;

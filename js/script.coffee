@@ -10,8 +10,14 @@ $(document).ready ()->
   footerTop = $('.site-footer').offset().top;
   $video = $('.background-video')
 
-  # slide in hero text
+  # trigger one-shot hero animations
   $('#hero').addClass('active')
+
+  # wait to play video
+  setTimeout ()->
+    $video[0].play()
+  , parseInt($video.css('transition-delay'), 10) * 1000
+
 
   do calculateHeights = ()->
     windowHeight = $window.height()
