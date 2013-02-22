@@ -151,9 +151,17 @@
 // hero
 
 #hero{
-  padding: $line * 2 0 $line * 3;
+  margin: 0;
+  padding: 0;
   background-color: $footer-dark;
   background-size: cover;
+
+  .row{
+    @media (min-width: $desktop){
+      top: 50%;
+      margin-top: -240px;
+    }
+  }
 }
 
 .background-video, .background-video img{
@@ -162,10 +170,13 @@
   top: 0;
   width: auto;
   height: 100%;
-  @media (min-width: $desktop){
+  .wide{
+
+  }
+  @media (min-width: 1300px){
     height: auto;
     width: 100%;
-    min-width: 1200px;
+    // min-width: 1200px;
   }
 }
 
@@ -190,14 +201,27 @@
 
 }
 
+.obi{
+  background-color: white;
+  position: absolute;
+  height: $line * 11.5;
+  width: 100%;
+  top: 50%;
+  margin-top: -$line * 4;
+  opacity: 0;
+  @include transition(opacity 2s);
+}
+
+.active .obi{
+  opacity: .8;
+}
+
 .hero-text-container{
   @extend .grid6;
   float: right;
-  margin-top: -$line * 2;
   padding: $line/2;
   @media (min-width: $desktop) {
-    margin-top: $line * 6;
-    // @include translateX(15%);
+    margin-top: $line * 5;
     position: absolute;
     left: 0;
     top: 0;
@@ -209,49 +233,44 @@
   .hero-text{
     @include translateX(150%);
     @include transition(transform 1s false 1s);
-    background-color: $translucent;
     padding: $line/2 $gtr * 2;
     text-align: center;
-    &.active{
-      @include translateX(0%);
-    }
+    width: 400px;
+
     .subheader{
       line-height: 1;
-      margin: $line/2 auto;
+      margin: $line/3 auto;
     }
     h1{
-      border-bottom: 1px solid $text-color;
       margin-bottom: 4px;
     }
   }
   .sub-subheader{
-    font-size: 20px;
-    margin-top: 0 !important;
-    padding-top: $line/2;
-    border-top: 1px dotted $text-color;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  hr{
+    border-style: solid none dotted none;
+    border-color: $text-color;
+    border-width: 1px;
+    height: 4px;
   }
 }
 
+.active .hero-text{
+  @include translateX(0%);
+}
+
 .hero-signup-button{
-  background-image: image-url('hero-request-cropped.png');
-  display: block;
-  height: 64px;
-  width: 419px;
+  background-image: image-url('request_invite_button.png');
+  display: inline-block;
+  height: 43px;
+  width: 215px;
   color: white;
   font-family: $header-font;
   text-transform: uppercase;
-  text-align: center;
-  font-size: $line - 2px;
-  line-height: 2;
-  position: absolute;
-  bottom: $line;
-  left: 0;
-  margin-left: 40px;
-  opacity: 0;
-  @include transition(opacity 1s false 1s);
-  &.active{
-    opacity: 1;
-  }
+  text-align: left;
+  padding: $line/2 - 1px $gtr - 1px;
 }
 
 #secure, #share {

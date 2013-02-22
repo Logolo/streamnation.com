@@ -14,6 +14,7 @@
     <source src="video/homepage_loop_320x180.ogv" type="video/ogg" />
     <img src="img/gump_framegrab.jpg">
   </video>
+  <div class="obi"></div>
   <div class="row">
     <div class="hero-image">
       <div class="image-container">
@@ -42,9 +43,11 @@
         <h2 class="subheader">Your Movies, Videos &amp; TV Shows</h2>
         <h1>Anywhere &amp; Everywhere</h1>
         <h3 class="sub-subheader">And Soon Your Photos Too!</h3>
+        <hr>
+        <a href="#" class="hero-signup-button">Request an Invite!</a>
       </div>
     </div>
-    <a href="#" class="hero-signup-button">Request an Invite!</a>
+
   </div>
   <a class="next-tab">Scroll Down to Learn More</a>
 </section>

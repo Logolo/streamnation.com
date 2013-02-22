@@ -8,18 +8,22 @@ $(document).ready ()->
   $header = $('.site-header')
   headerHeight = $header.height()
   footerTop = $('.site-footer').offset().top;
+  $video = $('.background-video')
 
   # slide in hero text
-  $('.hero-text').addClass('active')
-  $('.hero-signup-button').addClass('active')
+  $('#hero').addClass('active')
 
   do calculateHeights = ()->
+    windowHeight = $window.height()
+
+    # auto-size hero to fill window
+    $('#hero').height(7 + windowHeight - headerHeight)
+
     # cache sections, section heights, window height
     $sections = $('body').children('section').map ()->
       selector: $(this)
       top: $(this).offset().top
 
-    windowHeight = $window.height()
 
     setTimeout ()->
       $window.one('resize', calculateHeights)
