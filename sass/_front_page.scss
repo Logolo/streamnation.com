@@ -219,7 +219,7 @@
 .hero-text-container{
   @extend .grid6;
   float: right;
-  padding: $line/2;
+  padding: $line/2 0;
   @media (min-width: $desktop) {
     margin-top: $line * 5;
     position: absolute;
@@ -233,9 +233,9 @@
   .hero-text{
     @include translateX(150%);
     @include transition(transform 1s false 1s);
-    padding: $line/2 $gtr * 2;
+    padding: $line/2 0;
     text-align: center;
-    width: 400px;
+    width: 340px;
 
     .subheader{
       line-height: 1;

@@ -576,7 +576,7 @@ body:before {
 /* line 219, ../sass/_front_page.scss */
 .hero-text-container {
   float: right;
-  padding: 12px; }
+  padding: 12px 0; }
   @media (min-width: 960px) {
     /* line 219, ../sass/_front_page.scss */
     .hero-text-container {
@@ -599,9 +599,9 @@ body:before {
     -moz-transition: -moz-transform 1s 1s;
     -o-transition: -o-transform 1s 1s;
     transition: transform 1s false 1s;
-    padding: 12px 20px;
+    padding: 12px 0;
     text-align: center;
-    width: 400px; }
+    width: 340px; }
     /* line 240, ../sass/_front_page.scss */
     .hero-text-container .hero-text .subheader, .hero-text-container .hero-text .sub-subheader {
       line-height: 1;
