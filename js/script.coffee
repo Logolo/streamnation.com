@@ -7,7 +7,7 @@ $(document).ready ()->
   $gifs = $('.reloading-gif')
   $header = $('.site-header')
   headerHeight = $header.height()
-  footerTop = $('.site-footer').offset().top;
+  footerTop = 0
   $video = $('.background-video')
 
   # trigger one-shot hero animations
@@ -30,7 +30,7 @@ $(document).ready ()->
       selector: $(this)
       top: $(this).offset().top
 
-
+    footerTop = $('.site-footer').offset().top
     setTimeout ()->
       $window.one('resize', calculateHeights)
     , 1000

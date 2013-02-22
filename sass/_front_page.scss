@@ -34,11 +34,15 @@
     top: $line/2 + 1px;
     right: 0;
     opacity: 0;
-    @include transition(all 1s ease-out);
+    @include transition(all 1s ease-out 3s);
     height: 120px;
     width: 120px;
     @include scale(.5, .5);
   }
+}
+
+#share .signup-stamp{
+  @include transition(all 1s ease-out 4s);
 }
 
 .current .signup-stamp{
@@ -491,7 +495,7 @@
   top: 16px;
   left: 116px;
   .share-car{
-    @include transition(transform 2s false 1s);
+    @include transition(transform 1.5s false 1s);
     @include translateX(-100%);
   }
 }
@@ -500,7 +504,7 @@
   top: 151px;
   left: 69px;
   .share-car{
-    @include transition(transform 2s);
+    @include transition(transform 1.5s);
   }
 }
 
