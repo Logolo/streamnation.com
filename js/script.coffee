@@ -15,7 +15,7 @@ $(document).ready ()->
 
   # wait to play video
   setTimeout ()->
-    $video[0].play()
+    $video[0]?.play()
   , parseInt($video.css('transition-delay'), 10) * 1000
 
 
@@ -41,7 +41,7 @@ $(document).ready ()->
       pos = $window.scrollTop()
 
       # condense top menu
-      if pos > $sections[1].top - headerHeight
+      if $sections[1] && (pos > $sections[1].top - headerHeight)
         $header.addClass('condensed')
       else if pos <= headerHeight
         $header.removeClass('condensed')
