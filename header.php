@@ -32,7 +32,7 @@
       <a href="index.php" class="<?php is_current("index.php") ?>">Home</a>
       <a href="features.php" class="<?php is_current("features.php") ?>">Features</a>
       <a href="rights.php" class="<?php is_current("rights.php") ?>">Rights</a>
-      <a href="pricing.php" class="<?php is_current("pricing.php") ?>">Pricing</a>
+      <a href="index.php#pricing" class="<?php is_current("pricing.php") ?>">Pricing</a>
     </nav>
     <a href="#" class="login">Log in</a>
   </div>

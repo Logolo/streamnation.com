@@ -281,6 +281,12 @@
   @extend %jean-background;
 }
 
+// Pricing
+
+.pricing-block {
+  @extend .grid-block;
+}
+
 // animations below
 
 @include keyframes(bounce) {

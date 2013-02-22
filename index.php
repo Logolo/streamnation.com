@@ -185,4 +185,37 @@
   <a class="back-to-top"></a>
 </section>
 
+<section class="home-section" id="pricing">
+  <header class="section-header">
+    <h1>Join Now for Free</h1>
+    <p>
+      Try Stream Nation for 15 free days! Have all of your videos in one place, on any device, all the time. After you try Stream Nation, we have options for you to find the plan that will fit your needs.
+    </p>
+  </header>
+  <a href="#" class="body-signup-button">Request an Invite!</a>
+  <div class="row">
+    <div class="pricing-block">
+      <h2>100 GB</h2>
+      <p>$4.99 / month</p>
+      <p>$49.99 / year</p>
+    </div>
+    <div class="pricing-block">
+      <h2>500 GB</h2>
+      <p>$9.99 / month</p>
+      <p>$99.99 / year</p>
+    </div>
+    <div class="pricing-block">
+      <h2>1 TB</h2>
+      <p>$14.99 / month</p>
+      <p>$149.99 / year</p>
+    </div>
+    <div class="pricing-block">
+      <h2>Unlimited</h2>
+      <p>$19.99 / month</p>
+      <p>$199.99 / year</p>
+    </div>
+  </div>
+  <a class="back-to-top"></a>
+</section>
+
 <?php require 'footer.php' ?>
