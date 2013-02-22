@@ -136,7 +136,7 @@ html {
 
 /* line 25, ../sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "ralewayextrabold", "Comic Sans MS", sans-serif;
+  font-family: "ralewayextrabold", sans-serif;
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase; }
@@ -286,7 +286,7 @@ body:before {
   position: absolute;
   top: -14px;
   right: 44px;
-  font-family: "ralewayextrabold", "Comic Sans MS", sans-serif;
+  font-family: "ralewayextrabold", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   background-color: #65bbe2;
@@ -321,7 +321,7 @@ body:before {
     background-color: #65bbe2;
     color: white;
     padding: 0 10px;
-    font-family: "ralewayextrabold", "Comic Sans MS", sans-serif;
+    font-family: "ralewayextrabold", sans-serif;
     text-transform: uppercase;
     margin-left: 10px; }
 
@@ -652,7 +652,7 @@ body:before {
   height: 43px;
   width: 215px;
   color: white;
-  font-family: "ralewayextrabold", "Comic Sans MS", sans-serif;
+  font-family: "ralewayextrabold", sans-serif;
   text-transform: uppercase;
   text-align: left;
   padding: 11px 9px; }
