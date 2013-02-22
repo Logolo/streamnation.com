@@ -125,6 +125,7 @@
   @include transition(transform 1s);
   @include backface-visibility( hidden );
   z-index: 100;
+  opacity: .6;
   &.sticky{
     position: absolute;
   }
