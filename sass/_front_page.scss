@@ -115,17 +115,11 @@
 %bottom-tab{
   background-repeat: no-repeat;
   position: fixed;
-  bottom: -60px;
+  bottom: -35px;
   left: 50%;
-  margin-left: -227px;
-  width: 454px;
-  height: 108px;
-  font-size: 19px;
-  padding: 15px 0;
-  font-style: italic;
-  font-weight: bold;
-  color: white;
-  text-align: center;
+  margin-left: -43px;
+  width: 86px;
+  height: 70px;
   cursor: pointer;
   @include transform(rotateX(180deg));
   @include transition(transform 1s);
@@ -138,12 +132,15 @@
 
 .next-tab{
   @extend %bottom-tab;
-  background-image: image-url('scroll_button_down.png')
+  background-image: image-url('nav_down_gray.png');
+  &.white{
+    background-image: image-url('nav_down_white.png');
+  }
 }
 
 .back-to-top{
   @extend %bottom-tab;
-  background-image: image-url('scroll_button_up.png');
+  background-image: image-url('nav_up_gray.png');
 }
 
 .current{
