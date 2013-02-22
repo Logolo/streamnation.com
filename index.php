@@ -182,7 +182,7 @@
       <p>Archive your favorite films into your own personal library.</p>
     </div>
   </div>
-  <a class="back-to-top"></a>
+  <a class="next-tab"></a>
 </section>
 
 <section class="home-section" id="pricing">
