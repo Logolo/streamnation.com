@@ -55,11 +55,6 @@ $(document).ready ()->
         else
           item.selector.removeClass 'current'
 
-        # stickify section tabs
-        item.selector.find('.next-tab, .back-to-top')
-          .toggleClass('sticky', pos + windowHeight > sectionBottom )
-
-
       # trigger one-shot GIF animations
       $gifs.each ()->
         src = $(this).data('src')
