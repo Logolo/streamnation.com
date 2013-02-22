@@ -76,9 +76,11 @@ $(document).ready ()->
 
     if $(this).hasClass('next-tab')
       index = $(this).closest('section').index()
+      target = $sections[index].top
     else
-      index = 0;
+      index = 0
+      target = 0
 
-    $('body').animate { scrollTop: $sections[index].top }, ()->
+    $('body').animate { scrollTop: target }, ()->
       # set current section immediately
       currentSectionIndex = index
