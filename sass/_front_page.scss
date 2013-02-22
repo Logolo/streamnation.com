@@ -166,22 +166,21 @@
   }
 }
 
-.background-video, .background-video img{
+.background-video{
   overflow: hidden;
   position: absolute;
   top: 0;
-  width: auto;
-  height: 100%;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
   opacity: 0;
   @include transition(opacity 2s false 1s);
-  @media (min-width: 1300px){
-    height: auto;
-    width: 100%;
-    // min-width: 1200px;
+  img{
+    height: 100%;
   }
 }
 
-.active .background-video, .background-video img{
+.active .background-video{
   opacity: 1;
 }
 
