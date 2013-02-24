@@ -2,11 +2,13 @@
 .home-section{
   @extend %page-section;
   overflow: hidden;
+  .section-header{
+    padding-right: 150px;
+  }
 }
 
 .section-header{
   @extend .container;
-  padding-right: 150px;
   h1{
     font-size: 1.7* $line;
     $line-height: $line * 2;
@@ -274,7 +276,7 @@
   font-family: $header-font;
   text-transform: uppercase;
   text-align: left;
-  padding: $line/2 - 1px $gtr - 1px;  
+  padding: $line/2 - 1px $gtr - 1px;
 }
 
 .hero-signup-button{
@@ -300,7 +302,7 @@
 // Pricing
 
 #pricing {
-  padding-bottom: $line*2.5;  
+  padding-bottom: $line*2.5;
 }
 
 #pricing .section-header {

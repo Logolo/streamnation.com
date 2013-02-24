@@ -1,0 +1,86 @@
+%feature-width{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $desktop - 200px;
+}
+
+%divider{
+  content: "";
+  display: block;
+  border-top: 1px solid $text-color;
+  border-bottom: 1px dotted $text-color;
+  padding: 2px 0;
+}
+
+.features-header{
+  @extend %page-section;
+}
+
+.features-section{
+  @extend %page-section;
+  padding-top: $line;
+  .section-header{
+    h1, h2{
+      @extend %feature-width;
+      border: none;
+      padding: 0 $gtr;
+      &:after{
+        display: none;
+      }
+    }
+
+  }
+  .section-header:after{
+    @extend %divider;
+  }
+  .row{
+    @extend %feature-width;
+  }
+  p {
+    font-family: $light-font;
+    font-weight: lighter;
+    margin-bottom: $line;
+  }
+
+}
+
+.features-section-alt{
+  @extend .features-section;
+  @extend %jean-background;
+  .features-block{
+    float: right;
+  }
+}
+
+
+.features-block{
+  @extend .grid6;
+}
+
+.request-invite{
+  background-color: $blue;
+  color: white;
+  margin: 0 auto;
+  max-width: $desktop + 200px;
+  text-align: center;
+}
+
+.sign-up-container{
+  @extend .container;
+  &:before{
+    @extend %divider;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -2px;
+  }
+}
+
+.sign-up{
+  display: block;
+  height: 120px;
+  width: 160px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
