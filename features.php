@@ -16,10 +16,10 @@
     </div>
     <div class="features-block">
       <p class="summary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Uploading is easy, fast and compatible with any format from your computer and mobile devices.
       </p>
       <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+        Don't limit yourself to your current videos. You can also upload almost any videos from the web - from Youtube, Dailymotion, Vimeo to torrents and magnet links - directly to your cloud storage. All privately.
       </p>
     </div>
   </div>
@@ -35,10 +35,13 @@
     </div>
     <div class="features-block">
       <p class="summary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Once uploaded, files are automatically converted in the cloud into a format that will work on any device.
       </p>
       <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+        You can watch your videos anywhere on your browser, iPad and iPhone. You can even stream on your TV with Airplay from your iOS device.
+      </p>
+      <p>
+        On the go? You can download your videos on any of your devices to watch them offline.
       </p>
     </div>
   </div>
@@ -54,10 +57,10 @@
     </div>
     <div class="features-block">
       <p class="summary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Find your friends on Gmail and Facebook, or invite them by email.
       </p>
       <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+        Share your collections with all your friends on Stream Nation or selectively with only your chosen ones. All privately.
       </p>
     </div>
   </div>
@@ -73,10 +76,10 @@
     </div>
     <div class="features-block">
       <p class="summary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Like in real life, you can borrow any videos from your friend and in exchange lend them yours.
       </p>
       <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+        The more friends you have on Stream Nation, the more videos you can have access to.
       </p>
     </div>
   </div>
@@ -92,10 +95,10 @@
     </div>
     <div class="features-block">
       <p class="summary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Once all your movies and videos are uploaded, you can safely free your local storage. All your content is backed up.
       </p>
       <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+        You will never buy another hard drive again, or have any storage issue on your mobile devices or computer.
       </p>
     </div>
   </div>
@@ -111,10 +114,13 @@
     </div>
     <div class="features-block">
       <p class="summary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Your account is 100% private. We don't log or track your activity.
       </p>
       <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+        All transfers are done under SSL encryption and VPN.
+      </p>
+      <p>
+        So except your friends who you share your videos with, no one is able to know anything about your library.
       </p>
     </div>
   </div>
@@ -130,10 +136,10 @@
     </div>
     <div class="features-block">
       <p class="summary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        We send you our hard drive via Fedex. You fill it up with all your video library and drop it back at any Fedex in the envelope we provide you.
       </p>
       <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+        We process and add all your videos to your account so it is ready to be watched on any of your devices.
       </p>
     </div>
   </div>
