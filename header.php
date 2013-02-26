@@ -31,8 +31,9 @@
     <nav class="site-nav" role="navigation">
       <a href="index.php" class="<?php is_current("index.php") ?>">Home</a>
       <a href="features.php" class="<?php is_current("features.php") ?>">Features</a>
-      <a href="rights.php" class="<?php is_current("rights.php") ?>">Rights</a>
+      <a href="rights.php" class="<?php is_current("rights.php") ?>">Our Promises</a>
       <a href="index.php#pricing" class="<?php is_current("pricing.php") ?>">Pricing</a>
+      <a href="passport.php" class="<?php is_current("passport.php") ?>">Passport</a>
     </nav>
     <a href="#" class="login">Log in</a>
   </div>

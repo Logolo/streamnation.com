@@ -36,15 +36,11 @@
     top: $line/2 + 1px;
     right: 0;
     opacity: 0;
-    @include transition(all 1s ease-out 3s);
+    @include transition(all 1s ease-out 2s);
     height: 120px;
     width: 120px;
     @include scale(.5, .5);
   }
-}
-
-#share .signup-stamp{
-  @include transition(all 1s ease-out 4s);
 }
 
 .current .signup-stamp{
@@ -433,7 +429,7 @@
 
 // secure
 #secure .private img{
-  @include transition(transform 1s);
+  @include transition(transform 2s);
 }
 #private-curtain1{
   @include transform-origin($line);
@@ -482,7 +478,7 @@
 }
 
 #secure-lock{
-  @include transition(transform .5s false .5s);
+  @include transition(transform 1s false 1s);
   @include translateY(-25px);
 }
 
@@ -512,11 +508,11 @@
 }
 
 .current #efficient-hand {
-  @include animation(clockspin 3s linear);
+  @include animation(clockspin 3s linear 1s);
 }
 
 .current #efficient-clicker{
-  @include animation(clicker 3s);
+  @include animation(clicker 3s false 1s);
 }
 
 // access

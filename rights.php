@@ -2,8 +2,8 @@
 
 <section class="rights-header">
   <div class="container">
-    <h2 class="subheader">Your rights and responsibilities</h2>
-    <h1>With Stream Nation</h1>
+    <h2 class="subheader">The 9 Rules That Govern</h2>
+    <h1>Stream Nation</h1>
   </div>
 </section>
 <section class="rights-content">

@@ -44,7 +44,7 @@ body {
   }
   a{
     display: inline-block;
-    padding: 0 2em ($line/2 - 2px);
+    padding: 0 $line/2 ($line/2 - 2px);
     line-height: 1;
     &.current{
       color: $blue;
@@ -56,7 +56,7 @@ body {
 .login{
   position: absolute;
   top: -$line /2 - 2px;
-  right: 44px;
+  right: 34px;
   font-family: $header-font;
   font-size: $small-text;
   text-transform: uppercase;
