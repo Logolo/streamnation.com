@@ -49,7 +49,7 @@
     </div>
 
   </div>
-  <a class="next-tab next-white"></a>
+  <a class="next-tab white"></a>
 </section>
 
 <section class="home-section" id="secure">
