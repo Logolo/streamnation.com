@@ -1467,27 +1467,40 @@ body:before {
   border-bottom: 1px dotted #4b4d4d;
   padding: 2px 0; }
 
-/* line 19, ../sass/_features.scss */
+/* line 15, ../sass/_features.scss */
+.features-header {
+  background-color: #65bbe2;
+  color: white;
+  text-align: center; }
+
+/* line 22, ../sass/_features.scss */
 .features-section, .features-section-alt {
   padding-top: 24px; }
-  /* line 23, ../sass/_features.scss */
+  /* line 26, ../sass/_features.scss */
   .features-section .section-header h1, .features-section-alt .section-header h1, .features-section .section-header h2, .features-section-alt .section-header h2 {
     border: none;
     padding: 0 10px; }
-    /* line 27, ../sass/_features.scss */
+    /* line 30, ../sass/_features.scss */
     .features-section .section-header h1:after, .features-section-alt .section-header h1:after, .features-section .section-header h2:after, .features-section-alt .section-header h2:after {
       display: none; }
-  /* line 39, ../sass/_features.scss */
+  /* line 42, ../sass/_features.scss */
   .features-section p, .features-section-alt p {
     font-family: sans-serif;
     font-weight: lighter;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    line-height: 1.3;
+    padding-right: 30px; }
+  /* line 49, ../sass/_features.scss */
+  .features-section .summary, .features-section-alt .summary {
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Georgia", serif; }
 
-/* line 50, ../sass/_features.scss */
+/* line 59, ../sass/_features.scss */
 .features-section-alt .features-block {
   float: right; }
 
-/* line 60, ../sass/_features.scss */
+/* line 69, ../sass/_features.scss */
 .request-invite {
   background-color: #65bbe2;
   color: white;
@@ -1495,14 +1508,14 @@ body:before {
   max-width: 1160px;
   text-align: center; }
 
-/* line 70, ../sass/_features.scss */
+/* line 79, ../sass/_features.scss */
 .sign-up-container:before {
   position: absolute;
   width: 100%;
   top: 50%;
   margin-top: -2px; }
 
-/* line 79, ../sass/_features.scss */
+/* line 88, ../sass/_features.scss */
 .sign-up {
   display: block;
   height: 120px;
