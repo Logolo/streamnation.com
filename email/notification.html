@@ -18,12 +18,6 @@
   #backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
 
   /* Template Styles */
-  body,
-  #backgroundTable
-  {
-    background: url(img/background_denim.gif) left repeat;
-  }
-
   .notification-title,
   .heading,
   .button
@@ -51,28 +45,26 @@
     border: 0 !important;
   }
 
-  .avatar
+  .text p
   {
-    width: 75px;
-    height: 75px;
+    line-height: 1.5;
+    padding: 1em 0;
   }
 
-  .notification-wrapper
+  .text p a
+  {
+    font-weight: bold;
+  }
+
+  .notification-wrapper,
+  .text-wrapper
   {
     border-bottom: 3px solid #c1c1c1;
   }
 
-  .notification-background
-  {
-    background: url(img/notification-background.gif) left top repeat-x;
-  }
-
   .notification
   {
-    background: #f5f7f7;
-    border-top: 3px solid #c1c1c1;
-    border-right: 3px solid #c1c1c1;
-    border-left: 3px solid #c1c1c1;
+    border: 3px solid #c1c1c1;
   }
 
   .notification-title a
@@ -137,7 +129,6 @@
 
   a.unsubscribe
   {
-    background: #888;
     color: #fff !important;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -150,32 +141,36 @@
   </style>
 </head>
 
-<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" background="img/background_denim.gif">
   <center>
-    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable" background="img/background_denim.gif">
 
-      <tr><td height="4" bgcolor="#65bbe2"></td></tr> <!-- top blue border -->
+      <!-- top blue border -->
+      <tr><td height="4" bgcolor="#65bbe2"></td></tr>
 
       <!-- logo bar -->
       <tr>
-        <td height="100" style="background: url(img/logo-background.gif) top repeat-x" align="center" valign="top">
+        <td height="100" background="img/logo-background.gif" align="center" valign="top">
           <table width="600" height="100" cellpadding="0" cellspacing="0" border="0"><tr><td align="center"><a href="http://streamnation.com"><img src="img/logo.gif" width="351" height="100" border="0"></a></td></tr></table>
         </td>
       </tr>
 
-      <!-- notification -->
+      <!-- notification: 1 -->
       <tr>
         <td bgcolor="ffffff" align="center" class="notification-wrapper">
 
-          <table><tr><td height="25"></td></tr></table> <!-- space -->
+          <!-- space -->
+          <table><tr><td height="25"></td></tr></table>
 
-          <table width="600" cellpadding="20" cellspacing="0" class="notification"> <!-- notification avatar and text -->
+          <!-- notification avatar and text -->
+          <table width="600" cellpadding="20" cellspacing="0" class="notification" bgcolor="#f5f7f7">
             <tr>
               <td>
+
                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
-                    <td rowspan="3" width="90" valign="top">
-                      <img src="http://placehold.it/75x75" class="avatar" width="75" height="75">
+                    <td rowspan="4" width="90" valign="top">
+                      <img src="http://placehold.it/75x75&text=avatar" width="75" height="75">
                     </td>
                     <td height="38" valign="top">
                       <p class="notification-title">
@@ -183,7 +178,8 @@
                       </p>
                     </td>
                   </tr>
-                  <tr><td class="notification-background" height="20"></td></tr>
+                  <tr><td background="img/notification-background.gif" height="9"></td></tr> <!-- double border graphic -->
+                  <tr><td height="10="></td></tr> <!-- space -->
                   <tr>
                     <td>
                       <p class="notification-text">
@@ -192,15 +188,119 @@
                     </td>
                   </tr>
                 </table>
+
+                <!-- button -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+
+                  <!-- space -->
+                  <tr><td height="25"></td></tr>
+
+                  <!-- button image -->
+                  <tr>
+                    <td align="center">
+                      <a href="#"><img src="img/button-WatchItNow.gif" alt="Watch It Now" title="Watch It Now" width="277" height="60"></a>
+                    </td>
+                  </tr>
+
+                  <!-- space -->
+                  <tr><td height="25"></td></tr>
+
+                </table>
+
               </td>
             </tr>
           </table>
 
-          <table width="600" height="47" cellpadding="0" cellspacing="0" border="0"> <!-- 'stream it now' button -->
-            <tr><td class="button"><a href="#"><img src="img/stream_it.gif" alt="Stream Movie" title="Stream Movie" width="600" height="47"></a></td></tr>
+          <!-- space -->
+          <table><tr><td height="25"></td></tr></table>
+
+        </td>
+      </tr>
+
+      <!-- notification: 2 -->
+      <tr>
+        <td bgcolor="ffffff" align="center" class="notification-wrapper">
+
+          <!-- space -->
+          <table><tr><td height="25"></td></tr></table>
+
+          <!-- notification avatar and text -->
+          <table width="600" cellpadding="20" cellspacing="0" class="notification" bgcolor="#f5f7f7">
+            <tr>
+              <td>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td height="38" valign="top">
+                      <p class="notification-title">
+                        <a href="#">You&rsquo;ve got a new a collection <img src="img/notification-arrow.gif" width="6" height="10"></a>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr><td background="img/notification-background.gif" height="9"></td></tr> <!-- double border graphic -->
+                  <tr><td height="10="></td></tr> <!-- space -->
+                  <tr>
+                    <td>
+                      <p class="notification-text">
+                        <a href="#">Matthew shared a collection of videos called <strong>Action Classics</strong> for you to watch!</a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- space -->
+                <table><tr><td height="25"></td></tr></table>
+
+                <!-- table of thumbnails -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td width="25%" align="center" valign="top">
+                      <img src="http://placehold.it/75x100&text=thumb" width="75" height="100">
+                      <br>
+                      <em>Die Hard</em>
+                    </td>
+                    <td width="25%" align="center" valign="top">
+                      <img src="http://placehold.it/75x100&text=thumb" width="75" height="100">
+                      <br>
+                      <em>The Fast &amp; The Furious</em>
+                    </td>
+                    <td width="25%" align="center" valign="top">
+                      <img src="http://placehold.it/75x100&text=thumb" width="75" height="100">
+                      <br>
+                      <em>Drive</em>
+                    </td>
+                    <td width="25%" align="center" valign="top">
+                      <img src="http://placehold.it/75x100&text=thumb" width="75" height="100">
+                      <br>
+                      <em>Crank</em>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- button -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+
+                  <!-- space -->
+                  <tr><td height="25"></td></tr>
+
+                  <!-- button image -->
+                  <tr>
+                    <td align="center">
+                      <a href="#"><img src="img/button-WatchNow.gif" alt="Watch Now" title="Watch Now" width="250" height="60"></a>
+                    </td>
+                  </tr>
+
+                  <!-- space -->
+                  <tr><td height="25"></td></tr>
+
+                </table>
+
+              </td>
+            </tr>
           </table>
 
-          <table><tr><td height="25"></td></tr></table> <!-- space -->
+          <!-- space -->
+          <table><tr><td height="25"></td></tr></table>
 
         </td>
       </tr>
@@ -210,14 +310,16 @@
         <td align="center" valign="top" class="information">
           <table width="600" cellpadding="0" cellspacing="0" border="0">
 
-            <tr><td height="35"></td></tr> <!-- space -->
+            <!-- space -->
+            <tr><td height="35"></td></tr>
 
+            <!-- share -->
             <tr>
               <td>
                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
                     <td width="25%" align="left">
-                      <a href="#"><img src="img/share_grayscale.png" width="120" height="120"></a>
+                      <a href="#"><img src="img/feature-grayscale-share.png" width="120" height="120"></a>
                     </td>
                     <td width="75%">
                       <p class="heading"><a href="#">Share &amp; Be Shared With</a></p>
@@ -227,13 +329,17 @@
                 </table>
               </td>
             </tr>
-            <tr><td height="45"></td></tr> <!-- space -->
+
+            <!-- space -->
+            <tr><td height="45"></td></tr>
+
+            <!-- control -->
             <tr>
               <td>
                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
                     <td width="25%" align="left">
-                      <a href="#"><img src="img/control_grayscale.png" width="120" height="120"></a>
+                      <a href="#"><img src="img/feature-grayscale-control.png" width="120" height="120"></a>
                     </td>
                     <td width="75%">
                       <p class="heading"><a href="#">You Are Always in Control</a></p>
@@ -243,13 +349,17 @@
                 </table>
               </td>
             </tr>
-            <tr><td height="45"></td></tr> <!-- space -->
+
+            <!-- space -->
+            <tr><td height="45"></td></tr>
+
+            <!-- collect -->
             <tr>
               <td>
                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
                     <td width="25%" align="left">
-                      <a href="#"><img src="img/collect_grayscale.png" width="120" height="120"></a>
+                      <a href="#"><img src="img/feature-grayscale-collect.png" width="120" height="120"></a>
                     </td>
                     <td width="75%">
                       <p class="heading"><a href="#">Start Your Collection Today</a></p>
@@ -260,7 +370,8 @@
               </td>
             </tr>
 
-            <tr><td height="35"></td></tr> <!-- space -->
+            <!-- space -->
+            <tr><td height="35"></td></tr>
 
           </table>
         </td>        
@@ -270,19 +381,29 @@
       <tr>
         <td align="center" valign="top">
           <table width="600" cellpadding="0" cellspacing="0" border="0">
-            <tr><td height="25"></td></tr> <!-- space -->
+
+            <!-- space -->
+            <tr><td height="25"></td></tr>
+            
+            <!-- tagline -->
             <tr>
               <td align="center">
                 <p class="tagline">Your Movies, Videos, and TV Shows Anywhere &amp; Everywhere.</p>
               </td>
             </tr>
-            <tr><td height="25"></td></tr> <!-- space -->
+
+            <!-- space -->
+            <tr><td height="25"></td></tr>
+            
+            <!-- three devices graphic -->
             <tr>
               <td align="center">
                 <img src="img/3devices.png" width="290" height="80">
               </td>
             </tr>
-            <tr><td height="25"></td></tr> <!-- space -->
+            
+            <!-- space -->
+            <tr><td height="25"></td></tr>
           </table>
         </td>        
       </tr>
@@ -291,24 +412,33 @@
       <tr>
         <td align="center" valign="top" width="100%" bgcolor="#434744" class="footer">
           <table width="600" cellpadding="0" cellspacing="0" border="0">
-            <tr><td colspan="2" height="30"></td></tr> <!-- space -->
 
+            <!-- space -->
+            <tr><td colspan="2" height="30"></td></tr>
+
+            <!-- unsubscribe | badge -->
             <tr>
               <td width="50%" align="left"><a href="#" class="unsubscribe">Unsubscribe</a></td>
               <td width="50%" align="right"><img src="img/badge.png" width="50" height="50"></td>
             </tr>
 
+            <!-- space -->
+            <tr><td colspan="2" height="15"></td></tr>
 
-            <tr><td colspan="2" height="15"></td></tr> <!-- space -->
-            <tr><td colspan="2" height="2" bgcolor="#ffffff"></td></tr> <!-- line -->
-            <tr><td colspan="2" height="15"></td></tr> <!-- space -->
+            <!-- line -->
+            <tr><td colspan="2" height="2" bgcolor="#ffffff"></td></tr>
 
+            <!-- space -->
+            <tr><td colspan="2" height="15"></td></tr>
+
+            <!-- copyright | contact information -->
             <tr>
               <td width="50%" align="left">&copy; 2013 Stream Nation. All Rights Reserved.</td>
               <td width="50%" align="right"><a href="mailto:info@streamnation.com">info@streamnation.com</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;+1 (414) 555-5552</td>
             </tr>
 
-            <tr><td colspan="2" height="30"></td></tr> <!-- space -->
+            <!-- space -->
+            <tr><td colspan="2" height="30"></td></tr>
           </table>
         </td>
       </tr>
