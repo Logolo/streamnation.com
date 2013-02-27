@@ -1,11 +1,17 @@
 .rights-header {
   @extend .page-header;
-  background-image: image-url('rights/banner.png');
-  background-repeat: no-repeat;
-  background-position: center 50px;
-  padding: 120px 0 85px 75px;
-  padding-bottom: 85px;
+  @include background(linear-gradient(#fff, #aaa));
+  padding-top: 60px;
+  text-align: center;
   color: white;
+
+  .container {
+    background-image: image-url('rights/banner.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 90px 0 70px;
+  }
+
   .subheader {
     font-size: 43px;
   }
