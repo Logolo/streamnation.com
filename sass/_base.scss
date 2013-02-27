@@ -27,6 +27,10 @@ h1,h2,h3,h4,h5,h6{
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
+  .num{
+    font-size: 1.2em;
+    line-height: .75;
+  }
 }
 
 h1{
@@ -135,4 +139,12 @@ em{
 
 .page-content{
   @extend %jean-background;
+}
+
+%divider{
+  content: "";
+  display: block;
+  border-top: 1px solid $text-color;
+  border-bottom: 1px dotted $text-color;
+  padding: 2px 0;
 }

@@ -166,24 +166,60 @@
   <a href="#" class="body-signup-button">Request an Invite!</a>
   <div class="row">
     <div class="pricing-block">
-      <h2>100 GB</h2>
-      <p>$4.99 / month</p>
-      <p>$49.99 / year</p>
+      <h1><span class="num">100</span> GB</h1>
+      <div class="space">
+        100 GB of storage
+        <span class="separator">is</span>
+        100 movies
+        <span class="separator">or</span>
+        400 episodes
+      </div>
+      <div class="price">
+        <p>$4.99 <br>⁄ month</p>
+        <p>$49.99 <br>⁄ year</p>
+      </div>
     </div>
     <div class="pricing-block">
-      <h2>500 GB</h2>
-      <p>$9.99 / month</p>
-      <p>$99.99 / year</p>
+      <h1><span class="num">500</span> GB</h1>
+      <div class="space">
+        500 GB of storage
+        <span class="separator">is</span>
+        500 movies
+        <span class="separator">or</span>
+        800 episodes
+      </div>
+      <div class="price">
+        <p>$9.99 <br>⁄ month</p>
+        <p>$99.99 <br>⁄ year</p>
+      </div>
     </div>
     <div class="pricing-block">
-      <h2>1 TB</h2>
-      <p>$14.99 / month</p>
-      <p>$149.99 / year</p>
+      <h1><span class="num">1</span> TB</h1>
+      <div class="space">
+        1 TB of storage
+        <span class="separator">is</span>
+        1000 movies
+        <span class="separator">or</span>
+        1600 episodes
+      </div>
+      <div class="price">
+        <p>$14.99 <br>⁄ month</p>
+        <p>$149.99 <br>⁄ year</p>
+      </div>
     </div>
-    <div class="pricing-block">
-      <h2>Unlimited</h2>
-      <p>$19.99 / month</p>
-      <p>$199.99 / year</p>
+    <div class="pricing-block-best">
+      <h1>Unlimited</h1>
+      <div class="space">
+        Unlimited storage
+        <span class="separator">is</span>
+        Unlimited movies
+        <span class="separator">and</span>
+        Unlimited episodes
+      </div>
+      <div class="price">
+        <p>$19.99 <br>⁄ month</p>
+        <p>$199.99 <br>⁄ year</p>
+      </div>
     </div>
   </div>
   <a class="back-to-top"></a>
