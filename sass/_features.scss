@@ -6,9 +6,19 @@
 
 .features-header{
   @extend %page-section;
-  background-color: $blue;
-  color: white;
   text-align: center;
+  padding-top: $line;
+  h1{
+    @include replace-text("Features_Header_trimmed.png");
+    height: $line * 5;
+    background-size: contain;
+    @media (min-width: $tablet){
+      height: $line * 8;
+    }
+    @media (min-width: $desktop){
+      height: $line * 10;
+    }
+  }
 }
 
 .features-section{
@@ -49,13 +59,19 @@
   @extend .features-section;
   @extend %jean-background;
   .features-block{
-    float: right;
+    float: left;
   }
 }
 
 
 .features-block{
+  float: right;
   @extend .grid6;
+  img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .request-invite{

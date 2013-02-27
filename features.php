@@ -2,7 +2,7 @@
 
 <section class="features-header">
   <div class="container">
-    <h1>Stream Nation Tour</h1>
+    <h1>The Stream Nation Tour</h1>
   </div>
 </section>
 <section class="features-section-alt">
@@ -12,7 +12,7 @@
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="">
+      <img src="img/Feature_page_images-02.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -31,7 +31,7 @@
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="">
+      <img src="img/Feature_page_images-03.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -53,7 +53,7 @@
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="">
+      <img src="img/Feature_page_images-04.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -72,7 +72,7 @@
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="">
+      <img src="img/Feature_page_images-05.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -91,7 +91,7 @@
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="">
+      <img src="img/Feature_page_images-06.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -110,7 +110,7 @@
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="">
+      <img src="img/Feature_page_images-07.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -132,7 +132,7 @@
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="">
+      <img src="img/Feature_page_images-08.png">
     </div>
     <div class="features-block">
       <p class="summary">
