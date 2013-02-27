@@ -84,13 +84,6 @@
 
 .sign-up-container{
   @extend .container;
-  &:before{
-    @extend %divider;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    margin-top: -2px;
-  }
 }
 
 .sign-up{

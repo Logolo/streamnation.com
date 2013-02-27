@@ -291,13 +291,11 @@
 
 .body-signup-button {
   @extend .signup-button;
-
-  background-image: image-url('png/pricing/request_an_invite.png');
+  @include replace-text('png/pricing/request_an_invite.png');
   display: block;
   height: 59px;
   width: 316px;
   margin: $line auto $line*2;
-  text-indent: -1000000px;
 }
 
 // Pricing

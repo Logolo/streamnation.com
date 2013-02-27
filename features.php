@@ -146,8 +146,8 @@
 </section>
 <section class="features-section">
   <div class="sign-up-container">
-    <a href="#" class="sign-up">
-      <img src="img/png/stamps/Request_blue.png" alt="Sign up here">
+    <a href="#" class="body-signup-button">
+      Request an invite
     </a>
   </div>
 </section>
