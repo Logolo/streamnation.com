@@ -28,7 +28,7 @@ body {
 }
 
 .header-logo{
-  margin-top: -$line;
+  margin-top: -$line + 5px;
   float: left;
   img{ height: 90px; }
 }

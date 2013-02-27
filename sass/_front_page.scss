@@ -153,7 +153,7 @@
 #hero{
   margin: 0;
   padding: 0;
-  background-color: $text-color;
+  @include background(linear-gradient(#fff, #ccc));
   background-size: cover;
 
   .row{
@@ -164,59 +164,51 @@
   }
 }
 
-.background-video{
-  overflow: hidden;
+.hero-image{
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0;
-  @include transition(opacity 2s false 1s);
+  z-index: 1;
+  width: 100%;
+  top: $header-height;
+  @media (min-width: $desktop){
+    left: 50%;
+    margin-left: - $desktop/2;
+  }
+  @extend .container;
   img{
-    height: 100%;
+    position: absolute;
   }
 }
 
-.active .background-video{
-  opacity: 1;
-}
-
-
-.hero-image{
+.hero-spacer{
   @extend .grid6;
   float: right;
-  z-index: 1;
   height: 480px;
-
-  img, .image-container{
-    position: absolute;
-    top: 0;
-    height: 480px;
-    width: 480px;
-  }
-
-  .image-container{
-    left: 0;
-    left: 50%;
-    margin-left: -240px;
-  }
-
 }
 
-.obi{
-  background-color: white;
-  position: absolute;
-  height: $line * 11.5;
-  width: 100%;
-  top: 50%;
-  margin-top: -$line * 4;
-  opacity: 0;
-  @include transition(opacity 2s);
+.hero-tv{
+  top: 0;
+  right: 0;
 }
 
-.active .obi{
-  opacity: .8;
+.hero-ipad{
+  top: $line * 4;
+  right:405px;
+}
+
+.hero-iphone{
+  top: $line * 9;
+  right: 520px;
+}
+
+.hero-macbook{
+  top: $line * 6;
+  right: 130px;
+}
+
+.active{
+  .hero-image img{
+    @include translate(0,0);
+  }
 }
 
 .hero-text-container{
@@ -224,18 +216,18 @@
   float: right;
   padding: 15px 0;
   @media (min-width: $desktop) {
-    margin-top: 144px;
     position: absolute;
     left: 0;
     top: 0;
     width: 530px;
+    padding-bottom: $line * 10;
     padding-right: 50px;
     overflow: hidden;
   }
 
   .hero-text{
-    @include translateX(150%);
-    @include transition(transform 1s false 1s);
+    // @include translateX(150%);
+    // @include transition(transform 1s false 1s);
     text-align: center;
     width: 340px;
 
@@ -260,7 +252,7 @@
 }
 
 .active .hero-text{
-  @include translateX(0%);
+  // @include translateX(0%);
 }
 
 #secure, #share {
@@ -282,6 +274,8 @@
   display: inline-block;
   height: 43px;
   width: 215px;
+  box-shadow: 0 $line * 3 70px -10px #bbb,
+    0 $line * 6.5 50px -17px $blue;
 }
 
 .body-signup-button {
@@ -340,18 +334,6 @@
 
 // animations below
 
-@include keyframes(bounce) {
-  0%, 25% {
-    @include translateY(20px);
-  }
-  50% {
-    @include translateY(-20px);
-  }
-  100% {
-    @include translateY(0px);
-  }
-}
-
 @mixin shadowizer($item-distance, $item-width){
   $width-coefficient: 50;
   $opacity-coefficient: 50;
@@ -361,71 +343,6 @@
   opacity: .5 - ($item-distance * $opacity-coefficient)/10000px;
 }
 
-@include keyframes(slow-bounce) {
-  0%, 50%{
-    @include translateY(20px);
-  }
-  75% {
-    @include translateY(-10px);
-  }
-  100% {
-    @include translateY(0px);
-  }
-}
-// @include keyframes(shadows) {
-//   0%, 50%{
-//     @include shadowizer(0px, 11px);
-//   }
-//   75% {
-//     @include shadowizer(40px, 11px);
-//   }
-//   100% {
-//     @include shadowizer(20px, 11px);
-//   }
-// }
-
-#hero-cloud{
-  @include animation(bounce 3s);
-}
-
-.hero-computer{
-  @include animation(slow-bounce 2s);
-  margin-top: -30px;
-  .fade-in{
-    @include transition(opacity 1s false 1s);
-  }
-}
-
-.hero-iphone{
-  @include animation(slow-bounce 3s);
-  .fade-in{
-    @include transition(opacity 1s false 2s)
-  }
-}
-
-.hero-ipad{
-  @include animation(slow-bounce 4s);
-  .fade-in{
-    @include transition(opacity 1s false 3s);
-  }
-}
-
-.fade-in{
-  opacity: 0;
-}
-
-.current .fade-in{
-  opacity: 1;
-}
-
-// .shadow{
-//   @include animation(shadows 3s);
-//   @include shadowizer(20px, 11px);
-//   position: absolute;
-//   top:195px;
-//   left: 63px;
-//   box-shadow: 0 0 10px 4px #666;
-// }
 
 // secure
 #secure .private img{
@@ -548,7 +465,7 @@
   top: 16px;
   left: 116px;
   .share-car{
-    @include transition(transform 1.5s false 1s);
+    @include transition(transform 1.5s false 3s);
     @include translateX(-100%);
   }
 }
@@ -557,7 +474,7 @@
   top: 151px;
   left: 69px;
   .share-car{
-    @include transition(transform 1.5s);
+    @include transition(transform 1.5s false 2s);
   }
 }
 
@@ -589,10 +506,10 @@
   @include translateY(-300px);
 }
 
-.cd-1{@include transition-delay(2s);}
-.cd-2{@include transition-delay(2.3s);}
-.cd-3{@include transition-delay(2.6s);}
-.cd-4{@include transition-delay(3s);}
+.cd-1{@include transition-delay(0s);}
+.cd-2{@include transition-delay(.3s);}
+.cd-3{@include transition-delay(.6s);}
+.cd-4{@include transition-delay(1s);}
 
 
 .home-block .image-container{

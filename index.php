@@ -1,43 +1,14 @@
 <?php require 'header.php' ?>
 
-<!--
-<nav class="page-nav">
-  <a id="prev-section" href="#" title="previous section"></a>
-  <a id="next-section" href="#" title="next section"></a>
-  <a id="back-to-top" href="#home-section" title="back to top"></a>
-</nav>
--->
-
 <section class="home-section" id="hero">
-  <video class="background-video" loop>
-    <source src="video/homepage_loop_320x180.mp4" type="video/mp4" />
-    <source src="video/homepage_loop_320x180.ogv" type="video/ogg" />
-    <img src="img/gump_framegrab.jpg">
-  </video>
-  <div class="obi"></div>
+  <div class="hero-image">
+    <img src="img/home_device_tv.png" class="hero-tv">
+    <img src="img/home_device_ipad.png" class="hero-ipad">
+    <img src="img/home_device_iphone.png" class='hero-iphone'>
+    <img src="img/home_device_macbook.png" class="hero-macbook">
+  </div>
   <div class="row">
-    <div class="hero-image">
-      <div class="image-container">
-        <img id="hero-cloud" src="img/png/hero/Cloud.png">
-        <img src="img/png/hero/shield_animation.gif">
-        <img src="img/png/hero/Pillars.png">
-      </div>
-      <div class="image-container hero-computer">
-        <img src="img/png/hero/computer_Screen.png">
-        <img src="img/png/hero/computer_Moon.png" class="fade-in">
-        <img src="img/png/hero/Computer.png">
-      </div>
-      <div class="image-container hero-iphone">
-        <img src="img/png/hero/iPhone_Screen.png">
-        <img src="img/png/hero/iPhone_Moon.png" class="fade-in">
-        <img src="img/png/hero/iPhone.png">
-      </div>
-      <div class="image-container hero-ipad">
-        <img src="img/png/hero/iPad_Screen.png">
-        <img src="img/png/hero/iPad_Moon.png" class="fade-in">
-        <img src="img/png/hero/iPad.png">
-      </div>
-    </div>
+    <div class="hero-spacer"></div>
     <div class="hero-text-container">
       <div class="hero-text">
         <h2 class="subheader">Your Movies, Videos &amp; TV Shows</h2>
@@ -49,7 +20,7 @@
     </div>
 
   </div>
-  <a class="next-tab white"></a>
+  <a class="next-tab"></a>
 </section>
 
 <section class="home-section" id="secure">
@@ -57,7 +28,7 @@
     <!-- stealth nbsps -->
     <h1>Your videos in one safe place</h1>
     <p>
-      Privately store all of your files on our secure network. This keeps them safe from the dangers of computer crashes or hackers.
+      Upload all your movies and videos from your devices and keep them secure. Add videos from the web directly to your private account, including http and magnet links.
     </p>
     <a href="#" class="signup-stamp">
       <img src="img/png/stamps/Request_blue.png" alt="Request an Invite">
@@ -76,7 +47,7 @@
         <img id="private-hook5" src="img/png/private/hook.png">
         <img id="private-hook6" src="img/png/private/hook.png">
       </div>
-      <p>You choose who sees your videos and we do not log or track your account in any way.</p>
+      <p>No logging or tracking of your account.</p>
     </div>
     <div class="home-block">
       <div class="image-container">
@@ -84,7 +55,7 @@
         <img src="img/png/secure/Loop.png" id="secure-lock">
         <img src="img/png/secure/lock-cut.png" alt="Secure">
       </div>
-      <p>Your files are stored within a high-security virtual private network (VPN).</p>
+      <p>All communications are encrypted offering a secured and safe experience.</p>
     </div>
     <div class="home-block">
       <div class="image-container">
@@ -92,7 +63,7 @@
         <img src="img/png/efficient/Clock.png"  alt="Efficient">
         <img src="img/png/efficient/Hand.png" id="efficient-hand">
       </div>
-      <p>Our streamlined transfer process makes uploading files quick and effortless.</p>
+      <p>Effortless upload from your devices, a magnet link or any video url.</p>
     </div>
   </div>
   <a class="next-tab"></a>
@@ -102,7 +73,7 @@
   <header class="section-header">
     <h1>Access whenever &amp; wherever</h1>
     <p>
-      Stream to any device, and even download videos to watch when you&rsquo;re offline.
+      Stream to any device, and even download videos to watch when you are not connected.
     </p>
     <a href="#" class="signup-stamp">
       <img src="img/png/stamps/Request_yellow.png" alt="Request an Invite">
@@ -115,7 +86,7 @@
         <img class="reloading-gif" data-src="img/png/browser/browser_animation.gif" data-delay="0">
         <img src="img/png/browser/Computer.png" alt="Browser" class="animation-mask">
       </div>
-      <p>From your computer with our Mac &amp; Windows web app.</p>
+      <p>From your computer via the browser or your favorite desktop player.</p>
     </div>
     <div class="home-block" id="ios">
       <div class="image-container">
@@ -123,7 +94,7 @@
         <img class="reloading-gif" data-src="img/png/ios/iphone_ipad_animation.gif" data-delay="1000">
         <img src="img/png/ios/iPhone_iPad.png" alt="iPhone &amp; iPad" class="animation-mask">
       </div>
-      <p>From your pocket with our iOS mobile app.</p>
+      <p>From your pocket with our iOS Mobile apps.</p>
     </div>
     <div class="home-block" id="tv">
       <div class="image-container">
@@ -131,7 +102,7 @@
         <img class="reloading-gif" data-src="img/png/tv/tv_animation.gif" data-delay="2000">
         <img src="img/png/tv/TV.png" alt="TV - AirPlay" class="animation-mask">
       </div>
-      <p>From your living room with Apple TV.</p>
+      <p>In your living room with Apple TV.</p>
     </div>
   </div>
   <a class="next-tab"></a>
@@ -139,15 +110,27 @@
 
 <section class="home-section" id="share">
   <header class="section-header">
-    <h1>Share &amp; be Shared With</h1>
+    <h1>LEND &amp; BORROW BETWEEN FRIENDS</h1>
     <p>
-      Give friends secure access to your collections so you can trade videos and movies.
+      Give trusted friends access to a collection so they can watch from your library. They can do the same for you!
     </p>
     <a href="#" class="signup-stamp">
       <img src="img/png/stamps/Request_green.png" alt="Request an Invite">
     </a>
   </header>
   <div class="row">
+    <div class="home-block">
+      <div class="image-container">
+        <img src="img/png/collect/book.png" alt="Collect">
+        <img src="img/png/collect/cd.png" class="collect-cd cd-3">
+        <img src="img/png/collect/cd.png" class="collect-cd cd-4">
+        <img src="img/png/collect/top-sleeve.png">
+        <img src="img/png/collect/cd.png" class="collect-cd cd-1">
+        <img src="img/png/collect/cd.png" class="collect-cd cd-2">
+        <img src="img/png/collect/bottom-sleeve.png">
+      </div>
+      <p>Build collections of your favorite videos and movies.</p>
+    </div>
     <div class="home-block">
       <div class="image-container">
         <div id="lower-mask">
@@ -160,26 +143,14 @@
         </div>
         <img src="img/png/share/iPhones.png" alt="Share">
       </div>
-      <p>Privately share your videos within our secure network.</p>
+      <p>Share a collection with your friends on Stream Nation. Privately.</p>
     </div>
     <div class="home-block">
       <div class="image-container">
         <img src="img/png/control/remote_body.png" alt="Control">
         <img src="img/png/control/button_2.png" id="control-button">
       </div>
-      <p>You have full authority over your video files and account info.</p>
-    </div>
-    <div class="home-block">
-      <div class="image-container">
-        <img src="img/png/collect/book.png" alt="Collect">
-        <img src="img/png/collect/cd.png" class="collect-cd cd-3">
-        <img src="img/png/collect/cd.png" class="collect-cd cd-4">
-        <img src="img/png/collect/top-sleeve.png">
-        <img src="img/png/collect/cd.png" class="collect-cd cd-1">
-        <img src="img/png/collect/cd.png" class="collect-cd cd-2">
-        <img src="img/png/collect/bottom-sleeve.png">
-      </div>
-      <p>Archive your favorite films into your own personal library.</p>
+      <p>Choose who can access your collections.</p>
     </div>
   </div>
   <a class="next-tab"></a>

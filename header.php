@@ -27,13 +27,12 @@
 <![endif]-->
 <header class="site-header" role="banner">
   <div class="container">
-    <a href="index.php" class="header-logo"><img src="img/header.png" alt="Stream Nation"></a>
+    <a href="index.php" class="header-logo"><img src="img/header_beta.png" alt="Stream Nation"></a>
     <nav class="site-nav" role="navigation">
       <a href="index.php" class="<?php is_current("index.php") ?>">Home</a>
       <a href="features.php" class="<?php is_current("features.php") ?>">Features</a>
-      <a href="rights.php" class="<?php is_current("rights.php") ?>">Our Promises</a>
+      <a href="rights.php" class="<?php is_current("rights.php") ?>">Promises</a>
       <a href="index.php#pricing" class="<?php is_current("pricing.php") ?>">Pricing</a>
-      <a href="passport.php" class="<?php is_current("passport.php") ?>">Passport</a>
     </nav>
     <a href="#" class="login">Log in</a>
   </div>
