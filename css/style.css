@@ -250,7 +250,7 @@ body:before {
   height: 72px;
   padding-top: 16px;
   z-index: 10;
-  background-color: #f5f6f6;
+  background-color: #f7f9f9;
   border-bottom: 2px solid #c1c1c1;
   -webkit-transition: -webkit-transform 0.5s;
   -moz-transition: -moz-transform 0.5s;
