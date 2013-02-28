@@ -163,7 +163,6 @@
       Try Stream Nation UNLIMITED FREE for 30 days! Have all of your videos in one place, on any device, all the time. After you try Stream Nation, we have options for you to find the plan that will fit your needs.
     </p>
   </header>
-  <a href="#" class="body-signup-button">Request an Invite!</a>
   <div class="row">
     <div class="pricing-block">
       <h1><span class="num">100</span> GB</h1>
@@ -175,8 +174,9 @@
         400 episodes
       </div>
       <div class="price">
-        <p>$4.99<span>/month</span></p>
-        <p>$49.99<span>/year</span></p>
+        <p>$4<sup>00</sup><span>/month</span></p>
+        <p>Billed Annually</p>
+        <p>$10/month for month-to-month</p>
       </div>
     </div>
     <div class="pricing-block">
@@ -189,11 +189,12 @@
         800 episodes
       </div>
       <div class="price">
-        <p>$9.99<span>/month</span></p>
-        <p>$99.99<span>/year</span></p>
+        <p>$9<sup>00</sup><span>/month</span></p>
+        <p>Billed Annually</p>
+        <p>$10/month for month-to-month</p>
       </div>
     </div>
-    <div class="pricing-block">
+    <div class="pricing-block-best">
       <h1><span class="num">1</span> TB</h1>
       <div class="space">
         1 TB of storage
@@ -203,11 +204,12 @@
         1600 episodes
       </div>
       <div class="price">
-        <p>$14.99<span>/month</span></p>
-        <p>$149.99<span>/year</span></p>
+        <p>$14<sup>00</sup><span>/month</span></p>
+        <p>Billed Annually</p>
+        <p>$10/month for month-to-month</p>
       </div>
     </div>
-    <div class="pricing-block-best">
+    <div class="pricing-block">
       <h1>Unlimited</h1>
       <div class="space">
         Unlimited storage
@@ -217,11 +219,13 @@
         Unlimited episodes
       </div>
       <div class="price">
-        <p>$19.99<span>/month</span></p>
-        <p>$199.99<span>/year</span></p>
+        <p>$19<sup>00</sup><span>/month</span></p>
+        <p>Billed Annually</p>
+        <p>$10/month for month-to-month</p>
       </div>
     </div>
   </div>
+  <a href="#" class="body-signup-button">Request an Invite!</a>
   <a class="back-to-top"></a>
 </section>
 

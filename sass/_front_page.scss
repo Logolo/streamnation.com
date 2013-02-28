@@ -323,23 +323,37 @@
   }
 
   p {
-    font-size: 30px;
     line-height: 1;
-    font-style: italic;
-    font-weight: bold;
     margin: 0 $gtr;
-    padding: $line 0;
 
-    &:first-child:after{
-      @extend %divider;
-      position: absolute;
-      width: 100%;
-      bottom: 0;
+    &:first-child {
+      font-size: 38px;
+      font-style: italic;
+      font-weight: bold;
+      padding: $line 0 $line/3;
+
+      sup {
+        font-size: 65%;
+        vertical-align: $line/3;
+      }
     }
+
 
     span{
-      font-size: 18px;
+      font-size: 22px;
+      font-weight: normal;
     }
+  }
+
+  p + p {
+    color: #888;
+    font-family: $light-font;
+    font-size: $font-size*.9;
+    padding: $line/3 0;
+  }
+
+  p + p + p {
+    color: #ccc;
   }
 }
 

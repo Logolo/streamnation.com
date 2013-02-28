@@ -156,3 +156,7 @@ em{
   text-align: left;
   background-repeat: no-repeat;
 }
+
+.row + .body-signup-button {
+  margin-top: $line*2;
+}
