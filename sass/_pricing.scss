@@ -30,7 +30,7 @@
   h2 {
     @extend .subheader;
     font-size: $line * 1.1;
-    margin-top: $line/2;
+    margin-top: -$line;
   }
 
   p{

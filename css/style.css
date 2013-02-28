@@ -1422,7 +1422,7 @@ body:before {
   /* line 30, ../sass/_pricing.scss */
   .passport-etc h2 {
     font-size: 26.4px;
-    margin-top: 12px; }
+    margin-top: -24px; }
   /* line 36, ../sass/_pricing.scss */
   .passport-etc p {
     font-style: italic;
