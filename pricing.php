@@ -7,7 +7,6 @@
       Try Stream Nation for 15 free days! Have all of your videos in one place, on any device, all the time. After you try Stream Nation, we have options for you to find the plan that will fit your needs.
     </p>
   </header>
-  <a href="#" class="pricing-signup-button">Request an Invite!</a>
   <div class="row">
     <div class="pricing-block">
       <h1><span class="num">100</span> GB</h1>
@@ -19,8 +18,9 @@
         400 episodes
       </div>
       <div class="price">
-        <p>$4.99<span>/month</span></p>
-        <p>$49.99<span>/year</span></p>
+        <p>$4<sup>00</sup><span>/month</span></p>
+        <p>Billed Annually</p>
+        <p>$10/month for month-to-month</p>
       </div>
     </div>
     <div class="pricing-block">
@@ -33,11 +33,12 @@
         800 episodes
       </div>
       <div class="price">
-        <p>$9.99<span>/month</span></p>
-        <p>$99.99<span>/year</span></p>
+        <p>$9<sup>00</sup><span>/month</span></p>
+        <p>Billed Annually</p>
+        <p>$10/month for month-to-month</p>
       </div>
     </div>
-    <div class="pricing-block">
+    <div class="pricing-block-best">
       <h1><span class="num">1</span> TB</h1>
       <div class="space">
         1 TB of storage
@@ -47,11 +48,12 @@
         1600 episodes
       </div>
       <div class="price">
-        <p>$14.99<span>/month</span></p>
-        <p>$149.99<span>/year</span></p>
+        <p>$14<sup>00</sup><span>/month</span></p>
+        <p>Billed Annually</p>
+        <p>$10/month for month-to-month</p>
       </div>
     </div>
-    <div class="pricing-block-best">
+    <div class="pricing-block">
       <h1>Unlimited</h1>
       <div class="space">
         Unlimited storage
@@ -61,26 +63,36 @@
         Unlimited episodes
       </div>
       <div class="price">
-        <p>$19.99<span>/month</span></p>
-        <p>$199.99<span>/year</span></p>
+        <p>$19<sup>00</sup><span>/month</span></p>
+        <p>Billed Annually</p>
+        <p>$10/month for month-to-month</p>
       </div>
     </div>
   </div>
-  <div class="passport-pricing">
+  <a href="#" class="body-signup-button">Request an Invite!</a>
+  <p class="coming_soon">And Coming Soon&hellip;</p>
+  <div class="passport-etc">
+    <header class="section-header">
+      <h2 class="subheader">It has never been easier to get your</h2>
+      <h1>Movies, Videos &amp; Shows in the Cloud</h1>
+      <p>Stream Nation offers two revolutionary ways for you to avoid the hassles of days, weeks, even months of uploading&mdash;with our Stream Nation Passport and DVD Processing services, you can be uploading in now time.</p>
+    </header>
     <div class="grid6">
-      <h2 class="subheader">Your passport to</h2>
-      <h1>Stream Nation</h1>
-      <p>You fill it up with your video library and drop it back at any Fedex in the envelope we provide you. We process and add all your videos to your account so it is ready to be watched on any of your devices.</p>
+      <img src="img/png/pricing/fedex_hdd.png">
+      <h2>Stream Nation Passport</h2>
+      <p>Simply sign up for a Stream Nation Passport and overnight, a 500GB hard drive will arrive at your doorstep. Fill the drive with your video library, seal it up in the provided FedEx envelope and drop it at any FedEx location. Viola! All your videos are in the cloud and available on any of your devices.
       <ul>
-        <li>We will offer a 500GB Passport to all our Yearly Subscribers on 500GB, 1TB or Unlimited plans</li>
-        <li>Users will be able to order 500GB and 1TB Passports afterwards</li>
-        <li>500GB Passports will cost $49.99</li>
-        <li>1TB Passports will cost $99.99</li>
+        <li>500GB Passport is complimentary with all Yearly 500GB, 1TB, and Unlimited plans.</li>
+        <li>Additional 500GB &amp; 1TB Passports are available at any time to add to your Stream Nation Library (500GB Passport $49.99; 1TB Passport $99.99).</li>
       </ul>
-
     </div>
     <div class="grid6">
-      <img src="img/fedex_hdd.png">
+      <img src="img/png/pricing/DVD_Box.png">
+      <h2>Instant Import DVD Processing</h2>
+      <p>Have an enormous DVD collection and no time to load it all to your computer? Sign up for Stream Nation&rsquo;s Instant Import DVD Processing Service and a shipping box will be delivered to your door. Fill it up with up to 70 DVDs and drop it at any FedEx location and Stream Nation will automagically process all of your DVDs, add them to your account, and ship them back to you&mdash;all for only $99!</p>
+      <ul>
+        <li>Discounts available for larger DVD collections; please contact us for more information.</li>
+      </ul>
     </div>
   </div>
 

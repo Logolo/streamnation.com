@@ -160,3 +160,16 @@ em{
 .row + .body-signup-button {
   margin-top: $line*2;
 }
+
+.coming_soon
+{
+  background: #e0f2f9;
+  color: #63bde0;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  margin: $line*2.5 auto 0;
+  padding: $line/2 0;
+  text-align: center;
+  width: $desktop;
+}

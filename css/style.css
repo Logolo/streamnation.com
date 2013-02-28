@@ -68,7 +68,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 100%; }
 
 /* line 19, ../sass/_grid.scss */
-.row, .passport-pricing {
+.row, .passport-etc {
   overflow: hidden;
   *zoom: 1;
   margin: 24px auto;
@@ -158,7 +158,7 @@ em {
   font-style: italic; }
 
 /* line 70, ../sass/_base.scss */
-.subheader, .sub-subheader {
+.subheader, .sub-subheader, .passport-etc h2 {
   font-family: "Georgia", serif;
   text-transform: none;
   font-style: italic;
@@ -231,7 +231,7 @@ em {
   padding: 2px 0; }
 
 /* line 152, ../sass/_base.scss */
-.signup-button, .hero-signup-button, .body-signup-button, .pricing-signup-button {
+.signup-button, .hero-signup-button, .body-signup-button {
   color: white;
   font-family: "ralewayextrabold", sans-serif;
   text-transform: uppercase;
@@ -239,8 +239,20 @@ em {
   background-repeat: no-repeat; }
 
 /* line 160, ../sass/_base.scss */
-.row + .body-signup-button, .passport-pricing + .body-signup-button {
+.row + .body-signup-button, .passport-etc + .body-signup-button {
   margin-top: 48px; }
+
+/* line 165, ../sass/_base.scss */
+.coming_soon {
+  background: #e0f2f9;
+  color: #63bde0;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 60px auto 0;
+  padding: 12px 0;
+  text-align: center;
+  width: 960px; }
 
 /* line 2, ../sass/_header.scss */
 body:before {
@@ -508,7 +520,7 @@ body:before {
   background-size: cover; }
   @media (min-width: 960px) {
     /* line 128, ../sass/_front_page.scss */
-    #hero .row, #hero .passport-pricing {
+    #hero .row, #hero .passport-etc {
       top: 50%;
       margin-top: -200px; } }
 
@@ -621,7 +633,7 @@ body:before {
     width: 300px;
     margin-bottom: 12px; }
     /* line 211, ../sass/_front_page.scss */
-    .hero-text-container .hero-text .subheader, .hero-text-container .hero-text .sub-subheader {
+    .hero-text-container .hero-text .subheader, .hero-text-container .hero-text .sub-subheader, .hero-text-container .hero-text .passport-etc h2, .passport-etc .hero-text-container .hero-text h2 {
       font-size: 22px;
       line-height: 24px;
       margin: 0 auto 8px auto; }
@@ -1246,7 +1258,7 @@ body:before {
     background-position: center top;
     padding: 90px 0 70px; }
   /* line 15, ../sass/_rights.scss */
-  .rights-header .subheader, .rights-header .sub-subheader {
+  .rights-header .subheader, .rights-header .sub-subheader, .rights-header .passport-etc h2, .passport-etc .rights-header h2 {
     font-size: 43px; }
   /* line 19, ../sass/_rights.scss */
   .rights-header h1 {
@@ -1257,7 +1269,7 @@ body:before {
   padding-top: 10px; }
 
 /* line 1, ../sass/_features.scss */
-.features-section .section-header h1, .features-section-alt .section-header h1, .features-section .section-header h2, .features-section-alt .section-header h2, .features-section .row, .features-section-alt .row, .features-section .passport-pricing, .features-section-alt .passport-pricing {
+.features-section .section-header h1, .features-section-alt .section-header h1, .features-section .section-header h2, .features-section-alt .section-header h2, .features-section .row, .features-section-alt .row, .features-section .passport-etc, .features-section-alt .passport-etc {
   margin-left: auto;
   margin-right: auto;
   max-width: 760px; }
@@ -1389,34 +1401,44 @@ body:before {
 /* line 1, ../sass/_pricing.scss */
 .pricing-content {
   margin-top: 72px; }
+  /* line 5, ../sass/_pricing.scss */
+  .pricing-content .section-header h1 {
+    font-size: 46px; }
+    /* line 8, ../sass/_pricing.scss */
+    .pricing-content .section-header h1:after {
+      display: none; }
+  /* line 13, ../sass/_pricing.scss */
+  .pricing-content .section-header h2 {
+    font-size: 38px; }
 
-/* line 6, ../sass/_pricing.scss */
-.pricing-signup-button {
-  background-image: url('../img/request_invite_button_pricing_page.png?1362080129');
-  font-size: 36px;
-  padding: 32px 20px;
-  display: block;
-  height: 81px;
-  width: 486px;
-  margin: 24px auto 48px; }
-
-/* line 17, ../sass/_pricing.scss */
-.passport-pricing {
-  margin-top: 72px; }
-  /* line 20, ../sass/_pricing.scss */
-  .passport-pricing p {
-    font-size: 19px;
-    font-style: italic;
-    margin: 24px auto; }
+/* line 20, ../sass/_pricing.scss */
+.passport-etc {
+  margin-top: 8px;
+  margin-bottom: 72px; }
   /* line 25, ../sass/_pricing.scss */
-  .passport-pricing li {
+  .passport-etc img {
+    display: block;
+    margin: 0 auto; }
+  /* line 30, ../sass/_pricing.scss */
+  .passport-etc h2 {
+    font-size: 26.4px;
+    margin-top: 12px; }
+  /* line 36, ../sass/_pricing.scss */
+  .passport-etc p {
+    font-style: italic;
+    line-height: 26.4px; }
+  /* line 41, ../sass/_pricing.scss */
+  .passport-etc .div p {
+    font-size: 16px; }
+  /* line 45, ../sass/_pricing.scss */
+  .passport-etc li {
     padding: 0 10px;
     margin: 12px 10px;
     font-family: sans-serif;
     font-weight: lighter;
-    font-size: 18px; }
-    /* line 31, ../sass/_pricing.scss */
-    .passport-pricing li:before {
+    font-size: 14px; }
+    /* line 51, ../sass/_pricing.scss */
+    .passport-etc li:before {
       content: "•";
       font-family: "ralewayextrabold", sans-serif;
       position: absolute;
