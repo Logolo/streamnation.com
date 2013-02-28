@@ -55,7 +55,7 @@
         <img src="img/png/secure/Loop.png" id="secure-lock">
         <img src="img/png/secure/lock-cut.png" alt="Secure">
       </div>
-      <p>All communications are encrypted offering a secured and safe experience.</p>
+      <p>Videos are stored within a high security virtual private network.</p>
     </div>
     <div class="home-block">
       <div class="image-container">
@@ -110,7 +110,7 @@
 
 <section class="home-section" id="share">
   <header class="section-header">
-    <h1>LEND &amp; BORROW BETWEEN FRIENDS</h1>
+    <h1>Lend &amp; Borrrow Between Friends</h1>
     <p>
       Give trusted friends access to a collection so they can watch from your library. They can do the same for you!
     </p>
@@ -160,7 +160,7 @@
   <header class="section-header">
     <h1>Join Now for Free</h1>
     <p>
-      Try Stream Nation for 15 free days! Have all of your videos in one place, on any device, all the time. After you try Stream Nation, we have options for you to find the plan that will fit your needs.
+      Try Stream Nation UNLIMITED FREE for 30 days! Have all of your videos in one place, on any device, all the time. After you try Stream Nation, we have options for you to find the plan that will fit your needs.
     </p>
   </header>
   <a href="#" class="body-signup-button">Request an Invite!</a>
