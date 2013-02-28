@@ -366,11 +366,16 @@
     font-weight: bold;
     margin: 0 $gtr;
     padding: $line 0;
+
     &:first-child:after{
       @extend %divider;
       position: absolute;
       width: 100%;
       bottom: 0;
+    }
+
+    span{
+      font-size: 18px;
     }
   }
 }

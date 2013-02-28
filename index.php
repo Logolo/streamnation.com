@@ -175,8 +175,8 @@
         400 episodes
       </div>
       <div class="price">
-        <p>$4.99 <br>⁄ month</p>
-        <p>$49.99 <br>⁄ year</p>
+        <p>$4.99<span>/month</span></p>
+        <p>$49.99<span>/year</span></p>
       </div>
     </div>
     <div class="pricing-block">
@@ -189,8 +189,8 @@
         800 episodes
       </div>
       <div class="price">
-        <p>$9.99 <br>⁄ month</p>
-        <p>$99.99 <br>⁄ year</p>
+        <p>$9.99<span>/month</span></p>
+        <p>$99.99<span>/year</span></p>
       </div>
     </div>
     <div class="pricing-block">
@@ -203,8 +203,8 @@
         1600 episodes
       </div>
       <div class="price">
-        <p>$14.99 <br>⁄ month</p>
-        <p>$149.99 <br>⁄ year</p>
+        <p>$14.99<span>/month</span></p>
+        <p>$149.99<span>/year</span></p>
       </div>
     </div>
     <div class="pricing-block-best">
@@ -217,8 +217,8 @@
         Unlimited episodes
       </div>
       <div class="price">
-        <p>$19.99 <br>⁄ month</p>
-        <p>$199.99 <br>⁄ year</p>
+        <p>$19.99<span>/month</span></p>
+        <p>$199.99<span>/year</span></p>
       </div>
     </div>
   </div>
