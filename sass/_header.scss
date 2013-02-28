@@ -43,8 +43,9 @@ body {
     display: block;
   }
   a{
+    top: -2px;
     display: inline-block;
-    padding: 0 $line/2 ($line/2 - 2px);
+    padding: 0 $line/2 ($line/2);
     line-height: 1;
     &.current{
       color: $blue;

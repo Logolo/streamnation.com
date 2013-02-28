@@ -78,38 +78,6 @@
   }
 }
 
-.banner{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: $line;
-  font-style: italic;
-  color: white;
-  background-color: $blue;
-  padding: $line/2 $line $line/2 $gtr;
-  @include translateX(120%);
-  @include transition(transform 1s);
-  &:before, &:after{
-    content: "";
-    position: absolute;
-    left: -$line;
-    border-left: $line solid transparent;
-  }
-  &:before{
-    top: 0;
-    border-top: $line solid $blue;
-  }
-  &:after{
-    bottom: 0;
-    border-bottom: $line solid $blue;
-  }
-}
-
-.current .banner{
-  @include translateX(0%);
-}
-
-
 %bottom-tab{
   background-repeat: no-repeat;
   position: fixed;
@@ -154,7 +122,7 @@
   margin: 0;
   padding: 0;
   $experimental-support-for-svg: true;
-  @include background(linear-gradient(#fff, #ccc));
+  @include background(linear-gradient(#fff 50%, #ccc));
   background-size: cover;
 
   .row{
@@ -197,7 +165,7 @@
 
 .hero-ipad{
   top: $line * 4;
-  right:405px;
+  right:385px;
   @include translate(0, 2000px);
   @include transition(.7s ease-in .2s);
 }
@@ -211,14 +179,10 @@
 
 .hero-macbook{
   top: $line * 6;
-  right: 130px;
+  right: 110px;
   @include translate(0, 2000px);
   @include transition(.7s ease-in .7s);
 }
-
-// matt notes -- "zipper in:
-// left from top, middle from bottom, right from top
-// in quick succession"
 
 .active{
   .hero-image img{
@@ -233,36 +197,39 @@
   @media (min-width: $desktop) {
     position: absolute;
     left: 0;
-    top: 0;
+    top: $line/2;
     width: 530px;
     padding-bottom: $line * 10;
     padding-right: 50px;
     overflow: hidden;
   }
-
   .hero-text{
-    // @include translateX(150%);
-    // @include transition(transform 1s false 1s);
     text-align: center;
-    width: 340px;
+    width: 300px;
+    margin-bottom: $line/2;
 
     .subheader{
-      line-height: 1;
+      font-size: $line - 2px;
+      line-height: $line;
       margin: 0 auto $line/3 auto;
     }
     h1{
+      font-size: $line * 1.6;
       margin-bottom: 4px;
     }
+    .sub-subheader{
+      font-size: $font-size;
+      font-weight: normal;
+      margin: $line/2 0;
+    }
   }
-  .sub-subheader{
-    font-size: 18px;
-    font-weight: normal;
-  }
+
   hr{
     border-style: solid none dotted none;
     border-color: $text-color;
     border-width: 1px;
     height: 4px;
+    margin: $line/2 0 $line;
   }
 }
 
@@ -275,23 +242,27 @@
   font-family: $header-font;
   text-transform: uppercase;
   text-align: left;
-  padding: $line/2 - 1px $gtr - 1px;
+  background-repeat: no-repeat;
 }
 
 .hero-signup-button{
   @extend .signup-button;
-
-  background-image: image-url('request_invite_button.png');
+  padding-top: 7px;
+  padding-left: 15px;
+  font-size: 15px;
+  background-image: image-url('request_invite_button_header.png');
   display: inline-block;
-  height: 43px;
+  height: 40px;
   width: 215px;
-  box-shadow: 0 $line * 3 70px -10px #bbb,
-    0 $line * 6.5 50px -17px $blue;
+  box-shadow: 0 $line * 2.5 70px -10px #bbb,
+    0 $line * 6 50px -17px $blue;
 }
 
 .body-signup-button {
   @extend .signup-button;
-  @include replace-text('png/pricing/request_an_invite.png');
+  background-image: image-url('request_invite_button_pricing.png');
+  font-size: 23px;
+  padding: 17px 14px;
   display: block;
   height: 59px;
   width: 316px;

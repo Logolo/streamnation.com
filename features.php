@@ -5,14 +5,14 @@
     <h1>The Stream Nation Tour</h1>
   </div>
 </section>
-<section class="features-section-alt">
+<section class="features-section-alt" id="uploading">
   <header class="section-header">
     <h2 class="subheader">Start uploading</h2>
     <h1>Your Videos &amp; Movies</h1>
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="img/Feature_page_images-02.png">
+      <img src="img/Feature_page_images_365-02.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -24,14 +24,14 @@
     </div>
   </div>
 </section>
-<section class="features-section">
+<section class="features-section" id="any-device">
   <header class="section-header">
     <h2 class="subheader">You can watch</h2>
     <h1>On Any Device</h1>
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="img/Feature_page_images-03.png">
+      <img src="img/Feature_page_images_365-03.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -46,14 +46,14 @@
     </div>
   </div>
 </section>
-<section class="features-section-alt">
+<section class="features-section-alt" id="friends">
   <header class="section-header">
     <h2 class="subheader">Invite your trusted friends &amp;</h2>
     <h1>Open Your Collections</h1>
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="img/Feature_page_images-04.png">
+      <img src="img/Feature_page_images_365-04.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -65,14 +65,14 @@
     </div>
   </div>
 </section>
-<section class="features-section">
+<section class="features-section" id='borrow'>
   <header class="section-header">
     <h2 class="subheader">Browse your friends' collections &amp;</h2>
     <h1>Borrow Their Movies</h1>
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="img/Feature_page_images-05.png">
+      <img src="img/Feature_page_images_365-05.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -84,14 +84,14 @@
     </div>
   </div>
 </section>
-<section class="features-section-alt">
+<section class="features-section-alt" id="safe">
   <header class="section-header">
     <h2 class="subheader">Feel secure knowing</h2>
     <h1>Your Videos Are Safe</h1>
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="img/Feature_page_images-06.png">
+      <img src="img/Feature_page_images_365-06.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -103,14 +103,14 @@
     </div>
   </div>
 </section>
-<section class="features-section">
+<section class="features-section" id="private">
   <header class="section-header">
     <h2 class="subheader">Your account and videos</h2>
     <h1>Are Private</h1>
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="img/Feature_page_images-07.png">
+      <img src="img/Feature_page_images_365-07.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -125,14 +125,14 @@
     </div>
   </div>
 </section>
-<section class="features-section-alt">
+<section class="features-section-alt" id="passport">
   <header class="section-header">
     <h2 class="subheader">Upload all of your movie collections</h2>
     <h1>With Our Passport</h1>
   </header>
   <div class="row">
     <div class="features-block">
-      <img src="img/Feature_page_images-08.png">
+      <img src="img/Feature_page_images_365-08.png">
     </div>
     <div class="features-block">
       <p class="summary">
@@ -143,8 +143,6 @@
       </p>
     </div>
   </div>
-</section>
-<section class="features-section">
   <div class="sign-up-container">
     <a href="#" class="body-signup-button">
       Request an invite

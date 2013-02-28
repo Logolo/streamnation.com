@@ -8,23 +8,28 @@
   @extend %page-section;
   text-align: center;
   padding-top: $line;
+  @include background(linear-gradient(#fff,#ddd));
   h1{
-    @include replace-text("Features_Header_trimmed.png");
+    top: $line;
+    @include replace-text("Features_Header_960px_header.png");
     height: $line * 5;
     background-size: contain;
     @media (min-width: $tablet){
-      height: $line * 8;
+      top: 0;
+      height: $line * 10;
     }
     @media (min-width: $desktop){
-      height: $line * 10;
+      height: $line * 16;
     }
   }
 }
 
 .features-section{
+  @extend %jean-background;
   @extend %page-section;
   padding-top: $line;
   .section-header{
+    padding-bottom: $line;
     h1, h2{
       @extend %feature-width;
       border: none;
@@ -37,6 +42,9 @@
   }
   .section-header:after{
     @extend %divider;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
   .row{
     @extend %feature-width;
@@ -47,6 +55,7 @@
     margin-bottom: $line;
     line-height: 1.3;
     padding-right: $gtr * 3;
+    font-size: 20px;
   }
   .summary{
     font-weight: bold;
@@ -57,7 +66,7 @@
 
 .features-section-alt{
   @extend .features-section;
-  @extend %jean-background;
+  background-image: none;
   .features-block{
     float: left;
   }
@@ -93,4 +102,32 @@
   margin: 0 auto;
   background-color: white;
   text-align: center;
+}
+
+#uploading .summary{
+  margin-top: 10px;
+}
+
+#any-device img{
+  margin-top: 10px;
+}
+
+#friends .summary{
+  margin-top: 60px;
+}
+
+#borrow .summary{
+  margin-top: 70px;
+}
+
+#safe .summary {
+  margin-top: 65px;
+}
+
+#private .summary {
+  margin-top: 45px;
+}
+
+#passport .summary{
+  margin-top: 40px;
 }
