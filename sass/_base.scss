@@ -148,3 +148,11 @@ em{
   border-bottom: 1px dotted $text-color;
   padding: 2px 0;
 }
+
+.signup-button {
+  color: white;
+  font-family: $header-font;
+  text-transform: uppercase;
+  text-align: left;
+  background-repeat: no-repeat;
+}

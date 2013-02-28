@@ -237,14 +237,6 @@
   @extend %jean-background;
 }
 
-.signup-button {
-  color: white;
-  font-family: $header-font;
-  text-transform: uppercase;
-  text-align: left;
-  background-repeat: no-repeat;
-}
-
 .hero-signup-button{
   @extend .signup-button;
   padding-top: 7px;

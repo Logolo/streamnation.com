@@ -1,0 +1,38 @@
+.pricing-content{
+  margin-top: $header-height;
+
+}
+
+.pricing-signup-button {
+  @extend .signup-button;
+  background-image: image-url('request_invite_button_pricing_page.png');
+  font-size: $line * 1.5;
+  padding: 32px 20px;
+  display: block;
+  height: 81px;
+  width: 486px;
+  margin: $line auto $line*2;
+}
+
+.passport-pricing{
+  @extend .row;
+  margin-top: $line * 3;
+  p{
+    font-size: 19px;
+    font-style: italic;
+    margin: $line auto;
+  }
+  li{
+    padding: 0 $gtr;
+    margin: $line/2 $gtr;
+    font-family: $light-font;
+    font-weight: lighter;
+    font-size: 18px;
+    &:before{
+      content: "•";
+      font-family: $header-font;
+      position: absolute;
+      right: 100%;
+    }
+  }
+}

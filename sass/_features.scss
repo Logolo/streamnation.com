@@ -8,7 +8,7 @@
   @extend %page-section;
   text-align: center;
   padding-top: $line;
-  @include background(linear-gradient(#fff,#ddd));
+  @include background(linear-gradient(#fff 50%,#ddd));
   h1{
     top: $line;
     @include replace-text("Features_Header_960px_header.png");
