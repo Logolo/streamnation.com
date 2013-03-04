@@ -1,0 +1,1 @@
+For maximum compatibility with email platforms, email templates should be processed by Premailer at http://premailer.dialect.ca/ before being integrated with emailing services.
