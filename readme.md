@@ -1,5 +1,3 @@
-SVG or proper-sized PNGs
+# Stream Nation
 
-adjust all px offsets
-
-animations for rights page
+The public-facing website for StreamNation.com. Includes Wordpress theme files and HTML email templates.
